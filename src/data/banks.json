@@ -1,0 +1,21 @@
+[
+  { "bin": "970436", "name": "Vietcombank" },
+  { "bin": "970418", "name": "BIDV" },
+  { "bin": "970407", "name": "Techcombank" },
+  { "bin": "970422", "name": "MB Bank" },
+  { "bin": "970423", "name": "TPBank" },
+  { "bin": "970432", "name": "VIB" },
+  { "bin": "970412", "name": "Agribank" },
+  { "bin": "970415", "name": "VietinBank" },
+  { "bin": "970416", "name": "ACB" },
+  { "bin": "970411", "name": "HDBank" },
+  { "bin": "970426", "name": "MSB (Maritime Bank)" },
+  { "bin": "970444", "name": "VPBank" },
+  { "bin": "970406", "name": "DongA Bank" },
+  { "bin": "970429", "name": "Nam A Bank" },
+  { "bin": "970414", "name": "OceanBank" },
+  { "bin": "970431", "name": "Bắc Á Bank (BACB)" },
+  { "bin": "970438", "name": "BVB (Baoviet Bank)" },
+  { "bin": "970454", "name": "SCB" },
+  { "bin": "970410", "name": "Vietbank" }
+]

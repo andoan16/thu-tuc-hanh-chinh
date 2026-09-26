@@ -1,0 +1,229 @@
+{
+  "slug": "ly-lich-tu-phap",
+  "title": "Lý lịch tư pháp",
+  "icon": "file-text",
+  "category": "Tư pháp",
+  "portalUrl": "https://phapluat.gov.vn/",
+  "fee": 200000,
+  "feeNote": "Phí 200.000đ/lần (phiếu số 1 — đi nước ngoài), 100.000đ/lần (phiếu số 2 — trong nước). Từ phiếu thứ 3 trở lên thu thêm 5.000đ/phiếu. Nộp trực tuyến được giảm 15-20% phí trong năm 2025. Theo Thông tư 16/2025/TT-BTC (có hiệu lực 24/4/2025).",
+  "processingTime": "2-3 ngày làm việc (tại trung tâm dịch vụ công)",
+  "questions": [
+    {
+      "id": "purpose",
+      "text": "Bạn xin lý lịch tư pháp để làm gì?",
+      "options": [
+        {
+          "label": "Đi du học / Định cư nước ngoài",
+          "value": "abroad"
+        },
+        {
+          "label": "Xin việc làm / Thi tuyển",
+          "value": "job"
+        },
+        {
+          "label": "Đăng ký kinh doanh / Cấp phép",
+          "value": "business"
+        }
+      ],
+      "impact": "Phiếu số 1 (xuất cảnh) 200k, phiếu số 2 (trong nước) 100k"
+    },
+    {
+      "id": "online",
+      "text": "Bạn muốn nộp online qua Cổng DVC hay đến trực tiếp?",
+      "options": [
+        {
+          "label": "Online qua phapluat.gov.vn",
+          "value": "online"
+        },
+        {
+          "label": "Đến trực tiếp UBND / Trung tâm DVC",
+          "value": "offline"
+        }
+      ],
+      "impact": "Online qua VNeID/Cổng DVC nhanh hơn, trực tiếp cần đến Sở Tư pháp"
+    },
+    {
+      "id": "vneid",
+      "text": "Bạn đã có VNeID Mức 2 chưa?",
+      "options": [
+        {
+          "label": "Đã kích hoạt",
+          "value": "yes"
+        },
+        {
+          "label": "Chưa kích hoạt",
+          "value": "no"
+        }
+      ],
+      "impact": "Bắt buộc nếu nộp online"
+    }
+  ],
+  "rules": {
+    "online": {
+      "required": [
+        "cccd",
+        "photo",
+        "fee"
+      ],
+      "optional": [
+        "authorization"
+      ]
+    },
+    "offline": {
+      "required": [
+        "cccd",
+        "photo",
+        "fee"
+      ],
+      "optional": [
+        "authorization",
+        "household_doc"
+      ]
+    }
+  },
+  "documents": {
+    "cccd": {
+      "label": "CCCD gắn chip (bản gốc + bản sao)",
+      "badges": [
+        "scan",
+        "goc",
+        "saoy"
+      ]
+    },
+    "photo": {
+      "label": "Ảnh 3x4 (2 tấm)",
+      "badges": [
+        "scan"
+      ]
+    },
+    "authorization": {
+      "label": "Giấy ủy quyền (nếu nhờ người khác xin thay) - có công chứng",
+      "badges": [
+        "saoy"
+      ]
+    },
+    "household_doc": {
+      "label": "Sổ hộ khẩu / Giấy xác nhận hộ khẩu (bản sao)",
+      "badges": [
+        "saoy"
+      ]
+    },
+    "fee": {
+      "label": "Phí: 200.000đ/lần (phiếu 1) hoặc 100.000đ/lần (phiếu 2). Từ phiếu thứ 3: +5.000đ/phiếu",
+      "badges": [
+        "fee"
+      ]
+    }
+  },
+  "legal_bases": [
+    {
+      "title": "Luật Lý lịch tư pháp số 28/2009/QH12 của Quốc hội (sửa đổi, bổ sung bởi Luật 107/2025/QH15 có hiệu lực 01/07/2026)",
+      "article": "Điều 3, Điều 7, Điều 10, Điều 16 — quy định về lý lịch tư pháp, đối tượng, thủ tục",
+      "url": "https://vanban.chinhphu.vn/default.aspx?pageid=27160&docid=91028",
+      "last_verified_date": "2026-09-20"
+    },
+    {
+      "title": "Nghị định 216/2026/NĐ-CP của Chính phủ: Quy định chi tiết và hướng dẫn thi hành một số điều của Luật Lý lịch tư pháp",
+      "article": "Điều 10, Điều 12, Điều 13 — thủ tục xin cấp phiếu LLTP, hồ sơ, thời hạn giải quyết",
+      "url": "https://vanban.chinhphu.vn/?pageid=27160&docid=218523",
+      "last_verified_date": "2026-09-20"
+    },
+    {
+      "title": "Thông tư 16/2025/TT-BTC của Bộ Tài chính: Quy định mức thu, chế độ thu, nộp phí lý lịch tư pháp",
+      "article": "Điều 2 — mức thu 200.000đ (phiếu 1, đi nước ngoài), 100.000đ (phiếu 2, trong nước); giảm 15-20% khi nộp trực tuyến",
+      "url": "https://vanban.chinhphu.vn/?pageid=27160&docid=213475",
+      "last_verified_date": "2026-09-20"
+    },
+    {
+      "title": "Nghị định 59/2022/NĐ-CP của Chính phủ: Quy định về định danh và xác thực điện tử",
+      "article": "Điều 14, Điều 15 — VNeID Mức 2, xác thực điện tử dùng cho nộp trực tuyến",
+      "url": "https://vanban.chinhphu.vn/?pageid=27160&docid=206490",
+      "last_verified_date": "2026-09-20"
+    }
+  ],
+  "officeInfo": {
+    "where": "Trung tâm Phục vụ Hành chính công cấp tỉnh/huyện hoặc Sở Tư pháp",
+    "officeLevel": "province",
+    "officePrefix": "Trung tâm Phục vụ Hành chính công",
+    "hours": "Thứ 2 - Thứ 6: 8:00 - 11:30, 13:30 - 17:00",
+    "lunchNote": "Nghỉ trưa 11:30 - 13:30",
+    "bestTime": "Sáng Thứ 3 - Thứ 4 (vắng, nhận kết quả nhanh)",
+    "busyTime": "Thứ 2, đầu tuần và Thứ 7 (do sinh viên / người đi làm)",
+    "payment": [
+      "Tiền mặt",
+      "Chuyển khoản QR",
+      "Quẹt thẻ POS"
+    ],
+    "tips": [
+      "Nếu có VNeID Mức 2, nộp online qua phapluat.gov.vn — nhận kết quả bằng file điện tử có chữ ký số, giá trị pháp lý như bản giấy. Được giảm 15-20% phí.",
+      "Xin cho người khác cần giấy ủy quyền công chứng + CCCD bản sao của người ủy quyền.",
+      "Đi nước ngoài cần xin 2 bản: 1 tiếng Việt + 1 bản dịch công chứng sang tiếng Anh/phù hợp quốc gia tiếp nhận."
+    ]
+  },
+  "feeMin": 100000,
+  "data_source": "Cổng Dịch vụ công Quốc gia (dichvucong.gov.vn) / Cổng Pháp luật quốc gia (phapluat.gov.vn)",
+  "last_updated": "02/09/2026",
+  "difficulty_level": "Dễ",
+  "estimated_time_days": 3,
+  "execution_methods": [
+    "Online (VNeID / Cổng DVC Quốc gia / Cổng Pháp luật)",
+    "Trực tiếp (Sở Tư pháp / Trung tâm Hành chính công)"
+  ],
+  "feeOnline": 100000,
+  "feeOffline": 200000,
+  "forms": [
+    {
+      "form_code": "Theo Thông tư 16/2025/TT-BTC",
+      "form_name": "Đơn yêu cầu cấp phiếu Lý lịch tư pháp",
+      "fill_mode": "both",
+      "copies_count": 1,
+      "note": "Online: điền trực tiếp trên phapluat.gov.vn (cần VNeID Mức 2). Offline: lấy mẫu tại Sở Tư pháp/Trung tâm DVC cấp tỉnh.",
+      "download_url": "https://phapluat.gov.vn/"
+    }
+  ],
+  "warnings": [
+    {
+      "type": "risk",
+      "content": "Phiếu LLTP phiếu số 1 (đi nước ngoài) có giá trị sử dụng 6 tháng kể từ ngày cấp. Phiếu số 2 (trong nước) không quá 90 ngày.",
+      "solution": "Kiểm tra ngày cấp trước khi nộp. Nếu đã quá hạn, cần làm lại phiếu mới."
+    },
+    {
+      "type": "penalty",
+      "content": "Sử dụng phiếu LLTP giả mạo, chỉnh sửa, cho mượn có thể bị truy cứu trách nhiệm hình sự theo Điều 314 Bộ luật Hình sự 2015 (ban hành mới 2017).",
+      "solution": "Chỉ sử dụng phiếu do cơ quan có thẩm quyền cấp. Nếu phát hiện phiếu sai, liên hệ ngay Sở Tư pháp nơi cấp để hướng dẫn."
+    },
+    {
+      "type": "reject_reason",
+      "content": "Cơ quan nước ngoài có thể từ chối phiếu LLTP nếu không có bản dịch công chứng hoặc không được đóng dấu apostille/hợp pháp hóa lãnh sự.",
+      "solution": "Liên hệ trước với cơ quan nhận hồ sơ tại nước ngoài để xác nhận yêu cầu cụ thể. Cần dịch công chứng + hợp pháp hóa."
+    }
+  ],
+  "after_procedure": {
+    "how_to_receive": "Trực tiếp: nhận phiếu tại Sở Tư pháp/Trung tâm DVC cấp tỉnh theo ngày hẹn. Online: nhận bản điện tử qua email hoặc tải từ phapluat.gov.vn.",
+    "receipt_method": "Phiếu LLTP (bản giấy hoặc điện tử). Phiếu điện tử có chữ ký số — giá trị pháp lý tương đương bản giấy.",
+    "receive_by_other": "Ủy quyền nhận: cần giấy ủy quyền công chứng + CCCD cả 2 bên + giấy hẹn (nếu có).",
+    "rejected_solution": "Nếu bị từ chối: nhận công văn giải trình. Lý do thường gặp: có tiền án/tội phạm, đang bị truy nã, hoặc hồ sơ không hợp lệ."
+  },
+  "common_issues": [
+    {
+      "problem": "Đã từng bị kết án tội phạm nhưng đã xong án",
+      "solution": "Cơ quan cấp LLTP sẽ ghi rõ bản án trong phiếu số 1 (đi nước ngoài). Cần công khai thông tin, không tự ý che giấu.",
+      "impact": "Phiếu số 1 có thể bị từ chối hoặc ghi chú đặc biệt"
+    },
+    {
+      "problem": "CCCD gắn chip nhưng chưa có VNeID Mức 2, muốn xin online",
+      "solution": "Đăng ký VNeID Mức 2 tại ứng dụng VNeID trên điện thoại hoặc trực tiếp tại Công an cấp xã. Thời gian kích hoạt: 1-3 ngày.",
+      "impact": "Không thể xin online cho đến khi VNeID Mức 2 kích hoạt"
+    },
+    {
+      "problem": "Cần phiếu LLTP nhiều lần trong thời gian ngắn",
+      "solution": "Từ phiếu thứ 3 trở lên: thu thêm 5.000đ/phiếu. Nhiều hãng hàng không/cơ quan yêu cầu phiếu mới nhất (dưới 6 tháng tuổi).",
+      "impact": "Tốn thêm thời gian và phí, nhưng thủ tục nhanh"
+    },
+    {
+      "problem": "Không rõ mình cần phiếu số 1 hay số 2",
+      "solution": "Phiếu số 1 dùng cho xuất cảnh/đi nước ngoài. Phiếu số 2 dùng cho mục đích trong nước (xin việc, thi tuyển). Xin cả hai nếu không chắc.",
+      "impact": "Lệ phí khác nhau: số 1 = 200k, số 2 = 100k"
+    }
+  ]
+}

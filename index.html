@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#b91c1c" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Thủ Tục Hành Chính - Sổ Tay Dịch Vụ Công Thông Minh</title>
+  </head>
+  <body class="bg-stone-50 text-stone-900 dark:bg-stone-950 dark:text-stone-100">
+    <script>
+      // Chống nháy trắng: áp dụng dark mode TRƯỚC khi Vue mount.
+      // Thứ tự ưu tiên: localStorage người dùng chọn > theo hệ điều hành.
+      try {
+        var saved = localStorage.getItem('tttc_dark')
+        var dark = saved !== null
+          ? saved === '1'
+          : window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (dark) document.documentElement.classList.add('dark')
+      } catch (e) { /* localStorage bị chặn — bỏ qua */ }
+    </script>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

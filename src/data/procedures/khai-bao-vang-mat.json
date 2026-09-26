@@ -1,0 +1,263 @@
+{
+  "slug": "khai-bao-vang-mat",
+  "title": "Khai báo Vắng mặt / Lưu trú tạm thời",
+  "icon": "home",
+  "category": "Hộ tịch",
+  "portalUrl": "https://dichvucong.gov.vn/p/home/dvc-trang-chu.html",
+  "fee": 0,
+  "feeNote": "Miễn lệ phí (theo Thông tư 55/2021/TT-BCA và Thông tư 56/2021/TT-BCA).",
+  "processingTime": "Trong ngày (khai trực tiếp) / 1-2 ngày làm việc (qua VNeID)",
+  "questions": [
+    {
+      "id": "who",
+      "text": "Bạn khai báo cho ai vắng mặt / lưu trú?",
+      "options": [
+        {
+          "label": "Bản thân mình đi vắng",
+          "value": "self"
+        },
+        {
+          "label": "Tiếp đón khách lưu trú tại nhà",
+          "value": "host"
+        },
+        {
+          "label": "Người vắng dưới 15 tuổi (cha mẹ khai)",
+          "value": "minor"
+        }
+      ],
+      "impact": "Xác định ai là người khai (tự khai / chủ nhà tiếp đón / người giám hộ)"
+    },
+    {
+      "id": "channel",
+      "text": "Bạn muốn khai theo hình thức nào?",
+      "options": [
+        {
+          "label": "Qua VNeID (Mức 2)",
+          "value": "online"
+        },
+        {
+          "label": "Trực tiếp tại Công an cấp xã",
+          "value": "offline"
+        }
+      ],
+      "impact": "Online qua VNeID nhanh hơn, trực tiếp cần đến Công an"
+    },
+    {
+      "id": "vneid",
+      "text": "Bạn đã kích hoạt VNeID Mức 2 chưa?",
+      "options": [
+        {
+          "label": "Đã kích hoạt",
+          "value": "yes"
+        },
+        {
+          "label": "Chưa kích hoạt",
+          "value": "no"
+        }
+      ],
+      "impact": "Bắt buộc nếu khai online qua VNeID"
+    }
+  ],
+  "rules": {
+    "self": {
+      "required": [
+        "cccd",
+        "vang_mat_form",
+        "photo"
+      ],
+      "optional": [
+        "vneid_doc"
+      ]
+    },
+    "host": {
+      "required": [
+        "cccd",
+        "guest_id",
+        "luu_tru_form"
+      ],
+      "optional": [
+        "lease_guest"
+      ]
+    },
+    "minor": {
+      "required": [
+        "cccd_parent",
+        "birth_cert_minor",
+        "vang_mat_form"
+      ],
+      "optional": [
+        "vneid_doc"
+      ]
+    }
+  },
+  "documents": {
+    "cccd": {
+      "label": "CCCD gắn chip của người khai (bản gốc)",
+      "badges": [
+        "scan",
+        "goc"
+      ]
+    },
+    "cccd_parent": {
+      "label": "CCCD của cha/mẹ/người giám hộ (bản gốc)",
+      "badges": [
+        "scan",
+        "goc"
+      ]
+    },
+    "guest_id": {
+      "label": "CCCD/hộ chiếu của người lưu trú (bản sao)",
+      "badges": [
+        "saoy"
+      ]
+    },
+    "birth_cert_minor": {
+      "label": "Giấy khai sinh của người vắng dưới 15 tuổi (bản sao)",
+      "badges": [
+        "saoy"
+      ]
+    },
+    "vang_mat_form": {
+      "label": "Tờ khai vắng mặt tạm thời (Mẫu TK.01)",
+      "badges": [
+        "scan"
+      ]
+    },
+    "luu_tru_form": {
+      "label": "Tờ khai lưu trú (Mẫu TL.01)",
+      "badges": [
+        "scan"
+      ]
+    },
+    "photo": {
+      "label": "Ảnh 3x4 (1 tấm, nền trắng)",
+      "badges": [
+        "scan"
+      ]
+    },
+    "lease_guest": {
+      "label": "Hợp đồng thuê nhà / giấy đồng ý của chủ nhà (nếu khách ở thuê)",
+      "badges": [
+        "saoy"
+      ]
+    },
+    "vneid_doc": {
+      "label": "Xác nhận VNeID Mức 2 (in từ app VNeID — nếu khai online)",
+      "badges": [
+        "scan"
+      ]
+    },
+    "fee": {
+      "label": "Miễn lệ phí",
+      "badges": [
+        "fee"
+      ]
+    }
+  },
+  "legal_bases": [
+    {
+      "title": "Luật Cư trú số 68/2020/QH14 của Quốc hội (có hiệu lực 01/07/2021, hợp nhất 06/VBHN-VPQH 2026)",
+      "article": "Điều 22 — khai báo vắng mặt tạm thời; Điều 26 — thông báo lưu trú",
+      "url": "https://vanban.chinhphu.vn/?pageid=27160&docid=202609",
+      "last_verified_date": "2026-09-20"
+    },
+    {
+      "title": "Thông tư 55/2021/TT-BCA của Bộ Công an: Quy định chi tiết một số điều và biện pháp thi hành Luật Cư trú",
+      "article": "Điều 12, Điều 13 — mẫu tờ khai vắng mặt, lưu trú; quy trình tiếp nhận",
+      "url": "https://congbao.chinhphu.vn/van-ban/thong-tu-so-55-2021-tt-bca-33935.htm",
+      "last_verified_date": "2026-09-20"
+    },
+    {
+      "title": "Thông tư 56/2021/TT-BCA của Bộ Công an: Quy định về cư trú điện tử, khai báo vắng mặt/lưu trú qua VNeID",
+      "article": "Điều 5 — khai báo vắng mặt / lưu trú trực tuyến miễn lệ phí",
+      "url": "https://vanban.chinhphu.vn/?pageid=27160&docid=209185",
+      "last_verified_date": "2026-09-20"
+    },
+    {
+      "title": "Nghị định 59/2022/NĐ-CP của Chính phủ: Quy định về định danh và xác thực điện tử",
+      "article": "Điều 14, Điều 15 — VNeID Mức 2 dùng cho cư trú điện tử",
+      "url": "https://vanban.chinhphu.vn/?pageid=27160&docid=206490",
+      "last_verified_date": "2026-09-20"
+    }
+  ],
+  "officeInfo": {
+    "where": "Công an cấp xã/phường/thị trấn nơi cư trú hoặc nơi tiếp đón lưu trú",
+    "officeLevel": "ward",
+    "officePrefix": "Công an",
+    "hours": "Thứ 2 - Thứ 6: 7:30 - 11:30, 13:30 - 17:00; Thứ 7: 7:30 - 11:30",
+    "lunchNote": "Nghỉ trưa 11:30 - 13:30",
+    "bestTime": "Sáng Thứ 3 - Thứ 4 (ít người, xử lý nhanh)",
+    "busyTime": "Thứ 2 và cuối tháng (đợt người đi du lịch/công tác đông)",
+    "payment": [
+      "Không thu phí"
+    ],
+    "tips": [
+      "Nếu có VNeID Mức 2, khai online qua app VNeID — không cần đến Công an. Kết quả cập nhật tự động vào hồ sơ cư trú.",
+      "Tiếp đón khách lưu trú trên 30 ngày phải khai lưu trú cho khách, nếu dưới 30 ngày khách tự khai vắng mặt tạm thời.",
+      "Người vắng dưới 15 tuổi do cha/mẹ hoặc người giám hộ khai thay, cần giấy khai sinh bản sao."
+    ]
+  },
+  "data_source": "Cổng Dịch vụ công Quốc gia (dichvucong.gov.vn) / Bộ Công an",
+  "last_updated": "05/09/2026",
+  "difficulty_level": "Dễ",
+  "estimated_time_days": 1,
+  "execution_methods": [
+    "Online (VNeID)",
+    "Trực tiếp (Công an cấp xã/phường)"
+  ],
+  "feeOnline": 0,
+  "feeOffline": 0,
+  "forms": [
+    {
+      "form_code": "TK.01",
+      "form_name": "Tờ khai vắng mặt tạm thời",
+      "fill_mode": "offline",
+      "copies_count": 1,
+      "note": "Tải từ dichvucong.gov.vn hoặc lấy tại Công an. Người khai cần ghi rõ thời gian vắng mặt và lý do.",
+      "download_url": "https://dichvucong.gov.vn/p/home/dvc-trang-chu.html"
+    },
+    {
+      "form_code": "TL.01",
+      "form_name": "Tờ khai lưu trú",
+      "fill_mode": "offline",
+      "copies_count": 1,
+      "note": "Chủ nhà tiếp đón khách lưu trú khai thay. Ghi rõ thông tin khách, thời hạn lưu trú.",
+      "download_url": "https://dichvucong.gov.vn/p/home/dvc-trang-chu.html"
+    }
+  ],
+  "warnings": [
+    {
+      "type": "penalty",
+      "content": "Không khai báo vắng mặt tạm thời hoặc khai không đúng thông tin (thời gian, số lượng người) có thể bị phạt 100.000-300.000đ (Luật Cư trú 2020, Điều 22, 26).",
+      "solution": "Khai báo trong vòng 24 giờ sau khi vắng mặt được phát hiện. Nếu đã quá hạn, liên hệ Công an để giải trình."
+    },
+    {
+      "type": "reject_reason",
+      "content": "Người khai không phải là người trực tiếp chịu trách nhiệm (chủ nhà hoặc người giám hộ) — hồ sơ sẽ bị từ chối.",
+      "solution": "Chủ nhà hoặc người giám hộ phải tự khai trực tiếp, hoặc ủy quyền bằng văn bản có xác nhận của công an."
+    }
+  ],
+  "after_procedure": {
+    "how_to_receive": "Khai báo vắng mặt: Công an cấp xác nhận ngay tại quầy (nếu khai trực tiếp) hoặc qua app VNeID (nếu khai online).",
+    "receipt_method": "Biên bản xác nhận vắng mặt/lưu trú — giữ để đối chiếu nếu cần. Thông tin được vào hồ sơ điện tử.",
+    "receive_by_other": "Chủ nhà có thể ủy quyền cho người thân khai thay bằng văn bản có xác nhận Công an.",
+    "rejected_solution": "Nếu bị từ chối: yêu cầu công văn giải trình bằng văn bản. Có thể khiếu nại lên Công an cấp huyện."
+  },
+  "common_issues": [
+    {
+      "problem": "Không nhớ chính xác ngày bắt đầu vắng mặt",
+      "solution": "Khai theo ngước hiện tại, ghi chú 'không nhớ chính xác'. Công an sẽ ghi theo ngày khai + lưu ý trong biên bản.",
+      "impact": "Không ảnh hưởng lớn nếu chênh lệch dưới 7 ngày"
+    },
+    {
+      "problem": "Khai báo online qua VNeID nhưng hệ thống lỗi, không lưu được",
+      "solution": "Chụp màn hình lỗi, gọi tổng đài 113 hoặc đến trực tiếp Công an cấp xã để khai báo bằng tờ khai giấy.",
+      "impact": "Phải khai lại trực tiếp, mất thêm thời gian"
+    },
+    {
+      "problem": "Người vắng dưới 15 tuổi nhưng cha mẹ không có giấy khai sinh bản sao",
+      "solution": "Làm bản sao giấy khai sinh tại UBND cấp xã nơi đã đăng khai sinh. Lệ phí: 3.000đ/bản.",
+      "impact": "Khai báo chậm trễ cho đến khi có giấy khai sinh"
+    }
+  ]
+}
