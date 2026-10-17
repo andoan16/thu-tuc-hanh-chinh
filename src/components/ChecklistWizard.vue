@@ -174,10 +174,10 @@ function generateSummary() {
     <!-- Wizard -->
     <div v-if="!showChecklist" class="gov-card p-5 space-y-5">
       <div class="flex items-center justify-between">
-        <h3 class="text-base font-medium text-stone-900  ">
+        <h3 class="text-base font-medium text-stone-900 dark:text-white">
           Trả lời nhanh để nhận danh sách phù hợp
         </h3>
-        <span class="text-xs text-stone-500 200 100  font-mono">{{ currentQuestionIndex + 1 }}/{{ procedure.questions.length }}</span>
+        <span class="text-xs text-stone-500 dark:text-stone-300 font-mono">{{ currentQuestionIndex + 1 }}/{{ procedure.questions.length }}</span>
       </div>
 
       <!-- Stepper dọc kiểu cổ điển: số thứ tự + tiêu đề câu hỏi, nối nét đứt -->
@@ -194,8 +194,8 @@ function generateSummary() {
                 i < currentQuestionIndex
                   ? 'bg-gov-red text-yellow-100 border-gov-red'
                   : i === currentQuestionIndex
-                    ? 'bg-white 600 text-gov-red border-gov-red'
-                    : 'bg-stone-100 700 600 text-stone-400 200 100  border-stone-300 500 500',
+                    ? 'bg-white dark:bg-stone-700 text-gov-red dark:text-red-300 border-gov-red dark:border-red-400'
+                    : 'bg-stone-100 dark:bg-stone-700 text-stone-400 dark:text-stone-300 border-stone-300 dark:border-stone-600',
               ]"
             >
               {{ i + 1 }}
@@ -204,7 +204,7 @@ function generateSummary() {
               v-if="i < procedure.questions.length - 1"
               :class="[
                 'w-0.5 flex-1 min-h-[24px] border-l-2 border-dashed transition-colors',
-                i < currentQuestionIndex ? 'border-gov-red' : 'border-stone-300 500 500',
+                i < currentQuestionIndex ? 'border-gov-red' : 'border-stone-300 dark:border-stone-600',
               ]"
             />
           </div>
@@ -213,15 +213,15 @@ function generateSummary() {
               :class="[
                 'text-sm mb-0.5',
                 i === currentQuestionIndex
-                  ? 'font-semibold text-stone-900  '
+                  ? 'font-semibold text-stone-900 dark:text-white'
                   : i < currentQuestionIndex
-                    ? 'text-stone-500 200 100  line-through'
-                    : 'text-stone-400 200 100  200',
+                    ? 'text-stone-500 dark:text-stone-300 line-through'
+                    : 'text-stone-400 dark:text-stone-400',
               ]"
             >
               {{ q.text }}
             </p>
-            <div v-if="state.answers[q.id] && i < currentQuestionIndex" class="text-xs text-gov-red dark:text-red-200">
+            <div v-if="state.answers[q.id] && i < currentQuestionIndex" class="text-xs text-gov-red dark:text-red-300">
               ✓ {{ q.options.find(o => o.value === state.answers[q.id])?.label }}
             </div>
           </div>
@@ -233,7 +233,7 @@ function generateSummary() {
         :key="q.id"
         v-show="i === currentQuestionIndex"
       >
-        <p class="font-medium text-sm mb-3 text-stone-800 50 50 ">{{ q.text }}</p>
+        <p class="font-medium text-sm mb-3 text-stone-800 dark:text-stone-100">{{ q.text }}</p>
         <div class="grid gap-2">
           <button
             v-for="opt in q.options"
@@ -242,8 +242,8 @@ function generateSummary() {
             :class="[
               'px-4 py-3 rounded border text-sm font-medium text-left transition-all duration-150',
               state.answers[q.id] === opt.value
-                ? 'border-red-700 bg-red-50 text-red-800 dark:bg-red-900/40 200'
-                : 'border-stone-200 600 bg-white hover:border-stone-400 400 hover:bg-stone-50 :bg-stone-700 800 text-stone-700 100  600 500 ',
+                ? 'border-red-700 bg-red-50 text-red-800 dark:bg-red-900/40 dark:border-red-500 dark:text-red-100'
+                : 'border-stone-200 dark:border-stone-600 bg-white dark:bg-stone-700 hover:border-stone-400 dark:hover:border-stone-500 hover:bg-stone-50 dark:hover:bg-stone-600 text-stone-700 dark:text-stone-100',
             ]"
           >
             {{ opt.label }}
@@ -273,7 +273,7 @@ function generateSummary() {
       <div class="flex justify-center">
         <button
           @click="skipToAll"
-          class="text-xs text-stone-500 200 100  hover:text-red-700  :text-red-400 transition-colors"
+          class="text-xs text-stone-500 dark:text-stone-300 hover:text-red-700 dark:hover:text-red-400 transition-colors"
         >
           Bỏ qua — xem danh sách đầy đủ
         </button>
@@ -282,22 +282,22 @@ function generateSummary() {
 
     <!-- Checklist -->
     <div v-if="showChecklist" class="space-y-4">
-      <div v-if="viewAll" class="flex items-start gap-2 text-xs text-amber-800 dark:text-amber-100 bg-amber-50 900/40 border border-amber-200 800/40 rounded px-3 py-2">
+      <div v-if="viewAll" class="flex items-start gap-2 text-xs text-amber-800 dark:text-amber-200 bg-amber-50 dark:bg-amber-950/60 border border-amber-200 dark:border-amber-800/50 rounded px-3 py-2">
         <AlertTriangle :size="13" class="mt-0.5 shrink-0" />
         <span>Danh sách đầy đủ mọi trường hợp. Một số giấy tờ có thể không cần cho tình huống của bạn.</span>
       </div>
 
       <div class="gov-card p-5">
         <div class="flex items-center justify-between mb-2">
-          <span class="text-sm font-medium text-stone-700 dark:text-stone-100  ">Tiến độ chuẩn bị</span>
+          <span class="text-sm font-medium text-stone-700 dark:text-stone-100">Tiến độ chuẩn bị</span>
           <span
-            :class="progress === 100 ? 'text-emerald-700 font-semibold' : 'text-stone-500'"
+            :class="progress === 100 ? 'text-emerald-700 dark:text-emerald-300 font-semibold' : 'text-stone-500 dark:text-stone-300'"
             class="text-sm font-mono"
           >
             {{ progress }}%
           </span>
         </div>
-        <div class="h-2 bg-stone-200 600 600 rounded overflow-hidden">
+        <div class="h-2 bg-stone-200 dark:bg-stone-700 rounded overflow-hidden">
           <div
             :class="progress === 100 ? 'bg-emerald-600' : 'bg-red-700'"
             class="h-full transition-all duration-300"
@@ -307,7 +307,7 @@ function generateSummary() {
 
         <div
           v-if="missingRequired.length && progress < 100"
-          class="mt-3 flex items-start gap-2 text-xs text-amber-800 dark:text-amber-100"
+          class="mt-3 flex items-start gap-2 text-xs text-amber-800 dark:text-amber-200"
         >
           <AlertTriangle :size="13" class="mt-0.5 shrink-0" />
           <span>Thiếu {{ missingRequired.length }} giấy tờ bắt buộc.</span>
@@ -323,7 +323,7 @@ function generateSummary() {
 
       <!-- Required: bảng kiểu tờ khai -->
       <div v-if="requiredDocs.length" class="gov-card p-5">
-        <h3 class="text-sm font-medium text-stone-800 50 50  mb-3">
+        <h3 class="text-sm font-medium text-stone-800 dark:text-stone-100 mb-3">
           {{ viewAll ? 'Giấy tờ có thể cần (mọi trường hợp)' : 'Giấy tờ bắt buộc' }}
         </h3>
         <table class="doc-table">
@@ -351,12 +351,12 @@ function generateSummary() {
               <td class="break-words">
                 <label
                   :class="state.checked[doc.id] ? 'line-through' : ''"
-                  class="text-xs sm:text-sm font-medium cursor-pointer"
+                  class="text-xs sm:text-sm font-medium cursor-pointer text-stone-900 dark:text-stone-100"
                 >
                   {{ doc.label }}
                 </label>
               </td>
-              <td class="text-[10px] sm:text-xs text-stone-600 dark:text-stone-100  flex flex-wrap gap-1">
+              <td class="text-[10px] sm:text-xs text-stone-600 dark:text-stone-200 flex flex-wrap gap-1">
                 <span v-for="b in doc.badges" :key="b" class="shrink-0 whitespace-nowrap">{{ badgeMap[b]?.label }}</span>
               </td>
               <td class="text-center">
@@ -374,7 +374,7 @@ function generateSummary() {
 
       <!-- Optional: bảng kiểu tờ khai -->
       <div v-if="optionalDocs.length" class="gov-card p-5">
-        <h3 class="text-sm font-medium text-stone-500 200 100  mb-3">Giấy tờ phụ (nếu có)</h3>
+        <h3 class="text-sm font-medium text-stone-500 dark:text-stone-300 mb-3">Giấy tờ phụ (nếu có)</h3>
         <table class="doc-table">
           <thead>
             <tr>
@@ -400,12 +400,12 @@ function generateSummary() {
               <td class="break-words">
                 <label
                   :class="state.checked[doc.id] ? 'line-through' : ''"
-                  class="text-xs sm:text-sm cursor-pointer"
+                  class="text-xs sm:text-sm cursor-pointer text-stone-900 dark:text-stone-100"
                 >
                   {{ doc.label }}
                 </label>
               </td>
-              <td class="text-[10px] sm:text-xs text-stone-600 dark:text-stone-100  flex flex-wrap gap-1">
+              <td class="text-[10px] sm:text-xs text-stone-600 dark:text-stone-200 flex flex-wrap gap-1">
                 <span v-for="b in doc.badges" :key="b" class="shrink-0 whitespace-nowrap">{{ badgeMap[b]?.label }}</span>
               </td>
               <td class="text-center">

@@ -7,10 +7,10 @@ const props = defineProps({
 })
 
 const warningConfig = {
-  deadline: { icon: TrendingUp, cls: 'border-amber-300 bg-amber-50', label: 'Thời hạn', labelCls: 'text-amber-800 bg-amber-100' },
-  penalty: { icon: Scale, cls: 'border-orange-300 bg-orange-50', label: 'Xử phạt', labelCls: 'text-orange-800 bg-orange-100' },
-  reject_reason: { icon: Ban, cls: 'border-red-300 bg-red-50', label: 'Nguyên nhân từ chối', labelCls: 'text-red-800 bg-red-100' },
-  risk: { icon: FileX2, cls: 'border-stone-300 bg-stone-50', label: 'Rủi ro', labelCls: 'text-stone-800 bg-stone-100' },
+  deadline: { icon: TrendingUp, cls: 'border-amber-300 bg-amber-50 dark:border-amber-700/60 dark:bg-amber-950/50', label: 'Thời hạn', labelCls: 'text-amber-800 bg-amber-100 dark:text-amber-200 dark:bg-amber-900/60' },
+  penalty: { icon: Scale, cls: 'border-orange-300 bg-orange-50 dark:border-orange-700/60 dark:bg-orange-950/50', label: 'Xử phạt', labelCls: 'text-orange-800 bg-orange-100 dark:text-orange-200 dark:bg-orange-900/60' },
+  reject_reason: { icon: Ban, cls: 'border-red-300 bg-red-50 dark:border-red-700/60 dark:bg-red-950/50', label: 'Nguyên nhân từ chối', labelCls: 'text-red-800 bg-red-100 dark:text-red-200 dark:bg-red-900/60' },
+  risk: { icon: FileX2, cls: 'border-stone-300 bg-stone-50 dark:border-stone-600 dark:bg-stone-700/50', label: 'Rủi ro', labelCls: 'text-stone-800 bg-stone-100 dark:text-stone-200 dark:bg-stone-700' },
 }
 
 function getWarning(type) {
@@ -20,11 +20,11 @@ function getWarning(type) {
 
 <template>
   <div class="gov-card p-5 space-y-4">
-    <h3 class="text-sm font-medium text-stone-800 mb-1 flex items-center gap-2">
-      <AlertTriangle :size="14" class="text-amber-600" />
+    <h3 class="text-sm font-medium text-stone-800 dark:text-white mb-1 flex items-center gap-2">
+      <AlertTriangle :size="14" class="text-amber-600 dark:text-amber-400" />
       Cảnh báo pháp lý
     </h3>
-    <p class="text-xs text-stone-500 200 100">Những điểm cần lưu ý để tránh vi phạm hoặc bị từ chối hồ sơ.</p>
+    <p class="text-xs text-stone-500 dark:text-stone-300">Những điểm cần lưu ý để tránh vi phạm hoặc bị từ chối hồ sơ.</p>
 
     <div class="space-y-3">
       <div
@@ -35,7 +35,7 @@ function getWarning(type) {
       >
         <div class="flex items-start gap-3">
           <div class="shrink-0 mt-0.5">
-            <component :is="getWarning(warn.type).icon" :size="16" class="text-stone-600" />
+            <component :is="getWarning(warn.type).icon" :size="16" class="text-stone-600 dark:text-stone-300" />
           </div>
           <div class="flex-1 min-w-0">
             <div class="flex items-center gap-2 mb-1.5 flex-wrap">
@@ -44,8 +44,8 @@ function getWarning(type) {
               </span>
             </div>
             <p class="text-sm text-stone-800 dark:text-stone-100 leading-relaxed">{{ warn.content }}</p>
-            <p v-if="warn.solution" class="text-xs text-stone-600 dark:text-stone-100  mt-2 pt-2 border-t border-stone-200 dark:border-stone-600">
-              <span class="font-medium text-stone-700">Xử lý:</span> {{ warn.solution }}
+            <p v-if="warn.solution" class="text-xs text-stone-600 dark:text-stone-200 mt-2 pt-2 border-t border-stone-200 dark:border-stone-600">
+              <span class="font-medium text-stone-700 dark:text-stone-100">Xử lý:</span> {{ warn.solution }}
             </p>
           </div>
         </div>

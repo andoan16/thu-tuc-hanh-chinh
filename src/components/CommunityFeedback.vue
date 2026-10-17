@@ -49,15 +49,15 @@ function reportUrl() {
 <template>
   <div class="space-y-3">
     <div class="gov-card p-4">
-      <h3 class="text-sm font-medium text-stone-800 50 50  mb-1">
+      <h3 class="text-sm font-medium text-stone-800 dark:text-white mb-1">
         Trải nghiệm làm thủ tục của bạn thế nào?
       </h3>
-      <p class="text-xs text-stone-500 200 100   mb-3">
+      <p class="text-xs text-stone-500 dark:text-stone-300 mb-3">
         Ghi chú cá nhân trên máy bạn — không gửi đi đâu, không cộng đồng nào thấy.
       </p>
 
-      <div v-if="submitted" class="flex items-center gap-2 text-sm text-stone-700 dark:text-stone-100  ">
-        <Check :size="15" class="text-emerald-600" />
+      <div v-if="submitted" class="flex items-center gap-2 text-sm text-stone-700 dark:text-stone-100">
+        <Check :size="15" class="text-emerald-600 dark:text-emerald-400" />
         <span>Đã ghi nhớ: {{ options.find(o => o.value === survey)?.label }}</span>
       </div>
 
@@ -66,10 +66,10 @@ function reportUrl() {
           v-for="opt in options"
           :key="opt.value"
           @click="vote(opt.value)"
-          class="flex flex-col items-center gap-1.5 py-3 rounded border border-stone-200 600 bg-white hover:border-stone-400 400 hover:bg-stone-50 :bg-stone-700 800 transition-all duration-150 600 500 :border-stone-600"
+          class="flex flex-col items-center gap-1.5 py-3 rounded border border-stone-200 dark:border-stone-600 bg-white dark:bg-stone-700 hover:border-stone-400 dark:hover:border-stone-500 hover:bg-stone-50 dark:hover:bg-stone-600 transition-all duration-150"
         >
-          <component :is="opt.icon" :size="17" stroke-width="1.7" class="text-stone-500" />
-          <span class="text-xs font-medium text-stone-700 dark:text-stone-100  ">{{ opt.label }}</span>
+          <component :is="opt.icon" :size="17" stroke-width="1.7" class="text-stone-500 dark:text-stone-300" />
+          <span class="text-xs font-medium text-stone-700 dark:text-stone-100">{{ opt.label }}</span>
         </button>
       </div>
     </div>
@@ -78,7 +78,7 @@ function reportUrl() {
       <a
         :href="reportUrl()"
         target="_blank"
-        class="text-xs text-stone-500 200 100  hover:text-red-700 inline-flex items-center gap-1.5 transition-colors  :text-red-400"
+        class="text-xs text-stone-500 dark:text-stone-300 hover:text-red-700 dark:hover:text-red-400 inline-flex items-center gap-1.5 transition-colors"
       >
         <Flag :size="11" /> Báo thông tin cần cập nhật
       </a>

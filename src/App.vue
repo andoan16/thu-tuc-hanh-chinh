@@ -22,7 +22,7 @@ const todayFormatted = computed(() => {
     </div>
 
     <!-- Community badge bar -->
-    <div class="bg-amber-50 border-b border-amber-200 text-amber-800 text-xs">
+    <div class="bg-amber-50 dark:bg-amber-950/60 border-b border-amber-200 dark:border-amber-800/50 text-amber-800 dark:text-amber-200 text-xs">
       <div class="max-w-5xl mx-auto px-5 py-1.5">
         <strong>Lưu ý:</strong> Đây là dự án cộng đồng, <strong>không phải</strong> ứng dụng chính thức của Chính phủ. Để nộp hồ sơ chính thức, vui lòng truy cập <a href="https://dichvucong.gov.vn" target="_blank" rel="noopener noreferrer" class="link font-medium">dichvucong.gov.vn</a>
       </div>
@@ -48,14 +48,14 @@ const todayFormatted = computed(() => {
           <RouterLink
             to="/"
             class="px-3 py-1.5 text-sm font-medium text-stone-700 dark:text-stone-200 hover:text-gov-red dark:hover:text-red-400 border-b-2 border-transparent hover:border-gov-red transition-colors"
-            active-class="!text-gov-red !border-gov-red"
+            active-class="!text-gov-red dark:!text-red-400 !border-gov-red"
           >
             Trang chủ
           </RouterLink>
           <RouterLink
             to="/gioi-thieu"
             class="px-3 py-1.5 text-sm font-medium text-stone-700 dark:text-stone-200 hover:text-gov-red dark:hover:text-red-400 border-b-2 border-transparent hover:border-gov-red transition-colors"
-            active-class="!text-gov-red !border-gov-red"
+            active-class="!text-gov-red dark:!text-red-400 !border-gov-red"
           >
             Giới thiệu
           </RouterLink>

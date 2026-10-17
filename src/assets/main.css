@@ -32,18 +32,18 @@
   .badge {
     @apply inline-flex items-center gap-1 px-2 py-0.5 rounded-none text-[11px] font-medium;
   }
-  .badge-scan   { @apply bg-sky-100 text-sky-800 dark:bg-sky-800/30 dark:text-sky-100; }
-  .badge-goc    { @apply bg-amber-100 text-amber-900 dark:bg-amber-800/30 dark:text-amber-100; }
-  .badge-saoy   { @apply bg-slate-100 text-slate-700 dark:bg-slate-600/30 dark:text-slate-100; }
-  .badge-fee    { @apply bg-yellow-100 text-yellow-800 dark:bg-yellow-800/30 dark:text-yellow-100; }
+  .badge-scan   { @apply bg-sky-100 text-sky-800 dark:bg-sky-900/50 dark:text-sky-200; }
+  .badge-goc    { @apply bg-amber-100 text-amber-900 dark:bg-amber-900/50 dark:text-amber-200; }
+  .badge-saoy   { @apply bg-slate-100 text-slate-700 dark:bg-slate-700/60 dark:text-slate-200; }
+  .badge-fee    { @apply bg-yellow-100 text-yellow-800 dark:bg-yellow-900/50 dark:text-yellow-200; }
 
   .card {
-    @apply bg-white dark:bg-stone-600 rounded-sm border border-stone-200 dark:border-stone-600 dark:border-stone-500;
+    @apply bg-white dark:bg-stone-800 rounded-sm border border-stone-200 dark:border-stone-700;
   }
 
   /* Info card: viền trên đỏ 3px — không bo góc */
   .gov-card {
-    @apply bg-white dark:bg-stone-600 border border-stone-300 dark:border-stone-500 dark:border-stone-500;
+    @apply bg-white dark:bg-stone-800 border border-stone-300 dark:border-stone-700 text-stone-900 dark:text-stone-100;
     border-top: 3px solid #b91c1c;
   }
 
@@ -54,18 +54,18 @@
     @apply btn bg-red-700 text-white hover:bg-red-800 focus-visible:ring-red-700;
   }
   .btn-ghost {
-    @apply btn bg-stone-100 dark:bg-stone-700 text-stone-800 dark:text-stone-50 dark:text-stone-50 hover:bg-stone-200 dark:hover:bg-stone-500 dark:bg-stone-600 dark:bg-stone-600 dark:text-white dark:hover:bg-stone-600;
+    @apply btn bg-stone-100 dark:bg-stone-700 text-stone-800 dark:text-stone-100 hover:bg-stone-200 dark:hover:bg-stone-600;
   }
   .btn-outline {
-    @apply btn border border-stone-300 dark:border-stone-500 bg-white text-stone-800 dark:text-stone-50 dark:text-stone-50 hover:bg-stone-50 dark:hover:bg-stone-700 dark:bg-stone-800 dark:border-stone-500 dark:bg-stone-600 dark:text-white;
+    @apply btn border border-stone-300 dark:border-stone-600 bg-white dark:bg-stone-700 text-stone-800 dark:text-stone-100 hover:bg-stone-50 dark:hover:bg-stone-600;
   }
 
   .input {
-    @apply w-full px-3 py-2 rounded-md border border-stone-300 dark:border-stone-500 bg-white text-sm text-stone-900 dark:text-white placeholder:text-stone-400 dark:text-stone-200 dark:text-stone-100 dark:text-white focus-visible:outline-none focus-visible:border-red-700 focus-visible:ring-1 focus-visible:ring-red-700 dark:bg-stone-600 dark:border-stone-500 dark:text-white dark:placeholder:text-stone-500;
+    @apply w-full px-3 py-2 rounded-md border border-stone-300 dark:border-stone-600 bg-white dark:bg-stone-700 text-sm text-stone-900 dark:text-stone-100 placeholder:text-stone-400 dark:placeholder:text-stone-400 focus-visible:outline-none focus-visible:border-red-700 focus-visible:ring-1 focus-visible:ring-red-700;
   }
 
   .link {
-    @apply text-red-700 hover:text-red-800 underline-offset-2 hover:underline transition-colors dark:text-red-200 dark:hover:text-red-300;
+    @apply text-red-700 hover:text-red-800 underline-offset-2 hover:underline transition-colors dark:text-red-300 dark:hover:text-red-200;
   }
 
   /* Section header: nền đỏ, chữ trắng — kiểu cổng DVC */
@@ -78,20 +78,20 @@
 
   /* Bảng kiểu tờ khai */
   .doc-table {
-    @apply w-full border-collapse text-left;
+    @apply w-full border-collapse text-left text-stone-900 dark:text-stone-100;
     table-layout: fixed;
   }
   .doc-table thead {
-    @apply bg-stone-100 dark:bg-stone-700 dark:bg-stone-600;
+    @apply bg-stone-100 dark:bg-stone-700;
   }
   .doc-table th {
-    @apply px-1.5 py-2 text-xs font-semibold text-stone-700 dark:text-stone-100 dark:text-white dark:text-white border border-stone-200 dark:border-stone-600 dark:border-stone-500 uppercase tracking-wide sm:px-3;
+    @apply px-1.5 py-2 text-xs font-semibold text-stone-700 dark:text-stone-100 border border-stone-200 dark:border-stone-600 uppercase tracking-wide sm:px-3;
   }
   .doc-table td {
-    @apply px-1.5 py-2.5 border border-stone-200 dark:border-stone-600 dark:border-stone-500 align-top sm:px-3;
+    @apply px-1.5 py-2.5 border border-stone-200 dark:border-stone-600 align-top sm:px-3;
   }
   .doc-table tbody tr:hover {
-    @apply bg-stone-50 dark:bg-stone-800 dark:bg-stone-600/50;
+    @apply bg-stone-50 dark:bg-stone-700/50;
   }
 }
 

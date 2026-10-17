@@ -32,7 +32,7 @@ const feeLabel = computed(() => {
         <div class="flex items-center gap-2 mb-0.5">
           <span class="text-[10px] uppercase tracking-wider text-stone-500 dark:text-stone-300 font-medium">{{ procedure.category }}</span>
         </div>
-        <h3 class="font-medium text-sm leading-snug text-stone-900 dark:text-stone-50 group-hover:text-gov-red transition-colors">
+        <h3 class="font-medium text-sm leading-snug text-stone-900 dark:text-stone-50 group-hover:text-gov-red dark:group-hover:text-red-400 transition-colors">
           {{ procedure.title }}
         </h3>
         <div class="flex flex-wrap gap-x-4 gap-y-0.5 text-xs text-stone-600 dark:text-stone-200 mt-1">
@@ -45,7 +45,7 @@ const feeLabel = computed(() => {
 
       <ChevronRight
         :size="16"
-        class="shrink-0 text-stone-300 dark:text-stone-500 group-hover:text-gov-red transition-colors"
+        class="shrink-0 text-stone-300 dark:text-stone-500 group-hover:text-gov-red dark:group-hover:text-red-400 transition-colors"
       />
     </div>
   </RouterLink>

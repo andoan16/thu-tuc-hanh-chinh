@@ -266,12 +266,12 @@ function clearLocation() {
     <!-- Header -->
     <div class="flex items-start justify-between gap-3">
       <div class="flex items-start gap-3">
-        <div class="shrink-0 w-8 h-8 rounded bg-stone-100 700 600 flex items-center justify-center text-stone-600">
+        <div class="shrink-0 w-8 h-8 rounded bg-stone-100 dark:bg-stone-700 flex items-center justify-center text-stone-600 dark:text-stone-200">
           <MapPin :size="15" stroke-width="1.8" />
         </div>
         <div>
-          <h3 class="text-base font-medium text-stone-900  ">Nơi nộp hồ sơ</h3>
-          <p class="text-sm text-stone-600 dark:text-stone-100   mt-1">
+          <h3 class="text-base font-medium text-stone-900 dark:text-white">Nơi nộp hồ sơ</h3>
+          <p class="text-sm text-stone-600 dark:text-stone-200 mt-1">
             Chọn địa bàn để xem cơ quan tiếp nhận gần bạn nhất.
           </p>
         </div>
@@ -290,7 +290,7 @@ function clearLocation() {
     <!-- Geo error -->
     <div
       v-if="geoError"
-      class="flex items-center gap-2 text-xs text-red-700 dark:text-red-200 bg-red-50 900/40 border border-red-200 700/50 rounded px-3 py-2"
+      class="flex items-center gap-2 text-xs text-red-700 dark:text-red-200 bg-red-50 dark:bg-red-900/40 border border-red-200 dark:border-red-700/50 rounded px-3 py-2"
     >
       <X :size="12" />
       {{ geoError }}
@@ -299,7 +299,7 @@ function clearLocation() {
     <!-- Combobox tìm kiếm: Tỉnh → Phường (không dấu OK) -->
     <div class="grid sm:grid-cols-2 gap-3">
       <div class="space-y-1.5">
-        <label class="text-xs text-stone-500">Tỉnh / Thành phố</label>
+        <label class="text-xs text-stone-500 dark:text-stone-300">Tỉnh / Thành phố</label>
         <SearchSelect
           v-model="selectedProvince"
           :options="provinceOptions"
@@ -308,7 +308,7 @@ function clearLocation() {
       </div>
 
       <div class="space-y-1.5">
-        <label class="text-xs text-stone-500">Phường / Xã</label>
+        <label class="text-xs text-stone-500 dark:text-stone-300">Phường / Xã</label>
         <SearchSelect
           v-model="selectedWard"
           :options="wardOptions"
@@ -319,35 +319,35 @@ function clearLocation() {
     </div>
 
     <!-- Office result: specific office name + street address + map buttons -->
-    <div v-if="officeAddress" class="pt-3 border-t border-stone-200 600 500 space-y-3">
+    <div v-if="officeAddress" class="pt-3 border-t border-stone-200 dark:border-stone-700 space-y-3">
       <!-- Office name + address -->
       <div class="flex items-start justify-between gap-3">
         <div class="flex items-start gap-3">
-          <div class="shrink-0 w-9 h-9 rounded bg-red-50 dark:bg-red-900/40 flex items-center justify-center text-red-700 200">
+          <div class="shrink-0 w-9 h-9 rounded bg-red-50 dark:bg-red-900/40 flex items-center justify-center text-red-700 dark:text-red-200">
             <Building2 :size="17" stroke-width="1.7" />
           </div>
           <div class="min-w-0">
-            <div class="text-xs text-stone-500 200 100  mb-0.5">Cơ quan tiếp nhận</div>
-            <p class="text-sm font-semibold text-stone-900  ">{{ officeAddress.name }}</p>
+            <div class="text-xs text-stone-500 dark:text-stone-300 mb-0.5">Cơ quan tiếp nhận</div>
+            <p class="text-sm font-semibold text-stone-900 dark:text-white">{{ officeAddress.name }}</p>
             <!-- Loading state -->
             <div v-if="officeLoading" class="flex items-center gap-1.5 mt-1">
               <Loader2 :size="12" class="animate-spin text-stone-400" />
               <span class="text-xs text-stone-400">Đang tra cứu địa chỉ...</span>
             </div>
             <!-- Address found -->
-            <p v-else class="text-sm text-stone-500 200 100  mt-0.5 break-words">{{ officeAddress.address }}</p>
+            <p v-else class="text-sm text-stone-500 dark:text-stone-200 mt-0.5 break-words">{{ officeAddress.address }}</p>
             <!-- Badge: exact vs approximate -->
             <div v-if="!officeLoading && officeAddress.isExact" class="mt-1">
-              <span class="text-[11px] text-emerald-700 dark:text-emerald-200 font-medium">Đã xác nhận địa chỉ</span>
+              <span class="text-[11px] text-emerald-700 dark:text-emerald-300 font-medium">Đã xác nhận địa chỉ</span>
             </div>
             <div v-else-if="!officeLoading && !officeAddress.isExact && fullAddress" class="mt-1">
-              <span class="text-[11px] text-stone-400">Địa chỉ theo phường/xã</span>
+              <span class="text-[11px] text-stone-400 dark:text-stone-400">Địa chỉ theo phường/xã</span>
             </div>
           </div>
         </div>
         <button
           @click="clearLocation"
-          class="text-xs text-stone-400 200 100  hover:text-red-700 transition-colors shrink-0"
+          class="text-xs text-stone-400 dark:text-stone-300 hover:text-red-700 dark:hover:text-red-400 transition-colors shrink-0"
         >
           Xóa
         </button>

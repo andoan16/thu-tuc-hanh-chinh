@@ -29,7 +29,7 @@ const icons = { car: Car, home: Home, 'file-text': FileText, copy: Copy }
 const userLocation = ref({})
 const adaptedOfficeInfo = ref({ ...procedure.officeInfo })
 
-// Section numbering: I=Thông tin, II=Căn cứ pháp lý, III=Danh sách giấy tờ, IV=Cảnh báo, V=Mẫu tờ khai, VI=Nơi nộp, VII=Sau hoàn thành, VIII=Tình huống, IX=Góp ý
+// Section numbering: I=Thông tin, II=Danh sách giấy tờ, III=Cảnh báo, IV=Mẫu tờ khai, V=Nơi nộp, VI=Sau hoàn thành, VII=Tình huống, VIII=Căn cứ pháp lý, IX=Góp ý
 const hasLegal = computed(() => !!procedure.legal_bases?.length)
 const hasWarnings = computed(() => !!procedure.warnings?.length)
 const hasForms = computed(() => !!procedure.forms?.length)
@@ -40,13 +40,13 @@ const sections = computed(() => {
   const result = {}
   let num = 1
   result.info = num++
-  if (hasLegal.value) result.legal = num++
   result.docs = num++
   if (hasWarnings.value) result.warnings = num++
   if (hasForms.value) result.forms = num++
   result.office = num++
   if (hasAfter.value) result.after = num++
   if (hasIssues.value) result.issues = num++
+  if (hasLegal.value) result.legal = num++
   result.feedback = num++
   return result
 })
@@ -66,12 +66,12 @@ watch(userLocation, (loc) => {
 <template>
   <div class="space-y-6">
     <!-- Breadcrumb -->
-    <nav class="flex items-center gap-1.5 text-xs text-stone-500 bg-stone-100 py-2 px-3 border border-stone-200" aria-label="Breadcrumb">
-      <RouterLink to="/" class="hover:text-gov-red transition-colors">Trang chủ</RouterLink>
-      <span class="text-stone-300">/</span>
-      <span class="text-stone-400">{{ procedure.category }}</span>
-      <span class="text-stone-300">/</span>
-      <span class="text-stone-800 font-medium">{{ procedure.title }}</span>
+    <nav class="flex items-center gap-1.5 text-xs text-stone-500 dark:text-stone-300 bg-stone-100 dark:bg-stone-800 py-2 px-3 border border-stone-200 dark:border-stone-700" aria-label="Breadcrumb">
+      <RouterLink to="/" class="hover:text-gov-red dark:hover:text-red-400 transition-colors">Trang chủ</RouterLink>
+      <span class="text-stone-300 dark:text-stone-600">/</span>
+      <span class="text-stone-400 dark:text-stone-400">{{ procedure.category }}</span>
+      <span class="text-stone-300 dark:text-stone-600">/</span>
+      <span class="text-stone-800 dark:text-stone-100 font-medium">{{ procedure.title }}</span>
     </nav>
 
     <!-- Thông tin thủ tục -->
@@ -86,7 +86,7 @@ watch(userLocation, (loc) => {
             <h2 class="text-xl md:text-2xl font-bold text-stone-900 dark:text-white mb-2">
               {{ procedure.title }}
             </h2>
-            <div class="flex flex-wrap gap-4 text-sm text-stone-500">
+            <div class="flex flex-wrap gap-4 text-sm text-stone-500 dark:text-stone-300">
               <span class="inline-flex items-center gap-1">
                 <Clock :size="14" /> {{ procedure.processingTime }}
               </span>
@@ -102,7 +102,7 @@ watch(userLocation, (loc) => {
         </div>
       </div>
 
-      <p class="mt-4 text-sm text-stone-600">{{ procedure.feeNote }}</p>
+      <p class="mt-4 text-sm text-stone-600 dark:text-stone-200">{{ procedure.feeNote }}</p>
 
       <a
         :href="procedure.portalUrl"
@@ -117,19 +117,13 @@ watch(userLocation, (loc) => {
         <ExternalLink :size="13" />
       </a>
 
-      <div class="mt-4 pt-3 border-t border-stone-200 dark:border-stone-600 flex items-start gap-2 text-xs text-stone-500">
+      <div class="mt-4 pt-3 border-t border-stone-200 dark:border-stone-700 flex items-start gap-2 text-xs text-stone-500 dark:text-stone-300">
         <Database :size="13" class="shrink-0 mt-0.5" />
         <div>
           <span>Nguồn tham chiếu: Cổng Dịch vụ công Quốc gia / Cổng Pháp luật quốc gia</span>
           <span v-if="procedure.last_updated" class="block mt-0.5">Cập nhật gần nhất: {{ procedure.last_updated }}</span>
         </div>
       </div>
-    </div>
-
-    <!-- Căn cứ pháp lý -->
-    <div v-if="procedure.legal_bases?.length" class="space-y-2">
-      <h3 class="section-title"><span class="section-num">{{ sections.legal }}</span> Căn cứ pháp lý</h3>
-      <LegalBases :legal-bases="procedure.legal_bases" />
     </div>
 
     <!-- Danh sách giấy tờ -->
@@ -175,6 +169,12 @@ watch(userLocation, (loc) => {
     <div v-if="procedure.common_issues?.length" class="space-y-2">
       <h3 class="section-title"><span class="section-num">{{ sections.issues }}</span> Tình huống thường gặp</h3>
       <CommonIssues :issues="procedure.common_issues" />
+    </div>
+
+    <!-- Căn cứ pháp lý -->
+    <div v-if="procedure.legal_bases?.length" class="space-y-2">
+      <h3 class="section-title"><span class="section-num">{{ sections.legal }}</span> Căn cứ pháp lý</h3>
+      <LegalBases :legal-bases="procedure.legal_bases" />
     </div>
 
     <!-- Góp ý -->

@@ -113,7 +113,7 @@ onBeforeUnmount(() => document.removeEventListener('click', onDocClick))
       <button
         type="button"
         tabindex="-1"
-        class="absolute right-2 top-1/2 -translate-y-1/2 text-stone-400 200 100  hover:text-stone-600"
+        class="absolute right-2 top-1/2 -translate-y-1/2 text-stone-400 dark:text-stone-300 hover:text-stone-600 dark:hover:text-stone-100"
         :disabled="disabled"
         @click="toggleOpen"
         aria-label="Mở danh sách"
@@ -125,10 +125,10 @@ onBeforeUnmount(() => document.removeEventListener('click', onDocClick))
     <ul
       v-if="open && !disabled"
       ref="listEl"
-      class="absolute z-20 mt-1 w-full max-h-60 overflow-y-auto rounded-md border border-stone-200 600 bg-white shadow-lg 500 600"
+      class="absolute z-20 mt-1 w-full max-h-60 overflow-y-auto rounded-md border border-stone-200 dark:border-stone-600 bg-white dark:bg-stone-800 shadow-lg"
       role="listbox"
     >
-      <li v-if="!filtered.length" class="px-3 py-2 text-sm text-stone-400">
+      <li v-if="!filtered.length" class="px-3 py-2 text-sm text-stone-400 dark:text-stone-400">
         Không tìm thấy
       </li>
       <li
@@ -138,14 +138,14 @@ onBeforeUnmount(() => document.removeEventListener('click', onDocClick))
         :aria-selected="opt.value === modelValue"
         :class="[
           'flex items-center justify-between gap-2 px-3 py-2 text-sm cursor-pointer',
-          i === activeIndex ? 'bg-stone-100 700 600' : '',
-          opt.value === modelValue ? 'font-medium text-red-800 200' : 'text-stone-700 100  ',
+          i === activeIndex ? 'bg-stone-100 dark:bg-stone-700' : '',
+          opt.value === modelValue ? 'font-medium text-red-800 dark:text-red-300' : 'text-stone-700 dark:text-stone-100',
         ]"
         @mouseenter="activeIndex = i"
         @click="select(opt)"
       >
         <span class="truncate">{{ opt.label }}</span>
-        <Check v-if="opt.value === modelValue" :size="14" class="shrink-0 text-red-700 dark:text-red-200" />
+        <Check v-if="opt.value === modelValue" :size="14" class="shrink-0 text-red-700 dark:text-red-300" />
       </li>
     </ul>
   </div>
