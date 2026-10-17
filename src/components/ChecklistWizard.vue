@@ -322,49 +322,59 @@ function generateSummary() {
       </div>
 
       <!-- Required: bảng kiểu tờ khai -->
-      <div v-if="requiredDocs.length" class="gov-card p-5">
+      <div v-if="requiredDocs.length" class="gov-card p-5 overflow-x-auto">
         <h3 class="text-sm font-medium text-stone-800 dark:text-stone-100 mb-3">
           {{ viewAll ? 'Giấy tờ có thể cần (mọi trường hợp)' : 'Giấy tờ bắt buộc' }}
         </h3>
         <table class="doc-table">
+          <colgroup>
+            <col class="w-10 sm:w-12" />
+            <col />
+            <col class="w-28 sm:w-44" />
+            <col class="w-14 sm:w-16" />
+          </colgroup>
           <thead>
             <tr>
-              <th class="w-10 text-center">STT</th>
+              <th class="text-center">STT</th>
               <th>Nội dung</th>
-              <th class="w-32">Loại giấy tờ</th>
-              <th class="w-10 text-center">Đã có</th>
+              <th>Loại giấy tờ</th>
+              <th class="text-center whitespace-nowrap">Đã có</th>
             </tr>
           </thead>
-          <colgroup>
-          <col class="!w-[8%] sm:!w-[10%]">
-          <col class="!flex-1 min-w-0">
-          <col class="!w-[40%] sm:!w-[28%]">
-          <col class="!w-[8%] sm:!w-[10%]">
-        </colgroup>
           <tbody>
             <tr
               v-for="(doc, idx) in requiredDocs"
               :key="doc.id"
               :class="state.checked[doc.id] ? 'opacity-50' : ''"
             >
-              <td class="text-center font-mono text-xs">{{ idx + 1 }}</td>
-              <td class="break-words">
+              <td class="text-center font-mono text-xs align-middle">{{ idx + 1 }}</td>
+              <td class="break-words align-middle">
                 <label
+                  :for="`req-doc-${doc.id}`"
                   :class="state.checked[doc.id] ? 'line-through' : ''"
-                  class="text-xs sm:text-sm font-medium cursor-pointer text-stone-900 dark:text-stone-100"
+                  class="text-xs sm:text-sm font-medium cursor-pointer text-stone-900 dark:text-stone-100 block"
                 >
                   {{ doc.label }}
                 </label>
               </td>
-              <td class="text-[10px] sm:text-xs text-stone-600 dark:text-stone-200 flex flex-wrap gap-1">
-                <span v-for="b in doc.badges" :key="b" class="shrink-0 whitespace-nowrap">{{ badgeMap[b]?.label }}</span>
+              <td class="align-middle">
+                <div class="flex flex-wrap gap-1">
+                  <span
+                    v-for="b in doc.badges"
+                    :key="b"
+                    :class="['badge', badgeMap[b]?.cls]"
+                  >
+                    {{ badgeMap[b]?.label }}
+                  </span>
+                </div>
               </td>
-              <td class="text-center">
+              <td class="text-center align-middle">
                 <input
+                  :id="`req-doc-${doc.id}`"
                   type="checkbox"
                   :checked="!!state.checked[doc.id]"
                   @change="emit('toggle-check', doc.id)"
-                  class="cursor-pointer"
+                  class="cursor-pointer align-middle"
                 />
               </td>
             </tr>
@@ -373,47 +383,57 @@ function generateSummary() {
       </div>
 
       <!-- Optional: bảng kiểu tờ khai -->
-      <div v-if="optionalDocs.length" class="gov-card p-5">
+      <div v-if="optionalDocs.length" class="gov-card p-5 overflow-x-auto">
         <h3 class="text-sm font-medium text-stone-500 dark:text-stone-300 mb-3">Giấy tờ phụ (nếu có)</h3>
         <table class="doc-table">
+          <colgroup>
+            <col class="w-10 sm:w-12" />
+            <col />
+            <col class="w-28 sm:w-44" />
+            <col class="w-14 sm:w-16" />
+          </colgroup>
           <thead>
             <tr>
-              <th class="w-10 text-center">STT</th>
+              <th class="text-center">STT</th>
               <th>Nội dung</th>
-              <th class="w-32">Loại giấy tờ</th>
-              <th class="w-10 text-center">Đã có</th>
+              <th>Loại giấy tờ</th>
+              <th class="text-center whitespace-nowrap">Đã có</th>
             </tr>
           </thead>
-          <colgroup>
-          <col class="!w-[8%] sm:!w-[10%]">
-          <col class="!flex-1 min-w-0">
-          <col class="!w-[40%] sm:!w-[28%]">
-          <col class="!w-[8%] sm:!w-[10%]">
-        </colgroup>
           <tbody>
             <tr
               v-for="(doc, idx) in optionalDocs"
               :key="doc.id"
               :class="state.checked[doc.id] ? 'opacity-50' : ''"
             >
-              <td class="text-center font-mono text-xs">{{ idx + 1 }}</td>
-              <td class="break-words">
+              <td class="text-center font-mono text-xs align-middle">{{ idx + 1 }}</td>
+              <td class="break-words align-middle">
                 <label
+                  :for="`opt-doc-${doc.id}`"
                   :class="state.checked[doc.id] ? 'line-through' : ''"
-                  class="text-xs sm:text-sm cursor-pointer text-stone-900 dark:text-stone-100"
+                  class="text-xs sm:text-sm cursor-pointer text-stone-900 dark:text-stone-100 block"
                 >
                   {{ doc.label }}
                 </label>
               </td>
-              <td class="text-[10px] sm:text-xs text-stone-600 dark:text-stone-200 flex flex-wrap gap-1">
-                <span v-for="b in doc.badges" :key="b" class="shrink-0 whitespace-nowrap">{{ badgeMap[b]?.label }}</span>
+              <td class="align-middle">
+                <div class="flex flex-wrap gap-1">
+                  <span
+                    v-for="b in doc.badges"
+                    :key="b"
+                    :class="['badge', badgeMap[b]?.cls]"
+                  >
+                    {{ badgeMap[b]?.label }}
+                  </span>
+                </div>
               </td>
-              <td class="text-center">
+              <td class="text-center align-middle">
                 <input
+                  :id="`opt-doc-${doc.id}`"
                   type="checkbox"
                   :checked="!!state.checked[doc.id]"
                   @change="emit('toggle-check', doc.id)"
-                  class="cursor-pointer"
+                  class="cursor-pointer align-middle"
                 />
               </td>
             </tr>
