@@ -131,9 +131,15 @@
   },
   "legal_bases": [
     {
-      "title": "Nghị định 23/2015/NĐ-CP của Chính phủ (được sửa đổi, bổ sung bởi Nghị định 07/2025/NĐ-CP và Nghị định 280/2025/NĐ-CP có hiệu lực 01/11/2025)",
-      "article": "Điều 5, Điều 18, Điều 20, Điều 24 — thẩm quyền chứng thực của Chủ tịch UBND cấp xã, tổ chức hành nghề công chứng; không phụ thuộc nơi cư trú đối với sao y, chứng thực chữ ký",
+      "title": "Nghị định 23/2015/NĐ-CP của Chính phủ: Về cấp bản sao từ sổ gốc, chứng thực bản sao từ bản chính, chứng thực chữ ký và chứng thực hợp đồng, giao dịch",
+      "article": "Điều 5, Điều 18, Điều 20, Điều 24 — quy định về chứng thực bản sao, chứng thực chữ ký, chứng thực hợp đồng/giao dịch",
       "url": "https://vanban.chinhphu.vn/?pageid=27160&docid=179100",
+      "last_verified_date": "2026-10-17"
+    },
+    {
+      "title": "Nghị định 280/2025/NĐ-CP của Chính phủ: Sửa đổi, bổ sung một số điều của Nghị định 23/2015/NĐ-CP (có hiệu lực 01/11/2025)",
+      "article": "Phân định thẩm quyền chứng thực của Chủ tịch UBND cấp xã theo mô hình chính quyền 2 cấp; tích hợp dữ liệu VNeID",
+      "url": "https://vanban.chinhphu.vn/?pageid=27160&docid=215722",
       "last_verified_date": "2026-10-17"
     },
     {
@@ -145,7 +151,7 @@
     {
       "title": "Thông tư 226/2016/TT-BTC của Bộ Tài chính: Quy định mức thu, chế độ thu, nộp, quản lý và sử dụng phí chứng thực",
       "article": "Điều 4 — mức thu phí chứng thực bản sao từ bản chính (2.000đ/trang đối với 2 trang đầu, từ trang 3 trở lên thu 1.000đ/trang, tối đa 200.000đ/bản); chứng thực chữ ký 10.000đ/trường hợp",
-      "url": "https://vanban.chinhphu.vn/?pageid=27160&docid=187535",
+      "url": "https://vanban.chinhphu.vn/?pageid=27160&docid=188026",
       "last_verified_date": "2026-10-17"
     }
   ],

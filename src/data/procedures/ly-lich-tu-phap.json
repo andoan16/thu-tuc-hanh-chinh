@@ -117,9 +117,15 @@
   },
   "legal_bases": [
     {
-      "title": "Luật Lý lịch tư pháp số 28/2009/QH12 của Quốc hội (sửa đổi, bổ sung bởi Luật số 107/2025/QH15 có hiệu lực 01/07/2026)",
-      "article": "Điều 41, Điều 42, Điều 45, Điều 46 — phân biệt Phiếu LLTP số 1 và số 2; thẩm quyền cấp Phiếu LLTP thuộc Bộ Công an và Công an cấp tỉnh",
+      "title": "Luật Lý lịch tư pháp số 28/2009/QH12 của Quốc hội",
+      "article": "Điều 41, Điều 42, Điều 45 — quy định về Phiếu lý lịch tư pháp số 1, số 2 và thủ tục yêu cầu cấp Phiếu",
       "url": "https://vanban.chinhphu.vn/default.aspx?pageid=27160&docid=91028",
+      "last_verified_date": "2026-10-17"
+    },
+    {
+      "title": "Luật số 107/2025/QH15 của Quốc hội: Luật sửa đổi, bổ sung một số điều của Luật Lý lịch tư pháp (có hiệu lực 01/07/2026)",
+      "article": "Chuyển giao thẩm quyền quản lý nhà nước và cấp Phiếu LLTP về Bộ Công an / Công an cấp tỉnh; quy định về Phiếu LLTP điện tử",
+      "url": "https://vanban.chinhphu.vn/?pageid=27160&docid=216571",
       "last_verified_date": "2026-10-17"
     },
     {
@@ -137,7 +143,7 @@
     {
       "title": "Nghị định 69/2024/NĐ-CP của Chính phủ: Quy định về định danh và xác thực điện tử (thay thế Nghị định 59/2022/NĐ-CP)",
       "article": "Điều 14, Điều 15 — sử dụng VNeID Mức 2 để yêu cầu và nhận Phiếu lý lịch tư pháp điện tử",
-      "url": "https://vanban.chinhphu.vn/?pageid=27160&docid=210553",
+      "url": "https://vanban.chinhphu.vn/?pageid=27160&docid=210491",
       "last_verified_date": "2026-10-17"
     }
   ],
