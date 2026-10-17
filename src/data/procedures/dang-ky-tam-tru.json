@@ -5,8 +5,8 @@
   "category": "Hộ tịch",
   "portalUrl": "https://vneid.gov.vn/",
   "fee": 0,
-  "feeNote": "Miễn lệ phí (theo Thông tư 56/2021/TT-BCA).",
-  "processingTime": "3-5 ngày làm việc",
+  "feeNote": "Miễn 100% lệ phí khi đăng ký qua ứng dụng VNeID (theo Thông tư 29/2026/TT-BTC) hoặc thuộc diện miễn theo Thông tư 75/2022/TT-BTC (trực tiếp: 15.000đ/lần; qua cổng DVC: 7.000đ/lần).",
+  "processingTime": "Không quá 03 ngày làm việc",
   "questions": [
     {
       "id": "housing",
@@ -21,7 +21,7 @@
           "value": "rent"
         }
       ],
-      "impact": "Xác định giấy tờ chứng minh chỗ ở cần nộp"
+      "impact": "Xác định giấy tờ chứng minh chỗ ở hợp pháp cần nộp"
     },
     {
       "id": "vneid",
@@ -36,7 +36,7 @@
           "value": "no"
         }
       ],
-      "impact": "Bắt buộc nếu đăng ký online qua VNeID"
+      "impact": "Bắt buộc nếu đăng ký online qua VNeID (được miễn 100% lệ phí)"
     },
     {
       "id": "duration",
@@ -47,11 +47,11 @@
           "value": "short"
         },
         {
-          "label": "1 năm trở lên",
+          "label": "Từ 1 đến 2 năm (tối đa)",
           "value": "long"
         }
       ],
-      "impact": "Thời gian tạm trú tối đa theo Luật Cư trú 2020"
+      "impact": "Thời hạn tạm trú tối đa mỗi lần là 02 năm theo Điều 27 Luật Cư trú 2020 (được gia hạn nhiều lần)"
     }
   ],
   "rules": {
@@ -82,7 +82,7 @@
   },
   "documents": {
     "cccd": {
-      "label": "CCCD gắn chip (bản gốc + bản sao)",
+      "label": "Thẻ căn cước / CCCD gắn chip (hoặc xuất trình Căn cước điện tử trên VNeID)",
       "badges": [
         "scan",
         "goc",
@@ -90,43 +90,43 @@
       ]
     },
     "house_doc": {
-      "label": "Giấy chứng nhận quyền sử dụng đất / Sổ hồng (bản sao)",
+      "label": "Giấy tờ chứng minh chỗ ở hợp pháp (GCNQSDĐ / Sổ hồng hoặc văn bản cam kết theo Nghị định 154/2024/NĐ-CP)",
       "badges": [
         "saoy"
       ]
     },
     "lease": {
-      "label": "Hợp đồng thuê nhà (có công chứng nếu ≥6 tháng)",
+      "label": "Hợp đồng thuê, mượn, ở nhờ (không bắt buộc công chứng/chứng thực theo Nghị định 154/2024/NĐ-CP)",
       "badges": [
         "saoy"
       ]
     },
     "landlord_id": {
-      "label": "CCCD của chủ nhà / người cho thuê (bản sao)",
+      "label": "Ý kiến đồng ý của chủ hộ/chủ sở hữu chỗ ở (ký trên Mẫu CT01 hoặc xác nhận qua ứng dụng VNeID)",
       "badges": [
         "saoy"
       ]
     },
     "tamtru_form": {
-      "label": "Tờ khai tạm trú (TT01)",
+      "label": "Tờ khai thay đổi thông tin cư trú (Mẫu CT01)",
       "badges": [
         "scan"
       ]
     },
     "photo": {
-      "label": "Ảnh 3x4 (2 tấm)",
+      "label": "Ảnh 3x4 (không bắt buộc nếu nộp qua VNeID/Cổng DVC)",
       "badges": [
         "scan"
       ]
     },
     "vneid_doc": {
-      "label": "Xác nhận VNeID Mức 2 (in từ app VNeID)",
+      "label": "Tài khoản VNeID Mức 2 (nếu khai trực tuyến trên ứng dụng VNeID)",
       "badges": [
         "scan"
       ]
     },
     "fee": {
-      "label": "Miễn lệ phí",
+      "label": "Miễn lệ phí trên ứng dụng VNeID (trực tiếp: 15.000đ)",
       "badges": [
         "fee"
       ]
@@ -134,28 +134,34 @@
   },
   "legal_bases": [
     {
-      "title": "Luật Cư trú số 68/2020/QH14 của Quốc hội (có hiệu lực 01/07/2021, hợp nhất 06/VBHN-VPQH 2026)",
-      "article": "Điều 18, Điều 19, Điều 20 — quy định về đăng ký tạm trú, điều kiện, hồ sơ, thủ tục",
+      "title": "Luật Cư trú số 68/2020/QH14 của Quốc hội (sửa đổi, bổ sung bởi Luật Căn cước 26/2023/QH15; hợp nhất 06/VBHN-VPQH 2026)",
+      "article": "Điều 27, Điều 28 — điều kiện, hồ sơ, thủ tục đăng ký tạm trú (thời hạn tối đa 02 năm, giải quyết trong 03 ngày làm việc)",
       "url": "https://vanban.chinhphu.vn/?pageid=27160&docid=202609",
-      "last_verified_date": "2026-09-20"
+      "last_verified_date": "2026-10-17"
     },
     {
-      "title": "Nghị định 154/2024/NĐ-CP của Chính phủ: Quy định chi tiết một số điều và biện pháp thi hành Luật Cư trú",
-      "article": "Điều 10, Điều 12 — thủ tục đăng ký tạm trú, hồ sơ, thời hạn giải quyết",
+      "title": "Nghị định 154/2024/NĐ-CP của Chính phủ: Quy định chi tiết một số điều và biện pháp thi hành Luật Cư trú (có hiệu lực 10/01/2025)",
+      "article": "Điều 5, Điều 6 — giấy tờ, tài liệu chứng minh chỗ ở hợp pháp để đăng ký tạm trú (hợp đồng thuê, mượn, ở nhờ không bắt buộc công chứng)",
       "url": "https://vanban.chinhphu.vn/?pageid=27160&docid=211821",
-      "last_verified_date": "2026-09-20"
+      "last_verified_date": "2026-10-17"
     },
     {
-      "title": "Thông tư 56/2021/TT-BCA của Bộ Công an: Quy định về cư trú điện tử, đăng ký tạm trú qua VNeID",
-      "article": "Điều 5, Điều 6 — thủ tục đăng ký tạm trú điện tử, miễn lệ phí",
+      "title": "Thông tư 55/2021/TT-BCA và Thông tư 56/2021/TT-BCA (được sửa đổi, bổ sung bởi Thông tư 66/2023/TT-BCA và Thông tư 53/2025/TT-BCA)",
+      "article": "Quy định quy trình đăng ký cư trú trực tuyến qua VNeID và biểu mẫu quản lý cư trú (Mẫu CT01)",
       "url": "https://vanban.chinhphu.vn/?pageid=27160&docid=209185",
-      "last_verified_date": "2026-09-20"
+      "last_verified_date": "2026-10-17"
     },
     {
-      "title": "Nghị định 59/2022/NĐ-CP của Chính phủ: Quy định về định danh và xác thực điện tử",
-      "article": "Điều 14, Điều 15 — VNeID Mức 2, xác thực điện tử dùng cho thủ tục hành chính",
-      "url": "https://vanban.chinhphu.vn/?pageid=27160&docid=206490",
-      "last_verified_date": "2026-09-20"
+      "title": "Thông tư 75/2022/TT-BTC và Thông tư 29/2026/TT-BTC của Bộ Tài chính: Quy định mức thu, miễn lệ phí đăng ký cư trú",
+      "article": "Điều 4, Điều 5 — miễn 100% lệ phí đăng ký cư trú khi thực hiện qua ứng dụng VNeID",
+      "url": "https://vanban.chinhphu.vn/?pageid=27160&docid=207115",
+      "last_verified_date": "2026-10-17"
+    },
+    {
+      "title": "Nghị định 69/2024/NĐ-CP của Chính phủ: Quy định về định danh và xác thực điện tử (thay thế Nghị định 59/2022/NĐ-CP)",
+      "article": "Điều 14, Điều 15 — sử dụng VNeID Mức 2 thực hiện thủ tục hành chính về cư trú",
+      "url": "https://vanban.chinhphu.vn/?pageid=27160&docid=210553",
+      "last_verified_date": "2026-10-17"
     }
   ],
   "officeInfo": {
@@ -165,87 +171,80 @@
     "hours": "Thứ 2 - Thứ 6: 7:30 - 11:30, 13:30 - 17:00; Thứ 7: 7:30 - 11:30",
     "lunchNote": "Nghỉ trưa 11:30 - 13:30",
     "bestTime": "Sáng Thứ 3 - Thứ 4 (ít người, xử lý nhanh)",
-    "busyTime": "Đầu tuần (Thứ 2) và cuối tháng (đợt gia hạn hạn)",
+    "busyTime": "Đầu tuần (Thứ 2) và đầu năm học / cuối tháng",
     "payment": [
-      "Không thu phí"
+      "Miễn phí qua ứng dụng VNeID",
+      "Tiền mặt / Chuyển khoản QR (nếu nộp trực tiếp: 15.000đ)"
     ],
     "tips": [
-      "Nếu có VNeID Mức 2, có thể khai trực tuyến trên app VNeID — không cần đến Công an.",
-      "Hợp đồng thuê nhà ≥6 tháng bắt buộc công chứng, chuẩn bị trước.",
-      "Chủ nhà cần đi cùng hoặc ủy quyền bằng văn bản có chứng thực nếu không đi cùng."
+      "Nếu có VNeID Mức 2, khai trực tuyến ngay trên ứng dụng VNeID — được miễn 100% lệ phí và chủ hộ/chủ nhà có thể xác nhận đồng ý ngay trên app VNeID.",
+      "Theo Nghị định 154/2024/NĐ-CP (hiệu lực 10/01/2025), hợp đồng hoặc văn bản cho thuê, cho mượn, cho ở nhờ để đăng ký tạm trú KHÔNG bắt buộc phải công chứng hoặc chứng thực.",
+      "Trước khi hết hạn tạm trú (tối đa 02 năm) ít nhất 15 ngày, cần làm thủ tục gia hạn tạm trú."
     ]
   },
-  "data_source": "Cổng Dịch vụ công Quốc gia (dichvucong.gov.vn) / Cổng Pháp luật quốc gia (phapluat.gov.vn)",
-  "last_updated": "02/09/2026",
+  "data_source": "Cổng Dịch vụ công Bộ Công an (dichvucong.bocongan.gov.vn) / Ứng dụng VNeID",
+  "last_updated": "17/10/2026",
   "difficulty_level": "Dễ",
   "estimated_time_days": 3,
   "execution_methods": [
-    "Online (VNeID)",
+    "Online (Ứng dụng VNeID / Cổng DVC Bộ Công an)",
     "Trực tiếp (Công an cấp xã/phường)"
   ],
   "feeOnline": 0,
-  "feeOffline": 0,
+  "feeOffline": 15000,
   "forms": [
     {
-      "form_code": "TT01",
-      "form_name": "Tờ khai tạm trú",
-      "fill_mode": "offline",
+      "form_code": "Mẫu CT01",
+      "form_name": "Tờ khai thay đổi thông tin cư trú",
+      "fill_mode": "both",
       "copies_count": 1,
-      "note": "Tải từ dichvucong.gov.vn hoặc lấy tại Công an cấp xã/phường. Điền đầy đủ họ tên, số CCCD, địa chỉ thường trú và nơi tạm trú.",
-      "download_url": "https://dichvucong.gov.vn/p/home/dvc-trang-chu.html"
-    },
-    {
-      "form_code": "TL01",
-      "form_name": "Tờ khai lưu trú",
-      "fill_mode": "offline",
-      "copies_count": 1,
-      "note": "Dùng khi tiếp đón khách ở thời hạn dưới 30 ngày. Chủ nhà khai thay hoặc khách tự khai.",
-      "download_url": "https://dichvucong.gov.vn/p/home/dvc-trang-chu.html"
+      "note": "Ban hành kèm Thông tư 66/2023/TT-BCA và sửa đổi tại Thông tư 53/2025/TT-BCA. Nếu khai trên VNeID thì điền biểu mẫu điện tử trực tiếp, không cần bản giấy.",
+      "download_url": "https://dichvucong.bocongan.gov.vn/"
     }
   ],
   "warnings": [
     {
       "type": "penalty",
-      "content": "Không đăng ký tạm trú có thể bị xử phạt hành chính từ 100.000đ đến 300.000đ (Nghị định 81/2023/NĐ-CP, Điều 10; Luật Cư trú 2020, Điều 20).",
-      "solution": "Đăng ký trong vòng 24-48 giờ sau khi chuyển đến. Nếu quá hạn, chủ nhà cần giải trình bằng văn bản kèm theo lý do chậm trễ."
+      "content": "Không thực hiện đúng quy định về đăng ký tạm trú, xóa đăng ký tạm trú hoặc điều chỉnh thông tin trong Cơ sở dữ liệu về cư trú bị phạt tiền từ 500.000đ đến 1.000.000đ (khoản 1 Điều 9 Nghị định 144/2021/NĐ-CP).",
+      "solution": "Khi đến sinh sống tại chỗ ở hợp pháp ngoài phạm vi đơn vị hành chính cấp xã nơi thường trú từ 30 ngày trở lên thì phải đăng ký tạm trú (Điều 27 Luật Cư trú 2020)."
     },
     {
       "type": "deadline",
-      "content": "Tạm trú quá thời hạn đã khai báo mà không gia hạn bị coi là cư trú không hợp pháp. có thể bị trục xuất hoặc phạt nặng hơn.",
-      "solution": "Liên hệ Công an cấp xã trước khi hết hạn 3-5 ngày để được hướng dẫn gia hạn. Lệ phí gia hạn: miễn phí."
+      "content": "Thời hạn tạm trú tối đa là 02 năm. Trong thời hạn 15 ngày trước ngày kết thúc thời hạn tạm trú đã đăng ký, công dân phải làm thủ tục gia hạn tạm trú (Điều 28 Luật Cư trú 2020).",
+      "solution": "Nộp hồ sơ gia hạn tạm trú trên ứng dụng VNeID hoặc tại Công an cấp xã trước khi hết hạn ít nhất 15 ngày."
     },
     {
       "type": "reject_reason",
-      "content": "Hồ sơ thiếu chữ ký của chủ nhà trong trường hợp thuê ở, hoặc CCCD của khách không còn hạn.",
-      "solution": "Mang bổ sung giấy tờ bắt buộc. Nếu CCCD hết hạn, khách cần gia hạn trước khi nộp hồ sơ."
+      "content": "Hồ sơ thiếu sự đồng ý của chủ hộ/chủ sở hữu chỗ ở hợp pháp (trên tờ khai CT01 hoặc xác nhận qua VNeID), hoặc địa chỉ chỗ ở thuộc diện không được đăng ký tạm trú mới theo Điều 27 Luật Cư trú.",
+      "solution": "Nhờ chủ nhà/chủ hộ xác nhận đồng ý trên ứng dụng VNeID hoặc ký xác nhận vào Mẫu CT01 trước khi nộp."
     }
   ],
   "after_procedure": {
-    "how_to_receive": "Công an thông báo kết quả qua tin nhắn SMS hoặc app VNeID. Hồ sơ cư trú được cập nhật tự động vào hệ thống quản lý cư trú.",
-    "receipt_method": "Không có bản giấy xác nhận — thông tin tạm trú được ghi vào sổ hộ khẩu điện tử của chủ nhà. Có thể kiểm tra trạng thái qua app VNeID.",
-    "receive_by_other": "Không áp dụng — thủ tục hoàn toàn giữa Công an và người khai.",
-    "rejected_solution": "Nếu bị từ chối: nhận công văn giải trình lý do từ Công an. Người khai có quyền khiếu nại theo Luật Khiếu nại 2013."
+    "how_to_receive": "Công an cấp xã thông báo kết quả qua ứng dụng VNeID, Cổng dịch vụ công hoặc tin nhắn SMS; thông tin tạm trú được cập nhật vào Cơ sở dữ liệu quốc gia về cư trú.",
+    "receipt_method": "Thông tin cư trú được cập nhật trực tiếp trên ứng dụng VNeID (không còn cấp Sổ tạm trú giấy). Nếu cần bản xác nhận có thể xin Thông báo kết quả giải quyết (Mẫu CT08) hoặc Xác nhận thông tin về cư trú (Mẫu CT07).",
+    "receive_by_other": "Chủ hộ hoặc thành viên hộ gia đình có thể khai thay khi có sự đồng ý.",
+    "rejected_solution": "Nếu bị từ chối: cơ quan đăng ký cư trú phải trả lời bằng văn bản và nêu rõ lý do (Mẫu CT06). Công dân có quyền khiếu nại theo Luật Khiếu nại 2011."
   },
   "common_issues": [
     {
-      "problem": "Chủ nhà không ở nhà khi Công an đối chiếu",
-      "solution": "Chủ nhà phải mở cửa và xác nhận bằng chữ ký trong sổ tạm trú. Nếu bận, liên hệ Công an để hẹn lại (thường 1-2 lần).",
-      "impact": "Chậm tiến độ, có thể bị yêu cầu nộp lại"
+      "problem": "Chủ nhà ở xa, không thể ký trực tiếp vào tờ khai Mẫu CT01",
+      "solution": "Khai báo đăng ký tạm trú qua ứng dụng VNeID; hệ thống sẽ gửi thông báo để chủ nhà/chủ hộ bấm xác nhận đồng ý trực tuyến ngay trên VNeID của chủ nhà.",
+      "impact": "Nhanh chóng, không cần gặp trực tiếp lấy chữ ký giấy"
     },
     {
-      "problem": "Khách tạm trú quá hạn nhưng không rời đi",
-      "solution": "Chủ nhà báo Công an cấp xã. Công an ra quyết định xử phạt và yêu cầu rời đi trong thời hạn quy định (thường 48 giờ).",
-      "impact": "Chủ nhà bị phạt vi phạm quản lý cư trú (300.000-500.000đ)"
+      "problem": "Hết hạn tạm trú mà quên gia hạn trước 15 ngày",
+      "solution": "Khi hết hạn tạm trú mà không gia hạn, thông tin tạm trú sẽ bị xóa khỏi Cơ sở dữ liệu về cư trú. Công dân phải làm lại thủ tục đăng ký tạm trú mới từ đầu.",
+      "impact": "Phải nộp lại hồ sơ đăng ký tạm trú mới"
     },
     {
-      "problem": "CCCD của khách đã hết hạn",
-      "solution": "Khách cần gia hạn CCCD tại Công an nơi đăng ký hộ khẩu trước khi đăng ký tạm trú. Thời gian gia hạn: ~15 ngày.",
-      "impact": "Không thể đăng ký tạm trú cho đến khi CCCD hợp lệ"
+      "problem": "Thẻ căn cước / CCCD đã hết hạn sử dụng",
+      "solution": "Thực hiện thủ tục cấp đổi Thẻ căn cước theo Luật Căn cước 2023 để đồng bộ dữ liệu và duy trì hoạt động của tài khoản VNeID Mức 2.",
+      "impact": "Tài khoản VNeID có thể bị khóa tính năng nếu Thẻ căn cước hết hạn"
     },
     {
-      "problem": "Không có hợp đồng thuê nhà bằng văn bản",
-      "solution": "Lập hợp đồng thuê nhà có xác nhận của UBND cấp xã/phường (miễn phí). Phải có trước khi đăng ký tạm trú.",
-      "impact": "Bị từ chối đăng ký nếu không có hợp đồng"
+      "problem": "Hợp đồng thuê nhà viết tay, không có công chứng",
+      "solution": "Theo Nghị định 154/2024/NĐ-CP (hiệu lực từ 10/01/2025), hợp đồng hoặc văn bản cho thuê, cho mượn, cho ở nhờ để đăng ký tạm trú KHÔNG bắt buộc phải công chứng hay chứng thực.",
+      "impact": "Vẫn được chấp nhận hợp lệ để đăng ký tạm trú"
     }
   ]
 }

@@ -5,34 +5,34 @@
   "category": "Hộ tịch",
   "portalUrl": "https://dichvucong.gov.vn/p/home/dvc-trang-chu.html",
   "fee": 0,
-  "feeNote": "Miễn lệ phí (theo Thông tư 55/2021/TT-BCA và Thông tư 56/2021/TT-BCA).",
-  "processingTime": "Trong ngày (khai trực tiếp) / 1-2 ngày làm việc (qua VNeID)",
+  "feeNote": "Miễn lệ phí đối với thông báo lưu trú và khai báo tạm vắng (theo Luật Cư trú 2020 và Thông tư 75/2022/TT-BTC).",
+  "processingTime": "Trong ngày làm việc (tiếp nhận trực tiếp hoặc qua ứng dụng VNeID)",
   "questions": [
     {
       "id": "who",
-      "text": "Bạn khai báo cho ai vắng mặt / lưu trú?",
+      "text": "Bạn khai báo tạm vắng hay thông báo lưu trú?",
       "options": [
         {
-          "label": "Bản thân mình đi vắng",
+          "label": "Bản thân mình khai báo tạm vắng",
           "value": "self"
         },
         {
-          "label": "Tiếp đón khách lưu trú tại nhà",
+          "label": "Chủ nhà / cơ sở thông báo khách lưu trú",
           "value": "host"
         },
         {
-          "label": "Người vắng dưới 15 tuổi (cha mẹ khai)",
+          "label": "Khai báo cho người chưa thành niên (cha mẹ/người giám hộ khai)",
           "value": "minor"
         }
       ],
-      "impact": "Xác định ai là người khai (tự khai / chủ nhà tiếp đón / người giám hộ)"
+      "impact": "Xác định thủ tục khai báo tạm vắng (Điều 31) hay thông báo lưu trú (Điều 30 Luật Cư trú)"
     },
     {
       "id": "channel",
       "text": "Bạn muốn khai theo hình thức nào?",
       "options": [
         {
-          "label": "Qua VNeID (Mức 2)",
+          "label": "Qua ứng dụng VNeID / Cổng DVC",
           "value": "online"
         },
         {
@@ -40,7 +40,7 @@
           "value": "offline"
         }
       ],
-      "impact": "Online qua VNeID nhanh hơn, trực tiếp cần đến Công an"
+      "impact": "Online qua VNeID thực hiện 24/7, không cần đến trực tiếp Công an cấp xã"
     },
     {
       "id": "vneid",
@@ -92,57 +92,57 @@
   },
   "documents": {
     "cccd": {
-      "label": "CCCD gắn chip của người khai (bản gốc)",
+      "label": "Thẻ căn cước / CCCD gắn chip của người khai (hoặc xuất trình trên VNeID)",
       "badges": [
         "scan",
         "goc"
       ]
     },
     "cccd_parent": {
-      "label": "CCCD của cha/mẹ/người giám hộ (bản gốc)",
+      "label": "Thẻ căn cước / CCCD của cha/mẹ/người giám hộ (bản gốc)",
       "badges": [
         "scan",
         "goc"
       ]
     },
     "guest_id": {
-      "label": "CCCD/hộ chiếu của người lưu trú (bản sao)",
+      "label": "Thẻ căn cước / CCCD / Hộ chiếu hoặc định danh điện tử của người lưu trú",
       "badges": [
         "saoy"
       ]
     },
     "birth_cert_minor": {
-      "label": "Giấy khai sinh của người vắng dưới 15 tuổi (bản sao)",
+      "label": "Giấy khai sinh hoặc số định danh cá nhân của người chưa thành niên",
       "badges": [
         "saoy"
       ]
     },
     "vang_mat_form": {
-      "label": "Tờ khai vắng mặt tạm thời (Mẫu TK.01)",
+      "label": "Phiếu khai báo tạm vắng (Mẫu CT03)",
       "badges": [
         "scan"
       ]
     },
     "luu_tru_form": {
-      "label": "Tờ khai lưu trú (Mẫu TL.01)",
+      "label": "Thông tin thông báo lưu trú (kê khai trực tiếp trên VNeID / Cổng DVC hoặc tại Công an xã)",
       "badges": [
         "scan"
       ]
     },
     "photo": {
-      "label": "Ảnh 3x4 (1 tấm, nền trắng)",
+      "label": "Văn bản đồng ý của cơ quan giám sát, quản lý (nếu thuộc diện chấp hành án/biện pháp giáo dục theo khoản 1 Điều 31 Luật Cư trú)",
       "badges": [
         "scan"
       ]
     },
     "lease_guest": {
-      "label": "Hợp đồng thuê nhà / giấy đồng ý của chủ nhà (nếu khách ở thuê)",
+      "label": "Hợp đồng thuê nhà / giấy tờ chỗ ở (nếu cần đối chiếu)",
       "badges": [
         "saoy"
       ]
     },
     "vneid_doc": {
-      "label": "Xác nhận VNeID Mức 2 (in từ app VNeID — nếu khai online)",
+      "label": "Tài khoản VNeID Mức 2 (nếu khai trực tuyến trên VNeID)",
       "badges": [
         "scan"
       ]
@@ -156,108 +156,100 @@
   },
   "legal_bases": [
     {
-      "title": "Luật Cư trú số 68/2020/QH14 của Quốc hội (có hiệu lực 01/07/2021, hợp nhất 06/VBHN-VPQH 2026)",
-      "article": "Điều 22 — khai báo vắng mặt tạm thời; Điều 26 — thông báo lưu trú",
+      "title": "Luật Cư trú số 68/2020/QH14 của Quốc hội (sửa đổi, bổ sung bởi Luật Căn cước 26/2023/QH15; hợp nhất 06/VBHN-VPQH 2026)",
+      "article": "Điều 30 — thông báo lưu trú (trước 23 giờ hàng ngày); Điều 31 — khai báo tạm vắng",
       "url": "https://vanban.chinhphu.vn/?pageid=27160&docid=202609",
-      "last_verified_date": "2026-09-20"
+      "last_verified_date": "2026-10-17"
     },
     {
-      "title": "Thông tư 55/2021/TT-BCA của Bộ Công an: Quy định chi tiết một số điều và biện pháp thi hành Luật Cư trú",
-      "article": "Điều 12, Điều 13 — mẫu tờ khai vắng mặt, lưu trú; quy trình tiếp nhận",
+      "title": "Nghị định 154/2024/NĐ-CP của Chính phủ: Quy định chi tiết một số điều và biện pháp thi hành Luật Cư trú (có hiệu lực 10/01/2025)",
+      "article": "Quy định chi tiết về hình thức thông báo lưu trú và quản lý cư trú",
+      "url": "https://vanban.chinhphu.vn/?pageid=27160&docid=211821",
+      "last_verified_date": "2026-10-17"
+    },
+    {
+      "title": "Thông tư 55/2021/TT-BCA và Thông tư 56/2021/TT-BCA (sửa đổi, bổ sung bởi Thông tư 66/2023/TT-BCA và Thông tư 53/2025/TT-BCA)",
+      "article": "Điều 15, Điều 16 — tiếp nhận thông báo lưu trú, khai báo tạm vắng qua VNeID; biểu mẫu Phiếu khai báo tạm vắng (Mẫu CT03)",
       "url": "https://congbao.chinhphu.vn/van-ban/thong-tu-so-55-2021-tt-bca-33935.htm",
-      "last_verified_date": "2026-09-20"
+      "last_verified_date": "2026-10-17"
     },
     {
-      "title": "Thông tư 56/2021/TT-BCA của Bộ Công an: Quy định về cư trú điện tử, khai báo vắng mặt/lưu trú qua VNeID",
-      "article": "Điều 5 — khai báo vắng mặt / lưu trú trực tuyến miễn lệ phí",
-      "url": "https://vanban.chinhphu.vn/?pageid=27160&docid=209185",
-      "last_verified_date": "2026-09-20"
-    },
-    {
-      "title": "Nghị định 59/2022/NĐ-CP của Chính phủ: Quy định về định danh và xác thực điện tử",
-      "article": "Điều 14, Điều 15 — VNeID Mức 2 dùng cho cư trú điện tử",
-      "url": "https://vanban.chinhphu.vn/?pageid=27160&docid=206490",
-      "last_verified_date": "2026-09-20"
+      "title": "Nghị định 69/2024/NĐ-CP của Chính phủ: Quy định về định danh và xác thực điện tử (thay thế Nghị định 59/2022/NĐ-CP)",
+      "article": "Điều 14, Điều 15 — sử dụng VNeID Mức 2 thực hiện thông báo lưu trú, khai báo tạm vắng trực tuyến",
+      "url": "https://vanban.chinhphu.vn/?pageid=27160&docid=210553",
+      "last_verified_date": "2026-10-17"
     }
   ],
   "officeInfo": {
-    "where": "Công an cấp xã/phường/thị trấn nơi cư trú hoặc nơi tiếp đón lưu trú",
+    "where": "Công an cấp xã/phường/thị trấn nơi cư trú hoặc nơi có cơ sở lưu trú",
     "officeLevel": "ward",
     "officePrefix": "Công an",
-    "hours": "Thứ 2 - Thứ 6: 7:30 - 11:30, 13:30 - 17:00; Thứ 7: 7:30 - 11:30",
+    "hours": "Thứ 2 - Thứ 6: 7:30 - 11:30, 13:30 - 17:00; Thứ 7: 7:30 - 11:30 (Thông báo lưu trú qua VNeID/điện thoại tiếp nhận 24/24)",
     "lunchNote": "Nghỉ trưa 11:30 - 13:30",
-    "bestTime": "Sáng Thứ 3 - Thứ 4 (ít người, xử lý nhanh)",
-    "busyTime": "Thứ 2 và cuối tháng (đợt người đi du lịch/công tác đông)",
+    "bestTime": "Khai trực tuyến trên VNeID bất kỳ lúc nào hoặc sáng Thứ 3 - Thứ 4 nếu đến trực tiếp",
+    "busyTime": "Thứ 2 và các dịp lễ, Tết",
     "payment": [
       "Không thu phí"
     ],
     "tips": [
-      "Nếu có VNeID Mức 2, khai online qua app VNeID — không cần đến Công an. Kết quả cập nhật tự động vào hồ sơ cư trú.",
-      "Tiếp đón khách lưu trú trên 30 ngày phải khai lưu trú cho khách, nếu dưới 30 ngày khách tự khai vắng mặt tạm thời.",
-      "Người vắng dưới 15 tuổi do cha/mẹ hoặc người giám hộ khai thay, cần giấy khai sinh bản sao."
+      "Thông báo lưu trú (khi có người đến ở lại ban đêm dưới 30 ngày) phải thực hiện trước 23 giờ cùng ngày; nếu khách đến sau 23 giờ thì thông báo trước 08 giờ sáng ngày hôm sau (Điều 30 Luật Cư trú).",
+      "Khai báo tạm vắng áp dụng khi công dân đi khỏi phạm vi đơn vị hành chính cấp xã nơi cư trú từ 01 ngày trở lên (đối với người đang chấp hành án/biện pháp giám sát), hoặc đi khỏi phạm vi cấp tỉnh từ 03 tháng trở lên đối với người trong độ tuổi thực hiện nghĩa vụ quân sự (Điều 31 Luật Cư trú).",
+      "Thực hiện trên ứng dụng VNeID là cách nhanh nhất, hoàn toàn miễn phí và không cần nộp bản giấy."
     ]
   },
-  "data_source": "Cổng Dịch vụ công Quốc gia (dichvucong.gov.vn) / Bộ Công an",
-  "last_updated": "05/09/2026",
+  "data_source": "Cổng Dịch vụ công Bộ Công an (dichvucong.bocongan.gov.vn) / Ứng dụng VNeID",
+  "last_updated": "17/10/2026",
   "difficulty_level": "Dễ",
   "estimated_time_days": 1,
   "execution_methods": [
-    "Online (VNeID)",
-    "Trực tiếp (Công an cấp xã/phường)"
+    "Online (Ứng dụng VNeID / Cổng DVC Bộ Công an)",
+    "Trực tiếp hoặc qua điện thoại (Công an cấp xã/phường)"
   ],
   "feeOnline": 0,
   "feeOffline": 0,
   "forms": [
     {
-      "form_code": "TK.01",
-      "form_name": "Tờ khai vắng mặt tạm thời",
-      "fill_mode": "offline",
+      "form_code": "Mẫu CT03",
+      "form_name": "Phiếu khai báo tạm vắng",
+      "fill_mode": "both",
       "copies_count": 1,
-      "note": "Tải từ dichvucong.gov.vn hoặc lấy tại Công an. Người khai cần ghi rõ thời gian vắng mặt và lý do.",
-      "download_url": "https://dichvucong.gov.vn/p/home/dvc-trang-chu.html"
-    },
-    {
-      "form_code": "TL.01",
-      "form_name": "Tờ khai lưu trú",
-      "fill_mode": "offline",
-      "copies_count": 1,
-      "note": "Chủ nhà tiếp đón khách lưu trú khai thay. Ghi rõ thông tin khách, thời hạn lưu trú.",
-      "download_url": "https://dichvucong.gov.vn/p/home/dvc-trang-chu.html"
+      "note": "Ban hành kèm Thông tư 66/2023/TT-BCA (sửa đổi bởi Thông tư 53/2025/TT-BCA). Có thể kê khai trực tiếp trên ứng dụng VNeID.",
+      "download_url": "https://dichvucong.bocongan.gov.vn/"
     }
   ],
   "warnings": [
     {
       "type": "penalty",
-      "content": "Không khai báo vắng mặt tạm thời hoặc khai không đúng thông tin (thời gian, số lượng người) có thể bị phạt 100.000-300.000đ (Luật Cư trú 2020, Điều 22, 26).",
-      "solution": "Khai báo trong vòng 24 giờ sau khi vắng mặt được phát hiện. Nếu đã quá hạn, liên hệ Công an để giải trình."
+      "content": "Không thực hiện đúng quy định về thông báo lưu trú, khai báo tạm vắng bị phạt tiền từ 500.000đ đến 1.000.000đ đối với cá nhân/chủ hộ; cơ sở kinh doanh lưu trú không thông báo lưu trú từ 1-3 người bị phạt 1.000.000-2.000.000đ (Điều 9 Nghị định 144/2021/NĐ-CP).",
+      "solution": "Chủ hộ hoặc cơ sở lưu trú cần thông báo lưu trú trên ứng dụng VNeID trước 23 giờ tối ngày khách đến lưu trú."
     },
     {
       "type": "reject_reason",
-      "content": "Người khai không phải là người trực tiếp chịu trách nhiệm (chủ nhà hoặc người giám hộ) — hồ sơ sẽ bị từ chối.",
-      "solution": "Chủ nhà hoặc người giám hộ phải tự khai trực tiếp, hoặc ủy quyền bằng văn bản có xác nhận của công an."
+      "content": "Người thuộc diện quy định tại khoản 1 Điều 31 Luật Cư trú (bị can, bị cáo đang tại ngoại, người chấp hành án treo, cải tạo không giam giữ...) khai báo tạm vắng nhưng chưa có sự đồng ý của cơ quan có thẩm quyền giám sát, quản lý.",
+      "solution": "Xin văn bản đồng ý của cơ quan đang giám sát, quản lý, giáo dục trước khi nộp Phiếu khai báo tạm vắng (Mẫu CT03)."
     }
   ],
   "after_procedure": {
-    "how_to_receive": "Khai báo vắng mặt: Công an cấp xác nhận ngay tại quầy (nếu khai trực tiếp) hoặc qua app VNeID (nếu khai online).",
-    "receipt_method": "Biên bản xác nhận vắng mặt/lưu trú — giữ để đối chiếu nếu cần. Thông tin được vào hồ sơ điện tử.",
-    "receive_by_other": "Chủ nhà có thể ủy quyền cho người thân khai thay bằng văn bản có xác nhận Công an.",
-    "rejected_solution": "Nếu bị từ chối: yêu cầu công văn giải trình bằng văn bản. Có thể khiếu nại lên Công an cấp huyện."
+    "how_to_receive": "Nhận thông báo tiếp nhận ngay trên ứng dụng VNeID / Cổng dịch vụ công hoặc Phiếu khai báo tạm vắng tại Công an cấp xã.",
+    "receipt_method": "Xác nhận điện tử trên VNeID hoặc bản giấy Mẫu CT03 có xác nhận của Công an cấp xã.",
+    "receive_by_other": "Đối với thông báo lưu trú: chủ hộ, thành viên hộ gia đình hoặc người đại diện cơ sở lưu trú thực hiện thông báo.",
+    "rejected_solution": "Nếu bị từ chối: yêu cầu văn bản trả lời nêu rõ lý do; công dân có quyền khiếu nại lên Trưởng Công an cấp xã hoặc Công an cấp tỉnh."
   },
   "common_issues": [
     {
-      "problem": "Không nhớ chính xác ngày bắt đầu vắng mặt",
-      "solution": "Khai theo ngước hiện tại, ghi chú 'không nhớ chính xác'. Công an sẽ ghi theo ngày khai + lưu ý trong biên bản.",
-      "impact": "Không ảnh hưởng lớn nếu chênh lệch dưới 7 ngày"
+      "problem": "Khách đến lưu trú sau 23 giờ đêm",
+      "solution": "Theo khoản 4 Điều 30 Luật Cư trú 2020, trường hợp người đến lưu trú sau 23 giờ thì việc thông báo lưu trú được thực hiện trước 08 giờ sáng ngày hôm sau.",
+      "impact": "Không bị coi là vi phạm nếu thông báo trước 08 giờ sáng hôm sau"
     },
     {
-      "problem": "Khai báo online qua VNeID nhưng hệ thống lỗi, không lưu được",
-      "solution": "Chụp màn hình lỗi, gọi tổng đài 113 hoặc đến trực tiếp Công an cấp xã để khai báo bằng tờ khai giấy.",
-      "impact": "Phải khai lại trực tiếp, mất thêm thời gian"
+      "problem": "Ông bà, cha mẹ, vợ chồng, con cháu ruột đến chơi và ngủ lại nhiều lần",
+      "solution": "Theo khoản 4 Điều 30 Luật Cư trú 2020, trường hợp ông, bà, cha, mẹ, vợ, chồng, con, cháu, anh, chị, em ruột đến lưu trú nhiều lần thì chỉ cần thông báo lưu trú một lần.",
+      "impact": "Không phải khai báo lại mỗi lần người thân ruột thịt đến ở"
     },
     {
-      "problem": "Người vắng dưới 15 tuổi nhưng cha mẹ không có giấy khai sinh bản sao",
-      "solution": "Làm bản sao giấy khai sinh tại UBND cấp xã nơi đã đăng khai sinh. Lệ phí: 3.000đ/bản.",
-      "impact": "Khai báo chậm trễ cho đến khi có giấy khai sinh"
+      "problem": "Khai báo cho trẻ em chưa có Thẻ căn cước",
+      "solution": "Sử dụng mã số định danh cá nhân trên Giấy khai sinh của trẻ (hoặc thông tin thành viên hộ gia đình đã tích hợp trên VNeID của cha/mẹ).",
+      "impact": "Kê khai nhanh bằng số định danh cá nhân 12 số"
     }
   ]
 }

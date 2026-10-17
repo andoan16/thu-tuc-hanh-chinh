@@ -6,8 +6,8 @@
   "portalUrl": "https://dichvucong.gov.vn/p/home/dvc-trang-chu.html",
   "fee": 150000,
   "feeMin": 50000,
-  "feeNote": "Lệ phí cấp đổi biển số định danh: 150.000đ (ô tô dưới 9 chỗ), 50.000đ (xe máy). Sang tên đổi chủ: 30.000đ (xe máy) - 150.000đ (ô tô). Theo Thông tư 60/2023/TT-BTC và Thông tư 02/2023/TT-BCA. Giảm 15-20% khi nộp trực tuyến qua Cổng DVC.",
-  "processingTime": "2-7 ngày làm việc (cấp mới), 5-10 ngày (sang tên)",
+  "feeNote": "Lệ phí cấp đổi chứng nhận đăng ký kèm biển số: 150.000đ (ô tô), 50.000đ (xe máy). Cấp đổi chứng nhận đăng ký không kèm biển số: 50.000đ. Theo Thông tư 60/2023/TT-BTC và Thông tư 79/2024/TT-BCA. Giảm lệ phí khi nộp trực tuyến qua Cổng DVC.",
+  "processingTime": "Không quá 02 ngày làm việc (cấp chứng nhận đăng ký xe); cấp biển số mới ngay sau khi nhận hồ sơ hợp lệ",
   "questions": [
     {
       "id": "transaction",
@@ -18,11 +18,11 @@
           "value": "new"
         },
         {
-          "label": "Sang tên đổi chủ (mua bán)",
+          "label": "Sang tên đổi chủ (mua bán, tặng cho)",
           "value": "transfer"
         },
         {
-          "label": "Đổi / cấp lại biển số định danh",
+          "label": "Đổi / cấp lại chứng nhận đăng ký, biển số định danh",
           "value": "replace"
         }
       ],
@@ -56,7 +56,7 @@
           "value": "no"
         }
       ],
-      "impact": "Bắt buộc nếu đăng ký online qua Cổng DVC"
+      "impact": "Bắt buộc nếu đăng ký online qua Cổng DVC / VNeID"
     }
   ],
   "rules": {
@@ -102,7 +102,7 @@
   },
   "documents": {
     "cccd": {
-      "label": "CCCD gắn chip của chủ xe (bản gốc + bản sao)",
+      "label": "Thẻ căn cước / CCCD gắn chip của chủ xe (hoặc xuất trình trên VNeID Mức 2)",
       "badges": [
         "scan",
         "goc",
@@ -110,61 +110,61 @@
       ]
     },
     "invoice": {
-      "label": "Hóa đơn / chứng từ mua xe (bản gốc, có đóng dấu của đại lý)",
+      "label": "Hóa đơn điện tử / chứng từ nguồn gốc xe (hệ thống tự tra cứu hoặc bản in)",
       "badges": [
         "goc"
       ]
     },
     "inspection_cert": {
-      "label": "Giấy chứng nhận kiểm định an toàn kỹ thuật (xe ô tô / xe máy trên 50cc)",
+      "label": "Phiếu kiểm tra chất lượng xuất xưởng (xe sản xuất lắp ráp trong nước) / Chứng nhận chất lượng ATKT (xe nhập khẩu)",
       "badges": [
         "goc"
       ]
     },
     "insurance": {
-      "label": "Giấy chứng nhận bảo hiểm TNDS bắt buộc (bản gốc)",
+      "label": "Giấy chứng nhận bảo hiểm TNDS bắt buộc của chủ xe cơ giới (còn hiệu lực)",
       "badges": [
         "goc"
       ]
     },
     "reg_cert_old": {
-      "label": "Giấy chứng nhận đăng ký xe cũ (bản gốc)",
+      "label": "Chứng nhận đăng ký xe cũ / Chứng nhận thu hồi đăng ký, biển số xe (khi sang tên)",
       "badges": [
         "goc"
       ]
     },
     "transfer_contract": {
-      "label": "Hợp đồng mua bán / biên lai sang tên (có công chứng nếu yêu cầu)",
+      "label": "Chứng từ chuyển quyền sở hữu xe (Hợp đồng mua bán, tặng cho có công chứng/chứng thực theo quy định)",
       "badges": [
         "saoy"
       ]
     },
     "tax_receipt": {
-      "label": "Chứng từ nộp thuế trước bạ (in từ hệ thống thuế điện tử)",
+      "label": "Chứng từ nộp lệ phí trước bạ (hoặc mã hồ sơ lệ phí trước bạ điện tử)",
       "badges": [
         "scan"
       ]
     },
     "photo_vehicle": {
-      "label": "Ảnh xe (chụp trực tiếp tại điểm đăng ký hoặc file số)",
+      "label": "Bản chà số máy, số khung của xe (hoặc ảnh chụp xe khi làm dịch vụ công toàn trình)",
       "badges": [
         "scan"
       ]
     },
     "authorization": {
-      "label": "Giấy ủy quyền (nếu nhờ người khác) - công chứng",
+      "label": "Văn bản ủy quyền (nếu nhờ người khác thực hiện) - có công chứng/chứng thực",
       "badges": [
         "saoy"
       ]
     },
     "vneid_doc": {
-      "label": "Xác nhận VNeID Mức 2 (nếu nộp online qua Cổng DVC)",
+      "label": "Tài khoản VNeID Mức 2 (dùng kê khai trên Cổng DVC hoặc ứng dụng VNeID)",
       "badges": [
         "scan"
       ]
     },
     "fee": {
-      "label": "Lệ phí: 50.000đ (xe máy) - 150.000đ (ô tô); sang tên 30.000-150.000đ",
+      "label": "Lệ phí: 50.000đ (xe máy) - 150.000đ (ô tô); sang tên / cấp đổi 30.000-150.000đ",
       "badges": [
         "fee"
       ]
@@ -172,114 +172,120 @@
   },
   "legal_bases": [
     {
-      "title": "Luật Giao thông đường bộ số 23/2008/QH12 của Quốc hội (sửa đổi, bổ sung 2018)",
-      "article": "Điều 17, Điều 19 — đăng ký xe, biển số định danh; điều kiện tham gia giao thông",
-      "url": "https://vanban.chinhphu.vn/?pageid=27160&docid=81140",
-      "last_verified_date": "2026-09-20"
+      "title": "Luật Trật tự, an toàn giao thông đường bộ số 36/2024/QH15 của Quốc hội (có hiệu lực 01/01/2025)",
+      "article": "Điều 36, Điều 37, Điều 39 — cấp, thu hồi chứng nhận đăng ký xe và biển số xe cơ giới theo mã định danh",
+      "url": "https://vanban.chinhphu.vn/?pageid=27160&docid=211252",
+      "last_verified_date": "2026-10-17"
     },
     {
-      "title": "Thông tư 24/2023/TT-BCA của Bộ Công an: Quy định về cấp, thu hồi đăng ký, biển số xe cơ giới",
-      "article": "Điều 7, Điều 9, Điều 12 — thủ tục cấp mới, sang tên, đổi biển số định danh",
-      "url": "https://vanban.chinhphu.vn/?pageid=27160&docid=208348",
-      "last_verified_date": "2026-09-20"
+      "title": "Thông tư 79/2024/TT-BCA của Bộ Công an: Quy định về cấp, thu hồi chứng nhận đăng ký xe, biển số xe cơ giới, xe máy chuyên dùng (sửa đổi bởi Thông tư 13/2025/TT-BCA)",
+      "article": "Điều 4, Điều 8, Điều 15, Điều 16 — phân cấp đăng ký xe cho Phòng CSGT và Công an cấp xã; thủ tục đăng ký mới, sang tên, thu hồi biển số định danh",
+      "url": "https://vanban.chinhphu.vn/?pageid=27160&docid=212264",
+      "last_verified_date": "2026-10-17"
     },
     {
-      "title": "Thông tư 60/2023/TT-BTC của Bộ Tài chính: Quy định mức thu, chế độ thu, nộp lệ phí đăng ký, cấp biển số xe",
-      "article": "Điều 2 — mức thu 50.000đ (xe máy), 150.000đ (ô tô dưới 9 chỗ); giảm 15-20% online",
+      "title": "Thông tư 60/2023/TT-BTC của Bộ Tài chính: Quy định mức thu, chế độ thu, nộp, miễn, quản lý lệ phí đăng ký, cấp biển phương tiện giao thông cơ giới đường bộ",
+      "article": "Điều 5 — mức thu lệ phí cấp mới, cấp đổi chứng nhận đăng ký kèm biển số (50.000đ - 150.000đ)",
       "url": "https://vanban.chinhphu.vn/?pageid=27160&docid=208690",
-      "last_verified_date": "2026-09-20"
+      "last_verified_date": "2026-10-17"
+    },
+    {
+      "title": "Nghị định 69/2024/NĐ-CP của Chính phủ: Quy định về định danh và xác thực điện tử (thay thế Nghị định 59/2022/NĐ-CP)",
+      "article": "Điều 14, Điều 29 — sử dụng VNeID Mức 2 đăng ký xe toàn trình và tích hợp chứng nhận đăng ký xe điện tử",
+      "url": "https://vanban.chinhphu.vn/?pageid=210553",
+      "last_verified_date": "2026-10-17"
     }
   ],
   "officeInfo": {
-    "where": "Phòng Cảnh sát giao thông - Công an cấp tỉnh (đăng ký ô tô) / Công an cấp huyện (đăng ký xe máy)",
+    "where": "Phòng Cảnh sát giao thông - Công an cấp tỉnh hoặc Công an xã, phường, thị trấn được phân cấp đăng ký xe",
     "officeLevel": "province",
     "officePrefix": "Phòng CSGT",
-    "hours": "Thứ 2 - Thứ 6: 7:30 - 11:30, 13:30 - 16:30",
+    "hours": "Thứ 2 - Thứ 6: 7:30 - 11:30, 13:30 - 16:30; Sáng Thứ 7: 7:30 - 11:30",
     "lunchNote": "Nghỉ trưa 11:30 - 13:30",
-    "bestTime": "Sáng sớm Thứ 3 - Thứ 4 (vắng, có chỗ đậu xe)",
+    "bestTime": "Sáng sớm Thứ 3 - Thứ 4 (vắng, có chỗ đậu xe kiểm tra số khung/số máy)",
     "busyTime": "Thứ 2, sáng Thứ 7 và đầu tháng (đông nhất do người làm việc nộp ngoài giờ)",
     "payment": [
       "Tiền mặt",
       "Chuyển khoản QR",
-      "Quẹt thẻ POS"
+      "Thanh toán trực tuyến trên Cổng DVC"
     ],
     "tips": [
-      "Sang tên xe cần nộp thuế trước bạ TRƯỚC — nộp online qua Cổng thuế điện tử (thuedientu.gdt.gov.vn), in chứng từ mang đi.",
-      "Biển số định danh (5 số) áp dụng toàn quốc: xe máy đăng ký tại Công an huyện, ô tô tại Công an tỉnh.",
-      "Nếu có VNeID Mức 2, có thể nộp online qua Cổng DVC Quốc gia và nhận biển số qua bưu điện — giảm 15-20% lệ phí."
+      "Từ năm 2025 (theo Thông tư 79/2024/TT-BCA và Thông tư 13/2025/TT-BCA), đã bỏ Công an cấp huyện; người dân làm thủ tục đăng ký xe ô tô, mô tô trực tiếp tại Công an cấp xã/phường được phân cấp hoặc Phòng CSGT Công an cấp tỉnh.",
+      "Sang tên xe cần làm thủ tục thu hồi đăng ký, biển số định danh của chủ cũ và nộp lệ phí trước bạ (có thể nộp online qua Cổng Thuế điện tử hoặc eTax Mobile).",
+      "Với xe sản xuất, lắp ráp trong nước đăng ký lần đầu, chủ xe có VNeID Mức 2 có thể bấm biển số trực tuyến toàn trình trên VNeID hoặc Cổng DVC Bộ Công an và nhận biển số qua bưu chính."
     ]
   },
-  "data_source": "Cổng Dịch vụ công Quốc gia (dichvucong.gov.vn) / Bộ Công an",
-  "last_updated": "05/09/2026",
+  "data_source": "Cổng Dịch vụ công Bộ Công an (dichvucong.bocongan.gov.vn) / Cổng Dịch vụ công Quốc gia",
+  "last_updated": "17/10/2026",
   "difficulty_level": "Trung bình",
-  "estimated_time_days": 5,
+  "estimated_time_days": 2,
   "execution_methods": [
-    "Online (Cổng DVC Quốc gia)",
-    "Trực tiếp (Phòng CSGT Công an cấp tỉnh)"
+    "Online (VNeID / Cổng DVC Bộ Công an)",
+    "Trực tiếp (Phòng CSGT Công an cấp tỉnh / Công an cấp xã)"
   ],
   "feeOnline": 50000,
   "feeOffline": 150000,
   "forms": [
     {
-      "form_code": "Theo Thông tư 02/2023/TT-BCA",
-      "form_name": "Hồ sơ đăng ký sang tên phương tiện",
+      "form_code": "Mẫu ĐKX10/79 (Thông tư 79/2024/TT-BCA)",
+      "form_name": "Giấy khai đăng ký xe",
       "fill_mode": "both",
       "copies_count": 1,
-      "note": "Bao gồm: đơn đăng ký + chứng từ sang tên + giấy tờ chủ xe. Online: điền trên Cổng DVC.",
-      "download_url": "https://dichvucong.gov.vn/p/home/dvc-trang-chu.html"
+      "note": "Kê khai điện tử trên Cổng DVC Bộ Công an / ứng dụng VNeID hoặc kê khai trực tiếp tại Phòng CSGT / Công an cấp xã.",
+      "download_url": "https://dichvucong.bocongan.gov.vn/"
     },
     {
-      "form_code": "Mẫu biển số",
-      "form_name": "Đăng ký biển số định danh (5 số)",
-      "fill_mode": "offline",
+      "form_code": "Mẫu ĐKX11/79 (Thông tư 79/2024/TT-BCA)",
+      "form_name": "Giấy khai thu hồi chứng nhận đăng ký, biển số xe (khi sang tên)",
+      "fill_mode": "both",
       "copies_count": 1,
-      "note": "Chọn biển số trực tiếp tại Phòng CSGT khi nộp hồ sơ. Biển số định danh mang tính cá nhân, không đổi.",
-      "download_url": null
+      "note": "Dùng khi chuyển quyền sở hữu xe để thu hồi biển số định danh cho chủ cũ.",
+      "download_url": "https://dichvucong.bocongan.gov.vn/"
     }
   ],
   "warnings": [
     {
       "type": "deadline",
-      "content": "Chuyển nhượng xe không đăng ký biến động trong vòn 30 ngày kể từ ngày có hợp đồng mua bán có chữ ký (công chứng không bắt buộc cho xe máy) bị xử phạt 400.000-600.000đ (Nghị định 06/2016/NĐ-CP, Liên đoàn người lái xe).",
-      "solution": "Đăng ký sang tên ngay sau khi mua. Mang hợp đồng mua bán, CCCD cả 2 bên, giấy đăng ký xe cũ đến Phòng CSGT."
+      "content": "Trong thời hạn 30 ngày kể từ ngày làm giấy tờ chuyển quyền sở hữu xe, chủ xe phải làm thủ tục thu hồi; quá thời hạn mà không làm thủ tục thu hồi hoặc không làm thủ tục sang tên sẽ bị xử phạt theo Điều 32 Nghị định 168/2024/NĐ-CP (phạt 800.000-1.000.000đ đối với cá nhân đi xe máy; 4.000.000-6.000.000đ đối với cá nhân đi ô tô).",
+      "solution": "Thực hiện thủ tục thu hồi đăng ký, biển số của chủ cũ và đăng ký sang tên ngay trong vòng 30 ngày kể từ ngày ký hợp đồng mua bán."
     },
     {
       "type": "penalty",
-      "content": "Đăng ký xe với thông tin sai (màu số, khối lượng, dung tích) bị phạt 800.000-1.500.000đ. Đăng ký xe không đúng nơi thường trú cũng bị phạt.",
-      "solution": "Kiểm tra kỹ thông tin trên giấy đăng ký xe cũ. Nếu thông tin sai, cần làm lại giấy tờ gốc trước khi sang tên."
+      "content": "Tự ý thay đổi màu sơn không đúng với chứng nhận đăng ký xe hoặc tự ý thay đổi khung, máy, hình dáng, kích thước xe bị xử phạt nghiêm theo Điều 32 Nghị định 168/2024/NĐ-CP.",
+      "solution": "Nếu muốn đổi màu sơn xe, phải làm thủ tục đổi chứng nhận đăng ký xe tại cơ quan đăng ký xe trước khi lưu thông."
     },
     {
       "type": "reject_reason",
-      "content": "Xe chưa nộp đủ thuế, hoặc có tranh chấp phá lý, hoặc xe đang bị tạm giữ/giữ theo quyết định của cơ quan có thẩm quyền sẽ không được sang tên/cấp mới.",
-      "solution": "Giải quyết xong mọi tranh chấp và nộp đủ thuế trước khi nộp hồ sơ. Nếu xe bị giữ, cần văn bản xác nhận của cơ quan giữ."
+      "content": "Chủ xe chưa hoàn thành nộp phạt vi phạm hành chính trong lĩnh vực giao thông đường bộ (phạt nguội), xe chưa nộp lệ phí trước bạ hoặc xe đang có tranh chấp/tạm giữ sẽ chưa được giải quyết đăng ký.",
+      "solution": "Tra cứu và hoàn tất nộp phạt vi phạm giao thông, nộp lệ phí trước bạ trước khi nộp hồ sơ đăng ký xe."
     }
   ],
   "after_procedure": {
-    "how_to_receive": "Nhận giấy đăng ký xe mới + biển số tại Phòng CSGT theo ngày hẹn (2-7 ngắy làm việc).",
-    "receipt_method": "Giấy chứng nhận đăng ký xe (bản gốc) + biển số. Nộp online: nhận qua bưu điện VNPost.",
-    "receive_by_other": "Ủy quyền nhận: giấy ủy quyền công chứng + CCCD cả 2 bên + giấy hẹn.",
-    "rejected_solution": "Từ chối nếu hồ sơ thiếu, xe có tranh chấp, hoặc chưa nộp đủ thuế. Giải quyết: bổ sung hồ sơ, giải quyết tranh chấp."
+    "how_to_receive": "Nhận biển số ngay sau khi hồ sơ hợp lệ; nhận Chứng nhận đăng ký xe trong không quá 02 ngày làm việc tại Phòng CSGT / Công an cấp xã hoặc qua bưu chính.",
+    "receipt_method": "Chứng nhận đăng ký xe bản gốc + biển số định danh (và tích hợp trên VNeID).",
+    "receive_by_other": "Ủy quyền nhận: văn bản ủy quyền có công chứng/chứng thực + Thẻ căn cước/CCCD cả 2 bên + giấy hẹn.",
+    "rejected_solution": "Từ chối nếu hồ sơ thiếu chứng từ nguồn gốc, số khung/số máy bị đục sửa, hoặc chưa hoàn thành nộp phạt nguội. Khắc phục theo hướng dẫn của cán bộ đăng ký xe."
   },
   "common_issues": [
     {
-      "problem": "Xe chưa nộp thuế trước bạ",
-      "solution": "Nộp thuế tại Chi cục Thuế hoặc online qua thuedientu.gdt.gov.vn. In chứng từ mang đi khi nộp hồ sơ sang tên.",
-      "impact": "Không thể sang tên cho đến khi có chứng từ nộp thuế"
+      "problem": "Xe chưa nộp lệ phí trước bạ",
+      "solution": "Kê khai và nộp lệ phí trước bạ trực tuyến qua Cổng Thuế điện tử hoặc ứng dụng eTax Mobile để lấy mã hồ sơ lệ phí trước bạ điện tử.",
+      "impact": "Không thể hoàn tất đăng ký/sang tên cho đến khi có dữ liệu nộp lệ phí trước bạ"
     },
     {
-      "problem": "Hợp đồng mua bán xe không có chữ ký của bên bán",
-      "solution": "Yêu cầu bên bán ký bổ sung. Nếu bên bán không hợp tác, thông qua cơ quan trung gian (nếu có) hoặc giải quyết tại UBND.",
-      "impact": "Hồ sơ không hợp lệ, không thể sang tên"
+      "problem": "Mua xe qua nhiều đời chủ nhưng không tìm được chủ cũ trên giấy đăng ký",
+      "solution": "Thực hiện thủ tục đăng ký sang tên xe đối với xe đã chuyển quyền sở hữu qua nhiều tổ chức, cá nhân theo Điều 31 Thông tư 79/2024/TT-BCA (cơ quan đăng ký xe sẽ niêm yết công khai 30 ngày trước khi giải quyết).",
+      "impact": "Thời gian giải quyết kéo dài thêm 30 ngày niêm yết xác minh"
     },
     {
-      "problem": "Xe đang bị ngân hàng thế chấp",
-      "solution": "Cần nhận văn bản đồng ý cho phép sang tên từ ngân hàng đang thế chấp. Hoặc trả nợ trước khi sang tên.",
-      "impact": "Bị từ chối sang tên nếu không có văn bản ngân hàng"
+      "problem": "Xe đang thế chấp tại ngân hàng",
+      "solution": "Cần giải chấp và có văn bản xóa đăng ký biện pháp bảo đảm hoặc văn bản đồng ý của ngân hàng trước khi làm thủ tục sang tên.",
+      "impact": "Bị từ chối sang tên nếu xe vẫn đang trong trạng thái thế chấp"
     },
     {
-      "problem": "CCCD chủ xe đã đổi tên, không khớp với giấy đăng ký xe",
-      "solution": "Đổi tên trên giấy đăng ký xe trước khi sang tên (nếu tên CCCD mới đúng) hoặc trình bày bằng chứng nhận đổi tên.",
-      "impact": "Bị từ chối nếu tên trong hồ sơ mâu thuẫn"
+      "problem": "Thông tin chủ xe thay đổi (đổi số định danh/CCCD hoặc địa chỉ cư trú)",
+      "solution": "Thực hiện thủ tục đổi chứng nhận đăng ký xe theo Thông tư 79/2024/TT-BCA, dữ liệu được đối soát trực tiếp với Cơ sở dữ liệu quốc gia về dân cư.",
+      "impact": "Cần cập nhật đồng bộ thông tin cư trú trước khi đăng ký"
     }
   ]
 }

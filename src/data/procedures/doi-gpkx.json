@@ -48,10 +48,10 @@
     },
     {
       "id": "health_cert",
-      "text": "Bạn đã có Giấy khám sức khỏe (không quá 6 tháng) chưa?",
+      "text": "Bạn đã có Giấy khám sức khỏe lái xe (trong thời hạn 12 tháng) chưa?",
       "options": [
         {
-          "label": "Đã có",
+          "label": "Đã có (hoặc đổi hạng A1, A, B1 được miễn)",
           "value": "yes"
         },
         {
@@ -59,7 +59,7 @@
           "value": "no"
         }
       ],
-      "impact": "Nếu chưa có, cần đến phòng khám/bệnh viện liên thông dữ liệu trước"
+      "impact": "Theo Thông tư 36/2024/TT-BYT, giấy khám sức khỏe có giá trị 12 tháng (miễn với hạng A1, A, B1)"
     }
   ],
   "rules": {
@@ -102,7 +102,7 @@
   },
   "documents": {
     "cccd": {
-      "label": "CCCD gắn chip (bản gốc)",
+      "label": "Thẻ căn cước / CCCD gắn chip (bản gốc hoặc VNeID Mức 2)",
       "badges": [
         "scan",
         "goc"
@@ -115,7 +115,7 @@
       ]
     },
     "health_cert": {
-      "label": "Giấy khám sức khỏe (≤6 tháng, cơ sở y tế tuyến huyện trở lên)",
+      "label": "Giấy khám sức khỏe của người lái xe (≤12 tháng theo TT 36/2024/TT-BYT; miễn đối với hạng A1, A, B1)",
       "badges": [
         "goc",
         "saoy"
@@ -128,19 +128,19 @@
       ]
     },
     "dshv_upgrade": {
-      "label": "Chứng chỉ hoàn thành khóa học nâng hạng",
+      "label": "Chứng chỉ hoàn thành khóa đào tạo nâng hạng",
       "badges": [
         "saoy"
       ]
     },
     "sogplx": {
-      "label": "Sổ GPLX (nếu có)",
+      "label": "Hồ sơ gốc GPLX (nếu có)",
       "badges": [
         "goc"
       ]
     },
     "fee": {
-      "label": "Lệ phí cấp đổi: 115.000đ",
+      "label": "Lệ phí cấp đổi: 115.000đ (online) / 135.000đ (trực tiếp)",
       "badges": [
         "fee"
       ]
@@ -148,112 +148,119 @@
   },
   "legal_bases": [
     {
-      "title": "Luật Giao thông đường bộ số 23/2008/QH12 của Quốc hội (sửa đổi, bổ sung 2018)",
-      "article": "Điều 59, Điều 60, Điều 65 — điều kiện cấp, đổi, thu hồi giấy phép lái xe",
-      "url": "https://vanban.chinhphu.vn/?pageid=27160&docid=81140",
-      "last_verified_date": "2026-09-20"
+      "title": "Luật Trật tự, an toàn giao thông đường bộ số 36/2024/QH15 của Quốc hội (có hiệu lực 01/01/2025)",
+      "article": "Điều 57, Điều 62 — phân hạng giấy phép lái xe; cấp, đổi, cấp lại và thu hồi giấy phép lái xe",
+      "url": "https://vanban.chinhphu.vn/?pageid=27160&docid=211252",
+      "last_verified_date": "2026-10-17"
     },
     {
-      "title": "Thông tư 01/2021/TT-BGTVT của Bộ Giao thông vận tải: Sửa đổi, bổ sung một số điều Thông tư 29/2015/TT-BGTVT về cấp, đổi GPLX",
-      "article": "Điều 5, Điều 11, Điều 13 — thủ tục cấp đổi GPLX, hồ sơ, thời hạn giải quyết",
-      "url": "https://vanban.chinhphu.vn/default.aspx?pageid=27160&docid=202681",
-      "last_verified_date": "2026-09-20"
+      "title": "Thông tư 12/2025/TT-BCA của Bộ Công an: Quy định về sát hạch, cấp giấy phép lái xe; cấp, sử dụng giấy phép lái xe quốc tế (có hiệu lực 01/03/2025)",
+      "article": "Điều 19, Điều 20, Điều 21 — thủ tục đổi, cấp lại giấy phép lái xe do ngành Công an thực hiện",
+      "url": "https://vanban.chinhphu.vn/?pageid=27160&docid=213015",
+      "last_verified_date": "2026-10-17"
     },
     {
-      "title": "Thông tư 154/2025/TT-BTC của Bộ Tài chính: Quy định mức thu, chế độ thu, nộp phí sát hạch lái xe, lệ phí cấp bằng GPLX",
-      "article": "Điều 2 — mức thu 115.000đ/lần cấp đổi GPLX",
+      "title": "Thông tư 36/2024/TT-BYT của Bộ Y tế: Quy định về tiêu chuẩn sức khỏe, việc khám sức khỏe đối với người lái xe (có hiệu lực 01/01/2025)",
+      "article": "Điều 6 — Giấy khám sức khỏe của người lái xe có giá trị sử dụng trong 12 tháng kể từ ngày ký kết luận",
+      "url": "https://vanban.chinhphu.vn/?pageid=27160&docid=212088",
+      "last_verified_date": "2026-10-17"
+    },
+    {
+      "title": "Thông tư 154/2025/TT-BTC của Bộ Tài chính: Quy định mức thu, chế độ thu, nộp phí sát hạch lái xe, lệ phí cấp bằng, chứng chỉ được hoạt động trên các loại phương tiện",
+      "article": "Biểu mức thu — lệ phí cấp mới, cấp lại, cấp đổi GPLX (115.000đ trực tuyến / 135.000đ trực tiếp)",
       "url": "https://vanban.chinhphu.vn/?pageid=27160&docid=216544",
-      "last_verified_date": "2026-09-20"
+      "last_verified_date": "2026-10-17"
     },
     {
-      "title": "Nghị định 59/2022/NĐ-CP của Chính phủ: Quy định về định danh và xác thực điện tử",
-      "article": "Điều 14, Điều 15 — VNeID Mức 2, xác thực điện tử dùng cho thủ tục hành chính",
-      "url": "https://vanban.chinhphu.vn/?pageid=27160&docid=206490",
-      "last_verified_date": "2026-09-20"
+      "title": "Nghị định 69/2024/NĐ-CP của Chính phủ: Quy định về định danh và xác thực điện tử (thay thế Nghị định 59/2022/NĐ-CP từ 01/07/2024)",
+      "article": "Điều 14, Điều 29 — sử dụng tài khoản định danh điện tử VNeID Mức 2 và tích hợp GPLX điện tử",
+      "url": "https://vanban.chinhphu.vn/?pageid=27160&docid=210553",
+      "last_verified_date": "2026-10-17"
     }
   ],
   "officeInfo": {
-    "where": "Phòng Cấp phép lái xe - Sở GTVT hoặc Trung tâm dịch vụ công cấp tỉnh",
+    "where": "Phòng Cảnh sát giao thông (CSGT) Công an cấp tỉnh, Công an cấp xã/phường được phân cấp tiếp nhận hoặc Trung tâm Phục vụ Hành chính công",
     "officeLevel": "province",
-    "officePrefix": "Sở Giao thông vận tải",
-    "hours": "Thứ 2 - Thứ 6: 7:30 - 11:30, 13:30 - 16:30",
+    "officePrefix": "Phòng CSGT - Công an",
+    "hours": "Thứ 2 - Thứ 6: 7:30 - 11:30, 13:30 - 16:30; Sáng Thứ 7: 7:30 - 11:30",
     "lunchNote": "Nghỉ trưa 11:30 - 13:30",
     "bestTime": "Sáng sớm Thứ 3 - Thứ 4 (vắng nhất, xếp hàng nhanh)",
     "busyTime": "Thứ 2 và sáng Thứ 7 (đông nhất do người làm việc nộp ngoài giờ)",
     "payment": [
       "Tiền mặt",
       "Chuyển khoản QR",
-      "Quẹt thẻ POS"
+      "Thanh toán trực tuyến trên Cổng DVC"
     ],
     "tips": [
-      "Nếu chưa có VNeID Mức 2, nên đăng ký trước tại Công an cấp xã để tránh phải xác thực thêm.",
-      "Giấy khám sức khỏe lấy tại phòng khám tuyến huyện, mất ~100k + 30 phút.",
-      "Nên photo sẵn 1 bộ bản sao CCCD đề phòng yêu cầu nộp kèm."
+      "Từ 01/03/2025, thẩm quyền cấp đổi GPLX chuyển từ Sở GTVT sang lực lượng Công an (Cục CSGT, Phòng CSGT Công an tỉnh và Công an cấp xã/phường).",
+      "Giấy khám sức khỏe lái xe điện tử có hiệu lực 12 tháng (Thông tư 36/2024/TT-BYT). Khi khám tại cơ sở y tế liên thông, chỉ cần đọc mã số giấy khám sức khỏe khi nộp online.",
+      "Đổi GPLX hạng A1, A, B1 không yêu cầu Giấy khám sức khỏe.",
+      "Sau khi hồ sơ được duyệt, GPLX mới được cập nhật tự động trên ứng dụng VNeID sau 3 ngày làm việc."
     ]
   },
-  "data_source": "Cổng Dịch vụ công Quốc gia (dichvucong.gov.vn) / Cổng Pháp luật quốc gia (phapluat.gov.vn)",
-  "last_updated": "02/09/2026",
+  "data_source": "Cổng Dịch vụ công đổi GPLX Bộ Công an (dvc-gplx.csgt.bocongan.gov.vn) / Cổng Dịch vụ công Quốc gia",
+  "last_updated": "17/10/2026",
   "difficulty_level": "Trung bình",
   "estimated_time_days": 5,
   "execution_methods": [
-    "Online (Cổng DVC Quốc gia / dvc-gplx.csgt.bocongan.gov.vn)",
-    "Trực tiếp (Sở GTVT / Trung tâm Hành chính công)"
+    "Online (dvc-gplx.csgt.bocongan.gov.vn / Cổng DVC Quốc gia)",
+    "Trực tiếp (Phòng CSGT Công an cấp tỉnh / Công an cấp xã / Trung tâm Hành chính công)"
   ],
   "feeOnline": 115000,
   "feeOffline": 135000,
   "forms": [
     {
-      "form_code": "Theo Thông tư 01/2021/TT-BGTVT",
-      "form_name": "Đơn yêu cầu cấp đổi Giấy phép lái xe",
+      "form_code": "Phụ lục II - Thông tư 12/2025/TT-BCA",
+      "form_name": "Đơn đề nghị đổi (cấp lại) giấy phép lái xe",
       "fill_mode": "both",
       "copies_count": 1,
-      "note": "Online: điền trên dvc-gplx.csgt.bocongan.gov.vn hoặc Cổng DVC. Offline: lấy mẫu tại Sở GTVT/Trung tâm Dịch vụ công.",
+      "note": "Online: khai trực tiếp trên dvc-gplx.csgt.bocongan.gov.vn. Offline: lấy mẫu tại Phòng CSGT Công an cấp tỉnh, Công an cấp xã hoặc Trung tâm Phục vụ Hành chính công.",
       "download_url": "https://dvc-gplx.csgt.bocongan.gov.vn/"
     }
   ],
   "warnings": [
     {
       "type": "deadline",
-      "content": "GPLX hết hạn quá 1 năm mà không đổi mới bị xử phạt 2.000.000-3.000.000đ (Nghị định 46/2016/NĐ-CP). GPLX hết hạn dưới 1 năm: phạt nhẹ hơn nhưng vẫn bị kiểm tra.",
-      "solution": "Đổi GPLX trước khi hết hạn ít nhất 30 ngày. Mang GPLX cũ, giấy khám sức khỏe, CCCD đi Sở GTVT/Trung tâm DVC."
+      "content": "Theo Thông tư 12/2025/TT-BCA, GPLX ô tô quá hạn dù chỉ 1 ngày đến dưới 1 năm phải sát hạch lại lý thuyết; quá hạn từ 1 năm trở lên phải sát hạch lại cả lý thuyết và thực hành. Điều khiển ô tô dùng GPLX quá hạn dưới 1 năm bị phạt 8.000.000-10.000.000đ, quá hạn từ 1 năm trở lên phạt 18.000.000-20.000.000đ (Điều 18 Nghị định 168/2024/NĐ-CP).",
+      "solution": "Chủ động đổi GPLX trước khi hết hạn ít nhất 15-30 ngày qua Cổng DVC Cục CSGT hoặc tại Phòng CSGT / Công an cấp xã."
     },
     {
       "type": "reject_reason",
-      "content": "Người nộp không đủ điều kiện sức khỏe theo quy định (ví dụ: thị lực kém, bệnh tim, động kinh không kiểm soát) sẽ không được cấp/đổi GPLX.",
-      "solution": "Khám sức khỏe tại cơ sở y tế có liên kết với hệ thống quốc gia. Nếu có bệnh nền, cần giấy xác nhận của bác sĩ chuyên khoa về khả năng lái xe an toàn."
+      "content": "Người nộp không đủ điều kiện sức khỏe theo Thông tư 36/2024/TT-BYT hoặc đang có quyết định tạm giữ/tước quyền sử dụng GPLX trên hệ thống xử phạt vi phạm giao thông sẽ bị từ chối cấp đổi.",
+      "solution": "Hoàn thành chấp hành quyết định xử phạt vi phạm hành chính trước khi nộp hồ sơ đổi GPLX; khám sức khỏe tại cơ sở y tế liên thông dữ liệu."
     },
     {
       "type": "penalty",
-      "content": "Lái xe không có GPLX hoặc GPLX không tương ứng với phương tiện đang điều khiển bị phạt 100.000-200.000đ (Nghị định 46/2016/NĐ-CP, phạt hành chính giao thông đường bộ).",
-      "solution": "Luôn mang GPLX bản gốc (hoặc bản số trên VNeID Mức 2) khi lái xe. Kiểm tra hạng GPLX phù hợp với loại xe."
+      "content": "Lái xe không có GPLX hoặc GPLX không phù hợp với loại xe đang điều khiển bị phạt từ 2.000.000-4.000.000đ (xe mô tô ≤125cc), 6.000.000-8.000.000đ (mô tô >125cc) và 18.000.000-20.000.000đ (xe ô tô) theo Điều 18 Nghị định 168/2024/NĐ-CP.",
+      "solution": "Luôn mang GPLX bản vật lý hoặc xuất trình GPLX điện tử đã tích hợp trên ứng dụng VNeID Mức 2 khi tham gia giao thông."
     }
   ],
   "after_procedure": {
-    "how_to_receive": "Nhận GPLX mới tại Sở GTVT/Trung tâm DVC theo ngày hẹn (thường 5-7 ngắy làm việc).",
-    "receipt_method": "GPLX bản giấy mới (có ảnh, hạn 10 năm). Nộp online: có thể chọn nhận qua bưu điện.",
-    "receive_by_other": "Ủy quyền nhận: giấy ủy quyền công chứng + CCCD cả 2 bên + giấy hẹn nhận.",
-    "rejected_solution": "Từ chối nếu sức khỏe không đạt, GPLX cũ bị tẩy sửa, hoặc có tranh chấpGPLX. Giải quyết: khám lại sức khỏe, làm lại giấy tờ gốc."
+    "how_to_receive": "Nhận GPLX bản vật lý tại Phòng CSGT / điểm tiếp nhận theo ngày hẹn (5 ngày làm việc) hoặc qua bưu chính; bản điện tử được cập nhật trên VNeID sau 3 ngày làm việc.",
+    "receipt_method": "Thẻ GPLX PET mới (theo mẫu của Bộ Công an) và GPLX điện tử tích hợp trên VNeID.",
+    "receive_by_other": "Ủy quyền nhận: văn bản ủy quyền có chứng thực + Thẻ căn cước/CCCD cả 2 bên + giấy hẹn.",
+    "rejected_solution": "Hệ thống hoặc cán bộ tiếp nhận thông báo rõ lý do từ chối (chưa nộp phạt nguội, giấy khám sức khỏe chưa liên thông, ảnh không đúng chuẩn) để người dân bổ sung."
   },
   "common_issues": [
     {
-      "problem": "Sức khỏe không đạt, đang điều trị bệnh tim",
-      "solution": "Cần giấy xác nhận của bác sĩ chuyên khoa tim mạch về khả năng điều khiển xe an toàn. Khám tại bệnh viện tuyến tỉnh trở lên.",
-      "impact": "Không được cấp GPLX nếu không có giấy xác nhận"
+      "problem": "Sức khỏe có bệnh lý chuyên khoa cần đánh giá",
+      "solution": "Khám tại cơ sở y tế đủ điều kiện khám sức khỏe lái xe theo Thông tư 36/2024/TT-BYT để bác sĩ chuyên khoa kết luận đủ điều kiện điều khiển phương tiện theo hạng tương ứng.",
+      "impact": "Không được cấp đổi GPLX nếu kết luận sức khỏe không đạt"
     },
     {
-      "problem": "GPLX cũ bị mất, không có bản sao",
-      "solution": "Làm lại GPLX tại Sở GTVT/Trung tâm Dịch vụ công. Cần khai báo mất + CCCD bản gốc. Thời gian: ~5 ngày làm việc.",
-      "impact": "Tốn thêm thời gian trước khi đổi GPLX"
+      "problem": "GPLX cũ bị mất, không còn bản vật lý",
+      "solution": "Nộp hồ sơ đề nghị cấp lại GPLX theo Thông tư 12/2025/TT-BCA tại Phòng CSGT hoặc Công an cấp xã (không cần giấy xác nhận của cơ quan công an nơi mất).",
+      "impact": "Thời gian tra cứu, xác minh dữ liệu và cấp lại theo quy định"
     },
     {
-      "problem": "GPLX đã hết hạn nhưng đang ở nước ngoài",
-      "solution": "Liên hệ Đại sứ quán/Thị sự quán Việt Nam để được hướng dẫn. Có thể ủy quyền người thân đổi giúp với giấy ủy quyền công chứng + hợp pháp hóa.",
-      "impact": "Thủ tục phức tạp hơn, cần hợp pháp hóa giấy tờ"
+      "problem": "GPLX sắp hết hạn nhưng đang ở nước ngoài",
+      "solution": "Nếu đã có VNeID Mức 2 và giấy khám sức khỏe điện tử hợp lệ, có thể nộp trực tuyến; hoặc thực hiện đổi khi về nước (lưu ý nếu quá hạn sẽ phải thi lại lý thuyết).",
+      "impact": "Quá hạn sử dụng sẽ phải sát hạch lại lý thuyết/thực hành"
     },
     {
-      "problem": "Không có VNeID Mức 2 và không muốn đăng ký",
-      "solution": "Vẫn có thể làm trực tiếp tại cơ quan có thẩm quyền. Chỉ là online bắt buộc có VNeID Mức 2, trực tiếp thì không bắt buộc.",
-      "impact": "Không được giảm 15-20% phí khi nộp trực tiếp"
+      "problem": "Không có VNeID Mức 2 để nộp online",
+      "solution": "Vẫn có thể đến nộp trực tiếp tại Phòng CSGT Công an cấp tỉnh hoặc Công an cấp xã được phân cấp.",
+      "impact": "Lệ phí nộp trực tiếp là 135.000đ (online là 115.000đ)"
     }
   ]
 }

@@ -176,7 +176,7 @@
       ]
     },
     "land_tax_decl": {
-      "label": "Tờ khai thuế TNCN từ chuyển nhượng BĐS (mẫu 02/CK-TNCN) — nộp tại Chi cục Thuế cấp quận/huyện",
+      "label": "Tờ khai thuế TNCN từ chuyển nhượng BĐS (Mẫu 03/BĐS-TNCN) + Tờ khai lệ phí trước bạ (Mẫu 01/LPTB)",
       "badges": [
         "scan"
       ]
@@ -188,7 +188,7 @@
       ]
     },
     "spouse_doc": {
-      "label": "Giấy chứng nhận kết hôn + CCCD của vợ/chồng (nếu đất là tài sản chung)",
+      "label": "Giấy chứng nhận kết hôn + Thẻ căn cước/CCCD của vợ/chồng (nếu đất là tài sản chung)",
       "badges": [
         "saoy"
       ]
@@ -208,44 +208,44 @@
   },
   "legal_bases": [
     {
-      "title": "Luật Đất đai số 31/2024/QH15 của Quốc hội (có hiệu lực 01/01/2025)",
-      "article": "Điều 133 — đăng ký biến động (thời hạn 30 ngày từ ngày công chứng); Điều 135 — đăng ký đất đai; Điều 138 — đăng ký biến động; Điều 139 — chuyển quyền sử dụng đất; Điều 27 — công chứng hợp đồng chuyển nhượng",
+      "title": "Luật Đất đai số 31/2024/QH15 của Quốc hội (có hiệu lực từ 01/08/2024 theo Luật số 43/2024/QH15)",
+      "article": "Điều 133 — đăng ký biến động (thời hạn 30 ngày kể từ ngày có biến động); Điều 135 — cấp GCNQSDĐ; Điều 27 — công chứng, chứng thực hợp đồng chuyển nhượng, tặng cho",
       "url": "https://vanban.chinhphu.vn/?pageid=27160&docid=211189",
-      "last_verified_date": "2026-09-20"
+      "last_verified_date": "2026-10-17"
     },
     {
-      "title": "Nghị định 151/2025/NĐ-CP của Chính phủ: Quy định về phân định thẩm quyền của chính quyền địa phương 02 cấp",
-      "article": "Điều 5, Điều 10 — UBND cấp xã được tiếp nhận hồ sơ sang tên cho cá nhân/hộ gia đình; thời gian giải quyết 08 ngày làm việc; Mẫu số 18 thay thế Mẫu 11/ĐK",
+      "title": "Nghị định 151/2025/NĐ-CP của Chính phủ: Quy định về phân định thẩm quyền của chính quyền địa phương 02 cấp trong lĩnh vực đất đai",
+      "article": "Điều 5, Điều 10 — UBND cấp xã được tiếp nhận hồ sơ sang tên cho cá nhân/cộng đồng dân cư; thời gian giải quyết 08 ngày làm việc; Mẫu số 18 thay thế Mẫu 11/ĐK",
       "url": "https://vanban.chinhphu.vn/?pageid=27160&docid=213927",
-      "last_verified_date": "2026-09-20"
+      "last_verified_date": "2026-10-17"
     },
     {
-      "title": "Nghị định 101/2024/NĐ-CP của Chính phủ: Quy định về điều tra cơ bản đất đai; đăng ký, cấp Giấy chứng nhận quyền sử dụng đất",
-      "article": "Điều 22, Điều 23 — thủ tục đăng ký biến động, hồ sơ, thành phần",
+      "title": "Nghị định 101/2024/NĐ-CP của Chính phủ: Quy định về điều tra cơ bản đất đai; đăng ký, cấp Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất",
+      "article": "Điều 29, Điều 30, Điều 37 — hồ sơ, trình tự, thủ tục đăng ký biến động đất đai",
       "url": "https://vanban.chinhphu.vn/?pageid=27160&docid=210791",
-      "last_verified_date": "2026-09-20"
+      "last_verified_date": "2026-10-17"
     },
     {
-      "title": "Nghị định 126/2020/NĐ-CP của Chính phủ: Quy định chi tiết một số điều của Luật Quản lý thuế (thuế TNCN từ chuyển nhượng BĐS)",
-      "article": "Điều 19 — thuế TNCN 2% giá chuyển nhượng; nộp tại Chi cục Thuế cấp huyện trước khi đăng ký biến động",
-      "url": "https://vanban.chinhphu.vn/?pageid=27160&docid=201402",
-      "last_verified_date": "2026-09-20"
+      "title": "Nghị định 123/2024/NĐ-CP của Chính phủ: Quy định về xử phạt vi phạm hành chính trong lĩnh vực đất đai",
+      "article": "Điều 16 — xử phạt hành vi không đăng ký biến động đất đai trong thời hạn 30 ngày (phạt 2.000.000đ - 3.000.000đ đối với cá nhân)",
+      "url": "https://vanban.chinhphu.vn/?pageid=27160&docid=211618",
+      "last_verified_date": "2026-10-17"
     },
     {
-      "title": "Nghị định 10/2022/NĐ-CP của Chính phủ: Quy định về lệ phí trước bạ",
-      "article": "Điều 3 — lệ phí trước bạ 0,5% giá trị đất (cá nhân); nộp tại Chi cục Thuế trước khi sang tên",
+      "title": "Nghị định 10/2022/NĐ-CP và Thông tư 80/2021/TT-BTC: Quy định về lệ phí trước bạ (0,5%) và khai thuế TNCN từ chuyển nhượng BĐS (2%)",
+      "article": "Lệ phí trước bạ 0,5% giá trị nhà đất; thuế TNCN 2% giá chuyển nhượng (miễn giữa vợ chồng, cha mẹ - con, anh chị em ruột)",
       "url": "https://vanban.chinhphu.vn/?pageid=27160&docid=205090",
-      "last_verified_date": "2026-09-20"
+      "last_verified_date": "2026-10-17"
     },
     {
-      "title": "Nghị định 59/2022/NĐ-CP của Chính phủ: Quy định về định danh và xác thực điện tử",
-      "article": "Điều 14, Điều 15 — VNeID Mức 2 dùng cho nộp hồ sơ trực tuyến đất đai",
-      "url": "https://vanban.chinhphu.vn/?pageid=27160&docid=206490",
-      "last_verified_date": "2026-09-20"
+      "title": "Nghị định 69/2024/NĐ-CP của Chính phủ: Quy định về định danh và xác thực điện tử (thay thế Nghị định 59/2022/NĐ-CP)",
+      "article": "Điều 14, Điều 15 — sử dụng VNeID Mức 2 nộp hồ sơ trực tuyến và thực hiện nghĩa vụ tài chính đất đai",
+      "url": "https://vanban.chinhphu.vn/?pageid=27160&docid=210553",
+      "last_verified_date": "2026-10-17"
     }
   ],
   "officeInfo": {
-    "where": "Bước 1: Công chứng hợp đồng → Bước 2: Nộp thuế tại Chi cục Thuế → Bước 3: Nộp hồ sơ tại một trong các nơi: UBND cấp xã (Bộ phận Một cửa) / Văn phòng đăng ký đất đai cấp tỉnh / Chi nhánh Văn phòng đăng ký đất đai",
+    "where": "Bước 1: Công chứng hợp đồng → Bước 2: Liên thông thuế điện tử / Cơ quan Thuế → Bước 3: Nộp hồ sơ tại một trong các nơi: Bộ phận Một cửa UBND cấp xã / Văn phòng đăng ký đất đai / Chi nhánh Văn phòng đăng ký đất đai",
     "officeLevel": "ward",
     "officePrefix": "Văn phòng đăng ký đất đai",
     "hours": "Thứ 2 - Thứ 6: 8:00 - 11:30, 13:30 - 17:00",
@@ -255,47 +255,43 @@
     "payment": [
       "Tiền mặt",
       "Chuyển khoản QR",
-      "Quẹt thẻ POS"
+      "Thanh toán trực tuyến trên Cổng DVC / eTax Mobile"
     ],
     "multi_step": [
       {
         "step": 1,
-        "title": "Công chứng hợp đồng",
-        "where": "Văn phòng công chứng tư nhân hoặc UBND cấp xã (chứng thực)",
-        "note": "Hợp đồng chuyển nhượng BĐS bắt buộc công chứng theo Điều 27 Luật Đất đai 2024. Cả hai bên mang CCCD + sổ đỏ gốc đến. Phí công chứng: ~0,5-1% giá trị hợp đồng."
+        "title": "Công chứng hoặc chứng thực hợp đồng",
+        "where": "Tổ chức hành nghề công chứng hoặc Chủ tịch UBND cấp xã (chứng thực)",
+        "note": "Hợp đồng chuyển nhượng, tặng cho QSDĐ của cá nhân bắt buộc phải công chứng hoặc chứng thực (khoản 3 Điều 27 Luật Đất đai 2024). Hai bên mang Thẻ căn cước/CCCD + Sổ đỏ gốc + Giấy xác nhận tình trạng hôn nhân/Giấy đăng ký kết hôn đến ký."
       },
       {
         "step": 2,
-        "title": "Kê khai và nộp thuế",
-        "where": "Chi cục Thuế cấp quận/huyện nơi có đất",
-        "note": "Nộp tờ khai thuế TNCN (2% giá chuyển nhượng) + lệ phí trước bạ (0,5% giá trị đất). Có thể nộp online qua Cổng Thuế điện tử (thuedientu.gdt.gov.vn), in chứng từ."
+        "title": "Kê khai và nộp thuế, lệ phí trước bạ",
+        "where": "Liên thông điện tử qua Văn phòng đăng ký đất đai hoặc Cổng Thuế điện tử / Cơ quan Thuế khu vực",
+        "note": "Nộp tờ khai thuế TNCN (2% giá chuyển nhượng) + lệ phí trước bạ (0,5% giá trị đất). Sau khi có Thông báo nộp tiền của cơ quan thuế, có thể nộp ngay trên Cổng DVC Quốc gia hoặc ứng dụng eTax Mobile."
       },
       {
         "step": 3,
         "title": "Nộp hồ sơ đăng ký biến động",
-        "where": "Cá nhân/hộ gia đình: chọn 1 trong — (a) Bộ phận Một cửa UBND cấp xã, (b) Văn phòng đăng ký đất đai cấp tỉnh, (c) Chi nhánh VPĐKĐĐ tại địa phương. Tổ chức/doanh nghiệp: VPĐKĐĐ cấp tỉnh.",
-        "note": "Nộp đủ hồ sơ: sổ đỏ gốc + hợp đồng công chứng + chứng từ nộp thuế + Mẫu số 18. Thời hạn giải quyết: tối đa 08 ngày làm việc (NĐ 151/2025). Thời hạn phải đăng ký: 30 ngày từ ngày công chứng hợp đồng (Điều 133 Luật Đất đai 2024)."
+        "where": "Cá nhân: chọn 1 trong — (a) Bộ phận Một cửa UBND cấp xã, (b) Văn phòng đăng ký đất đai cấp tỉnh, (c) Chi nhánh VPĐKĐĐ. Tổ chức/doanh nghiệp: VPĐKĐĐ cấp tỉnh.",
+        "note": "Nộp đủ hồ sơ: Sổ đỏ gốc + hợp đồng công chứng + Đơn đăng ký biến động (Mẫu số 18 kèm NĐ 151/2025/NĐ-CP) + chứng từ hoàn thành nghĩa vụ tài chính. Thời hạn giải quyết: tối đa 08 ngày làm việc (không tính thời gian thực hiện nghĩa vụ tài chính). Thời hạn phải đăng ký: 30 ngày kể từ ngày công chứng hợp đồng (Điều 133 Luật Đất đai 2024)."
       }
     ],
     "tips": [
-      "Quy trình 3 BƯỚC: (1) Công chứng hợp đồng → (2) Nộp thuế tại Chi cục Thuế → (3) Nộp hồ sơ. Không thể bỏ bước nào.",
-      "Bước 2 (nộp thuế) có thể làm online qua Cổng Thuế điện tử (thuedientu.gdt.gov.vn) — in chứng từ mang đi bước 3, tránh xếp hàng 2 nơi.",
-      "Hợp đồng chuyển nhượng BĐS bắt buộc công chứng (Điều 27 Luật Đất đai 2024) — công chứng tại VP công chứng (nhanh hơn) hoặc UBND xã (rẻ hơn nhưng chậm).",
-      "Từ 01/7/2025 (Nghị định 151/2025): Cá nhân/hộ gia đình CÓ THỂ nộp hồ sơ tại UBND cấp xã (Bộ phận Một cửa) — tiện nhất, không phải lên huyện/tỉnh.",
-      "Tách thửa/gộp thửa cần thuê đơn vị đo đạc có giấy phép hành nghề lập bản vẽ địa chính — hỏi Văn phòng đăng ký đất đai giới thiệu hoặc tự tìm.",
-      "Nếu có VNeID Mức 2, có thể nộp hồ sơ online qua Cổng DVC Quốc gia, nhận kết quả qua bưu điện — giảm 15-20% lệ phí đăng ký.",
-      "Thừa kế không phải nộp thuế TNCN (miễn theo Luật Thuế TNCN), nhưng cần văn bản phân chia di sản có công chứng hoặc quyết định Tòa án.",
-      "Nên photo sẵn 2-3 bộ bản sao CCCD + sổ đỏ đề phòng yêu cầu nộp kèm.",
-      "Thời hạn đăng ký biến động: 30 ngày kể từ ngày hợp đồng được công chứng/chứng thực. Quá hạn bị xử phạt hành chính."
+      "Quy trình 3 BƯỚC: (1) Công chứng hợp đồng → (2) Nộp hồ sơ đăng ký & liên thông thuế → (3) Nộp thuế trên eTax Mobile/Cổng DVC và nhận Sổ đỏ.",
+      "Hiện nay hầu hết các địa phương đã áp dụng quy trình LIÊN THÔNG THUẾ: Bạn nộp cả bộ hồ sơ đăng ký biến động + tờ khai thuế tại Bộ phận Một cửa, cơ quan đăng ký đất đai sẽ tự chuyển phiếu thông tin sang cơ quan Thuế.",
+      "Từ 01/07/2025 (Nghị định 151/2025/NĐ-CP): Cá nhân có thể nộp hồ sơ tại Bộ phận Một cửa UBND cấp xã — thuận tiện theo mô hình chính quyền địa phương 2 cấp.",
+      "Tặng cho hoặc thừa kế nhà đất giữa: vợ với chồng; cha đẻ, mẹ đẻ với con đẻ; cha nuôi, mẹ nuôi với con nuôi; cha chồng, mẹ chồng với con dâu; cha vợ, mẹ vợ với con rể; ông bà với cháu; anh chị em ruột với nhau được MIỄN cả thuế TNCN (2%) và lệ phí trước bạ (0,5%).",
+      "Thời hạn đăng ký biến động: trong vòng 30 ngày kể từ ngày hợp đồng chuyển nhượng/tặng cho có hiệu lực công chứng. Quá hạn bị phạt 2.000.000 - 3.000.000đ theo Điều 16 Nghị định 123/2024/NĐ-CP."
     ]
   },
-  "data_source": "Cổng Dịch vụ công Quốc gia (dichvucong.gov.vn) / Cổng Thuế điện tử (thuedientu.gdt.gov.vn) / Bộ Tài nguyên và Môi trường",
-  "last_updated": "17/09/2026",
+  "data_source": "Cổng Dịch vụ công Quốc gia (dichvucong.gov.vn) / Bộ Nông nghiệp và Môi trường / Cục Thuế",
+  "last_updated": "17/10/2026",
   "difficulty_level": "Khó",
   "estimated_time_days": 8,
   "execution_methods": [
-    "Online (Cổng DVC Quốc gia — nộp hồ sơ)",
-    "Trực tiếp (Văn phòng đăng ký đất đai + Chi cục Thuế)"
+    "Online (Cổng DVC Quốc gia — nộp hồ sơ và thanh toán nghĩa vụ tài chính)",
+    "Trực tiếp (Bộ phận Một cửa UBND cấp xã / Văn phòng đăng ký đất đai)"
   ],
   "feeOnline": 50000,
   "feeOffline": 100000,
@@ -305,66 +301,66 @@
       "form_name": "Đơn đăng ký biến động đất đai, tài sản gắn liền với đất",
       "fill_mode": "both",
       "copies_count": 1,
-      "note": "Ban hành kèm Nghị định 151/2025/NĐ-CP. Online: tải từ dichvucong.gov.vn. Offline: lấy tại UBND xã/VPĐKĐĐ.",
+      "note": "Ban hành kèm Nghị định 151/2025/NĐ-CP. Online: khai trên Cổng DVC. Offline: lấy tại Bộ phận Một cửa UBND cấp xã / VPĐKĐĐ.",
       "download_url": "https://dichvucong.gov.vn/p/home/dvc-trang-chu.html"
     },
     {
-      "form_code": "Mẫu 02/CK-TNCN",
-      "form_name": "Tờ khai thuế TNCN từ chuyển nhượng BĐS",
+      "form_code": "Mẫu 03/BĐS-TNCN & 01/LPTB",
+      "form_name": "Tờ khai thuế TNCN từ chuyển nhượng BĐS và Tờ khai lệ phí trước bạ",
       "fill_mode": "both",
       "copies_count": 1,
-      "note": "Nộp tại Chi cục Thuế trước khi sang tên. Online: thuedientu.gdt.gov.vn.",
+      "note": "Ban hành kèm Thông tư 80/2021/TT-BTC. Nộp kèm hồ sơ liên thông hoặc khai trực tuyến.",
       "download_url": "https://thuedientu.gdt.gov.vn/"
     }
   ],
   "warnings": [
     {
       "type": "deadline",
-      "content": "Đăng ký biến động đất đai phải thực hiện TRONG VÒNG 30 NGÀY kể từ ngày hợp đồng chuyển nhượng được công chứng/chứng thực (Điều 133 Luật Đất đai 2024). Quá hạn bị xử phạt 100.000-500.000đ (Nghị định 168/2024/NĐ-CP).",
-      "solution": "Công chứng hợp đồng trước, sau đó nộp thuế, cuối cùng mới nộp hồ sơ đăng ký. Đảm bảo hoàn tất trong vòng 30 ngày."
+      "content": "Đăng ký biến động đất đai phải thực hiện TRONG VÒNG 30 NGÀY kể từ ngày hợp đồng chuyển nhượng, tặng cho được công chứng/chứng thực (khoản 3 Điều 133 Luật Đất đai 2024). Quá hạn bị phạt tiền từ 2.000.000đ đến 3.000.000đ đối với cá nhân (khoản 2 Điều 16 Nghị định 123/2024/NĐ-CP).",
+      "solution": "Nộp hồ sơ đăng ký biến động ngay sau khi công chứng hợp đồng để đảm bảo trong thời hạn 30 ngày."
     },
     {
       "type": "penalty",
-      "content": "Chuyển nhượng đất không đăng ký biến động: hợp đồng vẫn có hiệu lực dân sự nhưng không có hiệu lực đối với cơ quan nhà nước. Bên mua không được cấp GCNQSDĐ mới, không thể thế chấp ngân hàng.",
-      "solution": "Hoàn tất ngay thủ tục đăng ký biến động. Nếu quá 30 ngày, liên hệ UBND cấp xã/Văn phòng đăng ký đất đai để được hướng dẫn."
+      "content": "Kê khai giá chuyển nhượng trên hợp đồng thấp hơn thực tế nhằm trốn thuế có thể bị cơ quan Thuế ấn định thuế, truy thu thuế và xử phạt hành vi trốn thuế (từ 1 đến 3 lần số tiền thuế trốn) hoặc truy cứu trách nhiệm hình sự theo Điều 200 Bộ luật Hình sự.",
+      "solution": "Kê khai đúng giá giao dịch thực tế trong hợp đồng chuyển nhượng và tờ khai thuế."
     },
     {
       "type": "reject_reason",
-      "content": "Hợp đồng chuyển nhượng đất đai KHÔNG được công chứng/chứng thực theo quy định (Điều 27 Luật Đất đai 2024) bị từ chối. Trường hợp: đất nông nghiệp đang trong thời gian chuyển đổi, đất bị tranh chấp chưa giải quyết.",
-      "solution": "Công chứng hợp đồng tại văn phòng công chứng hoặc UBND cấp xã trước khi nộp hồ sơ. Giải quyết xong tranh chấp (nếu có) mới đăng ký."
+      "content": "Đất đang có tranh chấp, đang bị kê biên/áp dụng biện pháp khẩn cấp tạm thời để bảo đảm thi hành án, đã có thông báo thu hồi đất, hoặc hết thời hạn sử dụng đất mà chưa được gia hạn (Điều 45 Luật Đất đai 2024) sẽ bị từ chối đăng ký biến động.",
+      "solution": "Kiểm tra kỹ điều kiện thực hiện quyền của người sử dụng đất theo Điều 45 Luật Đất đai 2024 trước khi ký hợp đồng công chứng."
     },
     {
       "type": "risk",
-      "content": "Nộp hồ sơ tại UBND cấp xã kể từ 01/7/2025 (Nghị định 151/2025/NĐ-CP) chỉ áp dụng cho cá nhân/hộ gia đình. Tổ chức/doanh nghiệp vẫn phải nộp tại Văn phòng đăng ký đất đai cấp tỉnh.",
-      "solution": "Xác định đúng bản thân: cá nhân hoặc tổ chức trước khi chọn nơi nộp hồ sơ. Nếu không chắc chắn, gọi điện hỏi trước."
+      "content": "Nộp hồ sơ tại UBND cấp xã kể từ 01/07/2025 (Nghị định 151/2025/NĐ-CP) áp dụng đối với cá nhân, cộng đồng dân cư. Tổ chức trong nước, doanh nghiệp có vốn đầu tư nước ngoài nộp tại Văn phòng đăng ký đất đai cấp tỉnh.",
+      "solution": "Xác định đúng đối tượng sử dụng đất (cá nhân hay tổ chức) để chọn đúng cơ quan tiếp nhận hồ sơ."
     }
   ],
   "after_procedure": {
-    "how_to_receive": "Nhận GCNQSDĐ mới (đã cập nhật tên chủ mới) tại Văn phòng đăng ký đất đai/UBND cấp xã theo ngày hẹn (tối đa 8 ngắy làm việc từ ngày nộp).",
-    "receipt_method": "GCNQSDĐ bản gốc mới + hồ sơ gốc (sổ đỏ cũ được trả lại nếu không cần giữ).",
-    "receive_by_other": "Ủy quyền nhận: giấy ủy quyền công chứng + CCCD cả 2 bên. Người nhận mang giấy hẹn + CCCD.",
-    "rejected_solution": "Từ chối nếu: hợp đồng chưa công chứng, chưa nộp đủ thuế, đất có tranh chấp chưa giải quyết. Nhận công văn giải trình và khắc phục theo hướng dẫn."
+    "how_to_receive": "Nhận GCNQSDĐ (Sổ hồng mẫu mới theo Luật Đất đai 2024 có mã QR) hoặc Sổ cũ đã xác nhận nội dung biến động tại Bộ phận Một cửa UBND cấp xã / VPĐKĐĐ theo ngày hẹn (tối đa 08 ngày làm việc sau khi hoàn thành nghĩa vụ tài chính).",
+    "receipt_method": "Giấy chứng nhận quyền sử dụng đất, quyền sở hữu tài sản gắn liền với đất bản gốc (có mã QR tra cứu).",
+    "receive_by_other": "Ủy quyền nhận: văn bản ủy quyền có công chứng/chứng thực + Thẻ căn cước/CCCD của người nhận + giấy hẹn.",
+    "rejected_solution": "Từ chối nếu đất không đủ điều kiện chuyển nhượng theo Điều 45 Luật Đất đai 2024 hoặc chưa hoàn thành nghĩa vụ tài chính. Cơ quan tiếp nhận phải có văn bản trả lời nêu rõ lý do."
   },
   "common_issues": [
     {
-      "problem": "Đất bị tranh chấp giữa anh em trong gia đình",
-      "solution": "Phải có văn bản thỏa thuận phân chia di sản có công chứng, hoặc quyết định/án của Tòa án đã có hiệu lực pháp luật.",
-      "impact": "Không thể chuyển nhượng/sang tên cho đến khi tranh chấp được giải quyết"
+      "problem": "Đất có tranh chấp hoặc chưa thống nhất phân chia di sản thừa kế",
+      "solution": "Phải có văn bản thỏa thuận phân chia di sản thừa kế có công chứng, hoặc bản án/quyết định có hiệu lực pháp luật của Tòa án.",
+      "impact": "Không thể chuyển nhượng/sang tên cho đến khi giải quyết xong tranh chấp"
     },
     {
-      "problem": "Hợp đồng chuyển nhượng chưa công chứng trong thời hạn 30 ngày",
-      "solution": "Công chứng ngay. Nếu quá 30 ngày, bị xử phạt hành chính + phải tiếp tục đăng ký. Hợp đồng vẫn có hiệu lực dân sự.",
-      "impact": "Phạt 100.000-500.000đ (NĐ 168/2024) + kéo dài thời gian"
+      "problem": "Quá thời hạn 30 ngày kể từ ngày công chứng hợp đồng mới đi nộp hồ sơ",
+      "solution": "Vẫn được tiếp nhận giải quyết sang tên bình thường sau khi chấp hành quyết định xử phạt vi phạm hành chính về hành vi chậm đăng ký biến động.",
+      "impact": "Bị phạt từ 2.000.000đ - 3.000.000đ (Điều 16 Nghị định 123/2024/NĐ-CP)"
     },
     {
-      "problem": "Đất nông nghiệp đang trong thời gian cấm chuyển nhượng (chuyển đổi mục đích)",
-      "solution": "Chờ đợi cho đến khi kết thúc thời gian cấm. Hoặc xin cơ quan có thẩm quyền đánh giá lại trường hợp cụ thể.",
-      "impact": "Không thể thực hiện giao dịch cho đến khi có quyết định cho phép"
+      "problem": "Đất nông nghiệp đã hết thời hạn sử dụng ghi trên Sổ đỏ",
+      "solution": "Cá nhân trực tiếp sản xuất nông nghiệp được tự động tiếp tục sử dụng đất theo thời hạn mới; nếu cần xác nhận lại thời hạn trên Sổ đỏ để chuyển nhượng thì làm đồng thời hoặc trước khi công chứng.",
+      "impact": "Cần xác nhận gia hạn thời hạn sử dụng đất nếu đã hết hạn trên giấy chứng nhận"
     },
     {
-      "problem": "Không có tiền mặt để nộp thuế TNCN (2% giá chuyển nhượng)",
-      "solution": "Chuyển khoản nhận qua Cổng Thuế điện tử (thuedientu.gdt.gov.vn). In chứng từ mang đi. Hoặc thỏa thuận với người bán trả góp thuế.",
-      "impact": "Sang tên bị hoãn cho đến khi hoàn tất nộp thuế"
+      "problem": "Muốn nộp thuế TNCN và lệ phí trước bạ online để không phải ra ngân hàng/kho bạc",
+      "solution": "Khi nhận được tin nhắn Thông báo mã hồ sơ và số tiền thuế từ Cơ quan Thuế, đăng nhập Cổng DVC Quốc gia hoặc ứng dụng eTax Mobile để thanh toán trực tuyến và hệ thống sẽ tự động truyền chứng từ điện tử sang VPĐKĐĐ.",
+      "impact": "Tiết kiệm thời gian đi lại, chứng từ nộp thuế được liên thông tự động"
     }
   ]
 }

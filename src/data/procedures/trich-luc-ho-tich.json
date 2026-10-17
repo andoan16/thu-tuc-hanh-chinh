@@ -5,46 +5,46 @@
   "category": "Tư pháp",
   "portalUrl": "https://dichvucong.gov.vn/p/home/dvc-trang-chu.html",
   "fee": 5000,
-  "feeNote": "5.000đ/bản trích lục (theo Thông tư 01/2020/TT-BTP). Miễn phí cho người có công với cách mạng và gia đình. Nếu nộp online qua VNeID, nhận bản điện tử miễn phí.",
-  "processingTime": "Trong ngày (trực tiếp) / 1-3 ngày (qua bưu điện)",
+  "feeNote": "Khoảng 5.000đ - 8.000đ/bản sao trích lục (theo Thông tư 281/2016/TT-BTC và Nghị quyết HĐND cấp tỉnh theo Thông tư 85/2019/TT-BTC). Miễn phí cho người có công với cách mạng, người thuộc hộ nghèo, người khuyết tật. Nhận bản điện tử qua VNeID miễn phí.",
+  "processingTime": "Trong ngày tiếp nhận yêu cầu (trực tiếp/online) / 1-3 ngày (qua bưu chính)",
   "questions": [
     {
       "id": "record_type",
       "text": "Bạn cần trích lục loại giấy tờ nào?",
       "options": [
         {
-          "label": "Trích lục Khai sinh",
+          "label": "Bản sao Trích lục Khai sinh",
           "value": "birth"
         },
         {
-          "label": "Trích lục Kết hôn",
+          "label": "Bản sao Trích lục Kết hôn",
           "value": "marriage"
         },
         {
-          "label": "Trích lục Khai tử",
+          "label": "Bản sao Trích lục Khai tử",
           "value": "death"
         }
       ],
-      "impact": "Xác định loại trích lục cần cấp (khai sinh / kết hôn / khai tử)"
+      "impact": "Xác định sự kiện hộ tịch cần cấp bản sao trích lục (khai sinh / kết hôn / khai tử)"
     },
     {
       "id": "channel",
       "text": "Bạn muốn nhận kết quả bằng cách nào?",
       "options": [
         {
-          "label": "Online qua VNeID (bản điện tử)",
+          "label": "Online qua Cổng DVC / VNeID (bản điện tử)",
           "value": "online"
         },
         {
-          "label": "Trực tiếp tại UBND xã / Phòng Tư pháp",
+          "label": "Trực tiếp tại UBND cấp xã / Trung tâm Hành chính công",
           "value": "offline"
         },
         {
-          "label": "Qua bưu điện (VNPost)",
+          "label": "Qua bưu chính công ích (VNPost)",
           "value": "post"
         }
       ],
-      "impact": "Nhận bản điện tử qua VNeID hoặc bản giấy qua bưu điện VNPost"
+      "impact": "Bản điện tử hộ tịch có giá trị pháp lý tương đương bản giấy"
     },
     {
       "id": "vneid",
@@ -59,7 +59,7 @@
           "value": "no"
         }
       ],
-      "impact": "Bắt buộc nếu nhận kết quả bản điện tử"
+      "impact": "Bắt buộc nếu nộp trực tuyến và nhận bản hộ tịch điện tử"
     }
   ],
   "rules": {
@@ -100,38 +100,38 @@
   },
   "documents": {
     "cccd": {
-      "label": "CCCD gắn chip của người yêu cầu (bản gốc để đối chiếu)",
+      "label": "Thẻ căn cước / CCCD gắn chip hoặc xuất trình Căn cước điện tử trên VNeID",
       "badges": [
         "scan",
         "goc"
       ]
     },
     "request_form": {
-      "label": "Tờ khai yêu cầu trích lục hộ tịch (Mẫu C-1 hoặc tương đương)",
+      "label": "Tờ khai cấp bản sao trích lục hộ tịch (theo mẫu tại Thông tư 04/2020/TT-BTP, sửa đổi bởi Thông tư 04/2024/TT-BTP)",
       "badges": [
         "scan"
       ]
     },
     "old_copy": {
-      "label": "Bản sao giấy tờ hộ tịch cũ (nếu có — giúp tra cứu sổ gốc nhanh hơn)",
+      "label": "Bản chụp hoặc thông tin giấy tờ hộ tịch cũ (số quyển, ngày đăng ký — giúp tra cứu nhanh)",
       "badges": [
         "saoy"
       ]
     },
     "authorization": {
-      "label": "Giấy ủy quyền (nếu nhờ người khác) - có công chứng",
+      "label": "Văn bản ủy quyền (nếu ủy quyền cho người khác yêu cầu; nếu người được ủy quyền là ông, bà, cha, mẹ, con, vợ, chồng, anh, chị, em ruột thì không phải chứng thực)",
       "badges": [
         "saoy"
       ]
     },
     "relation_proof": {
-      "label": "Giấy tờ chứng minh quan hệ với người đã mất (khai tử — nếu không phải người quản lý di sản)",
+      "label": "Giấy tờ chứng minh quan hệ nhân thân với người đã mất (trường hợp dữ liệu dân cư chưa thể hiện mối quan hệ)",
       "badges": [
         "saoy"
       ]
     },
     "fee": {
-      "label": "Lệ phí: 5.000đ/bản (miễn phí bản điện tử qua VNeID)",
+      "label": "Phí: 5.000đ - 8.000đ/bản sao trích lục (miễn phí bản điện tử)",
       "badges": [
         "fee"
       ]
@@ -139,111 +139,112 @@
   },
   "legal_bases": [
     {
-      "title": "Luật Hộ tịch số 60/2014/QH13 của Quốc hội (còn hiệu lực; bị thay thế bởi Luật Hộ tịch 03/2026/QH16 có hiệu lực 01/03/2027)",
-      "article": "Điều 2, Điều 14, Điều 24, Điều 35 — đăng ký khai sinh, kết hôn, khai tử; cấp trích lục",
+      "title": "Luật Hộ tịch số 60/2014/QH13 của Quốc hội (đang có hiệu lực; sẽ được thay thế bởi Luật Hộ tịch số 03/2026/QH16 từ ngày 01/03/2027)",
+      "article": "Điều 63, Điều 64 — cấp bản sao trích lục hộ tịch không phụ thuộc nơi cư trú khi đã có trong Cơ sở dữ liệu hộ tịch điện tử",
       "url": "https://vanban.chinhphu.vn/default.aspx?pageid=27160&docid=178129",
-      "last_verified_date": "2026-09-20"
+      "last_verified_date": "2026-10-17"
     },
     {
-      "title": "Thông tư 01/2020/TT-BTP của Bộ Tư pháp: Quy định chi tiết và hướng dẫn thi hành một số điều của NĐ 23/2015/NĐ-CP (lệ phí hộ tịch)",
-      "article": "Điều 2 — mức thu 5.000đ/bản trích lục; miễn phí người có công",
-      "url": "https://vanban.chinhphu.vn/default.aspx?pageid=27160&docid=199458",
-      "last_verified_date": "2026-09-20"
+      "title": "Nghị định 123/2015/NĐ-CP của Chính phủ: Quy định chi tiết một số điều và biện pháp thi hành Luật Hộ tịch (sửa đổi, bổ sung bởi Nghị định 87/2020/NĐ-CP và Nghị định 07/2025/NĐ-CP)",
+      "article": "Điều 2, Điều 23 — ủy quyền đăng ký hộ tịch; đăng ký hộ tịch trực tuyến và cấp bản điện tử giấy tờ hộ tịch",
+      "url": "https://vanban.chinhphu.vn/?pageid=27160&docid=182297",
+      "last_verified_date": "2026-10-17"
     },
     {
-      "title": "Nghị định 82/2023/NĐ-CP của Chính phủ: Sửa đổi, bổ sung một số điều của NĐ 120/2016/NĐ-CP (hướng dẫn Luật Hộ tịch)",
-      "article": "Điều 18, Điều 25 — thủ tục cấp trích lục hộ tịch, hồ sơ, thẩm quyền",
-      "url": "https://vanban.chinhphu.vn/?pageid=27160&docid=209063",
-      "last_verified_date": "2026-09-20"
+      "title": "Thông tư 281/2016/TT-BTC và Thông tư 85/2019/TT-BTC (sửa đổi bởi Thông tư 106/2021/TT-BTC) của Bộ Tài chính",
+      "article": "Quy định mức thu phí khai thác, sử dụng thông tin trong cơ sở dữ liệu hộ tịch (8.000đ/bản sao trích lục) và thẩm quyền HĐND cấp tỉnh quyết định lệ phí hộ tịch",
+      "url": "https://vanban.chinhphu.vn/?pageid=27160&docid=187542",
+      "last_verified_date": "2026-10-17"
     },
     {
-      "title": "Nghị định 59/2022/NĐ-CP của Chính phủ: Quy định về định danh và xác thực điện tử",
-      "article": "Điều 14, Điều 15 — VNeID Mức 2 dùng cho hộ tịch điện tử",
-      "url": "https://vanban.chinhphu.vn/?pageid=27160&docid=206490",
-      "last_verified_date": "2026-09-20"
+      "title": "Nghị định 69/2024/NĐ-CP của Chính phủ: Quy định về định danh và xác thực điện tử (thay thế Nghị định 59/2022/NĐ-CP)",
+      "article": "Điều 14, Điều 15 — sử dụng VNeID Mức 2 để yêu cầu và tích hợp bản điện tử giấy tờ hộ tịch",
+      "url": "https://vanban.chinhphu.vn/?pageid=27160&docid=210553",
+      "last_verified_date": "2026-10-17"
     }
   ],
   "officeInfo": {
-    "where": "UBND cấp xã/phường/thị trấn nơi đã đăng ký hộ tịch hoặc Phòng Tư pháp cấp huyện",
+    "where": "UBND cấp xã/phường/thị trấn nơi đã đăng ký hộ tịch trước đây hoặc bất kỳ UBND cấp xã nào (nếu dữ liệu đã được số hóa trên Cơ sở dữ liệu hộ tịch điện tử toàn quốc)",
     "officeLevel": "ward",
     "officePrefix": "UBND",
     "hours": "Thứ 2 - Thứ 6: 8:00 - 11:30, 13:30 - 17:00; Thứ 7: 8:00 - 11:30",
     "lunchNote": "Nghỉ trưa 11:30 - 13:30",
-    "bestTime": "Sáng Thứ 3 - Thứ 4 (ít người, tra cứu sổ gốc nhanh)",
-    "busyTime": "Thứ 2 và chiều Thứ 6 (rất đông do người làm việc nộp ngoài giờ)",
+    "bestTime": "Sáng Thứ 3 - Thứ 4 (ít người, tra cứu cơ sở dữ liệu hộ tịch nhanh)",
+    "busyTime": "Thứ 2 và chiều Thứ 6 (đông người làm thủ tục hành chính)",
     "payment": [
       "Tiền mặt",
-      "Chuyển khoản QR (nếu có)"
+      "Chuyển khoản QR",
+      "Thanh toán trực tuyến trên Cổng DVC"
     ],
     "tips": [
-      "Nếu có VNeID Mức 2, xin trích lục online qua app VNeID — nhận bản điện tử có chữ ký số, giá trị pháp lý như bản giấy, MIỄN PHÍ.",
-      "Tra cứu nhanh hơn nếu mang theo bản sao cũ hoặc biết rõ ngày/tháng/năm đăng ký hộ tịch.",
-      "Trích lục khai tử cho người ngoài gia đình cần giấy tờ chứng minh quyền lợi liên quan (di sản, pháp lý)."
+      "Nếu thông tin hộ tịch đã có trong Cơ sở dữ liệu hộ tịch điện tử, bạn có thể xin cấp bản sao trích lục tại BẤT KỲ UBND cấp xã nào hoặc nộp trực tuyến trên Cổng DVC Quốc gia mà không cần về nơi đăng ký gốc.",
+      "Nếu ủy quyền cho ông, bà, cha, mẹ, con, vợ, chồng, anh, chị, em ruột đi xin thay thì văn bản ủy quyền KHÔNG cần công chứng, chứng thực (khoản 1 Điều 2 Nghị định 123/2015/NĐ-CP).",
+      "Theo Luật Hộ tịch số 03/2026/QH16 (có hiệu lực từ 01/03/2027), dữ liệu hộ tịch điện tử và bản điện tử giấy tờ hộ tịch có giá trị pháp lý tương đương bản giấy trong mọi thủ tục hành chính."
     ]
   },
   "data_source": "Cổng Dịch vụ công Quốc gia (dichvucong.gov.vn) / Bộ Tư pháp",
-  "last_updated": "05/09/2026",
+  "last_updated": "17/10/2026",
   "difficulty_level": "Dễ",
   "estimated_time_days": 1,
   "execution_methods": [
-    "Online (Cổng DVC Quốc gia)",
+    "Online (Cổng DVC Quốc gia / VNeID)",
     "Trực tiếp (UBND cấp xã/phường)"
   ],
   "feeOnline": 5000,
-  "feeOffline": 5000,
+  "feeOffline": 8000,
   "forms": [
     {
-      "form_code": "Mẫu C-1",
-      "form_name": "Tờ khai yêu cầu trích lục hộ tịch",
+      "form_code": "Phụ lục Thông tư 04/2020/TT-BTP",
+      "form_name": "Tờ khai cấp bản sao trích lục hộ tịch",
       "fill_mode": "both",
       "copies_count": 1,
-      "note": "Tải từ dichvucong.gov.vn hoặc lấy tại UBND xã/Phòng Tư pháp. Ghi rõ loại trích lục (khai sinh/kết hôn/khai tử).",
+      "note": "Online: điền biểu mẫu tương tác trực tiếp trên Cổng DVC Quốc gia. Offline: lấy mẫu tại Bộ phận Một cửa UBND cấp xã.",
       "download_url": "https://dichvucong.gov.vn/p/home/dvc-trang-chu.html"
     }
   ],
   "warnings": [
     {
       "type": "penalty",
-      "content": "Cung cấp thông tin sai lệch quốc gia, tên, ngày sinh, nơi sinh trong trích lục có thể bị xử phạt 500.000-1.000.000đ theo Nghị định 104/2022/NĐ-CP xử lý vi phạm hành chính về hộ tịch.",
-      "solution": "Kiểm tra kỹ thông tin trước khi nộp. Nếu phát hiện sai sau khi cấp, cần yêu cầu cấp lại với giấy tờ chứng minh."
+      "content": "Hành vi tẩy xóa, sửa chữa làm sai lệch nội dung giấy tờ hộ tịch hoặc cam đoan, làm chứng sai sự thật để làm thủ tục hộ tịch bị phạt tiền từ 1.000.000đ đến 5.000.000đ theo Điều 37, Điều 45 Nghị định 82/2020/NĐ-CP (sửa đổi bởi Nghị định 117/2024/NĐ-CP).",
+      "solution": "Kê khai trung thực thông tin. Nếu phát hiện thông tin trong sổ hộ tịch hoặc bản chính có sai sót, phải làm thủ tục 'Cải chính hộ tịch' chứ không tự ý tẩy xóa."
     },
     {
       "type": "reject_reason",
-      "content": "Người yêu cầu không có quyền lợi hợp pháp với người trong trích lục (ví dụ: người không có quan hệ huyết thống khi xin trích lục khai tử).",
-      "solution": "Cần mang theo giấy tờ chứng minh quyền lợi liên quan (giấy chứng nhận quyền thừa kế, hợp đồng, quyết định tòa án)."
+      "content": "Sổ hộ tịch gốc trước đây bị thất lạc/chưa được số hóa và người yêu cầu không nộp ở đúng UBND cấp xã nơi đã đăng ký hộ tịch trước đây để tra cứu sổ giấy.",
+      "solution": "Nếu sự kiện hộ tịch đăng ký đã lâu và chưa được số hóa lên hệ thống điện tử, cần liên hệ UBND cấp xã nơi đã đăng ký trước đây để tra cứu sổ gốc."
     },
     {
       "type": "deadline",
-      "content": "Trích lục hộ tịch có giá trị sử dụung không thời hạn, nhưng một số cơ quan yêu cầu bản trích lục không quá 6 tháng tuổi.",
-      "solution": "Nên xin cấp bản trích lục mới nhất. Nếu bản cũ quá cũ, cơ quan có thể yêu cầu cấp lại."
+      "content": "Bản sao trích lục hộ tịch có giá trị sử dụng lâu dài (trừ Giấy xác nhận tình trạng hôn nhân có giá trị 06 tháng), tuy nhiên một số hồ sơ nước ngoài có thể yêu cầu bản trích lục mới cấp trong vòng 06 tháng.",
+      "solution": "Có thể yêu cầu cấp nhiều bản sao trích lục trong cùng một lần nộp hồ sơ để dự phòng."
     }
   ],
   "after_procedure": {
-    "how_to_receive": "Nhận bản trích lục trực tiếp tại quầy trả kết quả (nộp trực tiếp) hoặc qua bưu điện VNPost (nếu chọn hình thức qua bưu điện).",
-    "receipt_method": "Bản gốc trích lục không có thời hạn. Nộp online qua VNeID: nhận bản điện tử (có chữ ký số) miễn phí.",
-    "receive_by_other": "Ủy quyền nhận thay: cần giấy ủy quyền công chứng + CCCD cả 2 bên. Người nhận mang giấy hẹn + CCCD đến lấy.",
-    "rejected_solution": "Nếu bị từ chối: nhận kèm công văn giải trình lý do. Có thể yêu cầu xem xét lại hoặc cấp trích lục theo hướng khác."
+    "how_to_receive": "Nhận kết quả ngay trong ngày làm việc tại Bộ phận Một cửa UBND cấp xã, hoặc nhận bản điện tử qua Cổng DVC / VNeID / email, hoặc qua bưu chính VNPost.",
+    "receipt_method": "Bản sao trích lục hộ tịch bản giấy (có dấu đỏ) và/hoặc bản điện tử có chữ ký số.",
+    "receive_by_other": "Ủy quyền cho người thân ruột thịt (ông, bà, cha, mẹ, con, vợ, chồng, anh, chị, em ruột): văn bản ủy quyền không cần chứng thực. Ủy quyền cho người khác: văn bản ủy quyền phải được chứng thực.",
+    "rejected_solution": "Nếu không tìm thấy thông tin trong sổ hộ tịch và Cơ sở dữ liệu, UBND cấp xã sẽ có văn bản xác nhận không có thông tin để công dân làm cơ sở thực hiện thủ tục 'Đăng ký lại khai sinh/kết hôn/khai tử'."
   },
   "common_issues": [
     {
-      "problem": "Không nhớ ngày đăng ký hộ tịch (chỉ nhớ năm)",
-      "solution": "Cơ quan trích lục sẽ tra cứu theo khoảng thời gian. Nên mang theo bất kỳ bản sao cũ hoặc giấy tờ liên quan để tham chiếu.",
-      "impact": "Tìm kiếm chậm hơn, có thể thêm 1-2 ngày làm việc"
+      "problem": "Không nhớ chính xác ngày tháng đăng ký hộ tịch, chỉ nhớ năm",
+      "solution": "Ghi rõ năm đăng ký và nơi đăng ký vào tờ khai; công chức tư pháp - hộ tịch sẽ tra cứu trên Phần mềm hộ tịch điện tử dùng chung và sổ gốc lưu trữ.",
+      "impact": "Nếu phải tra cứu sổ giấy lưu trữ nhiều năm có thể kéo dài 1-2 ngày làm việc"
     },
     {
-      "problem": "Hộ tịch gốc bị mất hoặc hỏng",
-      "solution": "Cần có giấy xác nhận của UBND cấp xã nơi đã đăng ký hộ tịch + tìm kiếm trong sổ gốc tại lưu trữ (nếu còn).",
-      "impact": "Thời gian giải quyết kéo dài thêm 5-10 ngày"
+      "problem": "Cả bản chính giấy khai sinh của cá nhân và Sổ hộ tịch gốc tại UBND xã đều đã bị mất/hư hỏng",
+      "solution": "Không thể cấp bản sao trích lục nếu sổ gốc đã mất và chưa có trong CSDL điện tử. Trường hợp này phải chuyển sang làm thủ tục 'Đăng ký lại khai sinh' (Điều 26 Nghị định 123/2015/NĐ-CP) để được cấp lại bản chính mới.",
+      "impact": "Giải quyết theo thủ tục Đăng ký lại hộ tịch (thời hạn khoảng 05 ngày làm việc)"
     },
     {
-      "problem": "Tên trong hộ tịch gốc viết sai so với CCCD hiện tại",
-      "solution": "Làm thủ tục khiếu nại thay đổi hộ tịch trước, sau đó mới xin trích lục. Cần ỷ kiến của Tòa án nhân dân cấp huyện.",
-      "impact": "Tốn thêm 1-3 tháng để giải quyết"
+      "problem": "Họ tên, năm sinh trong Sổ hộ tịch gốc bị sai lệch so với Thẻ căn cước hiện tại",
+      "solution": "Làm thủ tục 'Cải chính hộ tịch' tại UBND cấp xã theo quy định của Luật Hộ tịch và Nghị định 123/2015/NĐ-CP (không cần qua Tòa án).",
+      "impact": "Thời gian giải quyết cải chính hộ tịch khoảng 03-06 ngày làm việc"
     },
     {
-      "problem": "Ở nước ngoài, cần trích lục bằng tiếng nước ngoài",
-      "solution": "Đặt lịch hẹn tại Đại sứ quán/Thị sự quán Việt Nam. Lệ phí ngoại giao áp dụng. Thời gian: 3-5 ngày làm việc.",
-      "impact": "Phí cao hơn trong nước, thêm thời gian chuyển hồ sơ"
+      "problem": "Đang sinh sống ở tỉnh/thành phố khác xa nơi đăng ký khai sinh trước đây",
+      "solution": "Nộp hồ sơ trực tuyến trên Cổng Dịch vụ công Quốc gia hoặc đến UBND cấp xã nơi đang cư trú hiện tại để yêu cầu trích lục từ Cơ sở dữ liệu hộ tịch điện tử toàn quốc.",
+      "impact": "Không cần phải đi lại về quê nơi đăng ký gốc nếu dữ liệu đã số hóa"
     }
   ]
 }

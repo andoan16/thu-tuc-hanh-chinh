@@ -5,15 +5,15 @@
   "category": "Tư pháp",
   "portalUrl": "https://dichvucong.gov.vn/p/home/dvc-trang-chu.html",
   "fee": 2000,
-  "feeNote": "2.000đ / bản (theo Thông tư 01/2020/TT-BTP). Nếu chứng thực chữ ký: 5.000đ/lần.",
-  "processingTime": "Trong ngày (30 phút - 2 giờ)",
+  "feeNote": "Sao y bản chính: 2.000đ/trang (trang 1-2), từ trang thứ 3 trở lên thu 1.000đ/trang (tối đa 200.000đ/bản). Chứng thực chữ ký: 10.000đ/trường hợp (theo Thông tư 226/2016/TT-BTC).",
+  "processingTime": "Trong ngày tiếp nhận yêu cầu (thường 15 phút - 2 giờ)",
   "questions": [
     {
       "id": "type",
       "text": "Bạn cần chứng thực loại nào?",
       "options": [
         {
-          "label": "Sao y bản chính (photo công chứng)",
+          "label": "Sao y bản chính (chứng thực bản sao từ bản chính)",
           "value": "saoy"
         },
         {
@@ -25,7 +25,7 @@
           "value": "contract"
         }
       ],
-      "impact": "Sao y bản sao từ bản chính hoặc chứng thực chữ ký — thủ tục và lệ phí khác nhau"
+      "impact": "Sao y bản sao từ bản chính hoặc chứng thực chữ ký — thủ tục và phí khác nhau"
     },
     {
       "id": "count",
@@ -40,7 +40,7 @@
           "value": "many"
         }
       ],
-      "impact": "Lệ phí 2.000đ/bản sao y, 5.000đ/lần chứng thực chữ ký"
+      "impact": "Phí 2.000đ/trang (2 trang đầu), từ trang thứ 3 là 1.000đ/trang; chứng thực chữ ký 10.000đ/trường hợp"
     }
   ],
   "rules": {
@@ -79,51 +79,51 @@
   },
   "documents": {
     "cccd": {
-      "label": "CCCD gắn chip (bản gốc để đối chiếu)",
+      "label": "Thẻ căn cước / CCCD gắn chip hoặc xuất trình Căn cước điện tử trên VNeID (bắt buộc khi chứng thực chữ ký / hợp đồng)",
       "badges": [
         "scan",
         "goc"
       ]
     },
     "original_doc": {
-      "label": "Bản chính giấy tờ cần sao y",
+      "label": "Bản chính giấy tờ, văn bản làm cơ sở để chứng thực bản sao",
       "badges": [
         "goc"
       ]
     },
     "copies": {
-      "label": "Bản photo giấy tờ (số lượng bản cần sao y)",
+      "label": "Bản chụp (photo) giấy tờ cần chứng thực (hoặc cơ quan chứng thực tự chụp từ bản chính)",
       "badges": [
         "scan"
       ]
     },
     "doc_to_sign": {
-      "label": "Giấy tờ cần ký chứng thực (2 bản)",
+      "label": "Giấy tờ, văn bản mà mình sẽ ký (ký trực tiếp trước mặt người thực hiện chứng thực)",
       "badges": [
         "scan"
       ]
     },
     "contract_doc": {
-      "label": "Hợp đồng / giao dịch (2 bản chính)",
+      "label": "Dự thảo hợp đồng, giao dịch (tối thiểu 02 bản)",
       "badges": [
         "goc"
       ]
     },
     "land_doc": {
-      "label": "Giấy chứng nhận QSDĐ (nếu chứng thực hợp đồng liên quan đất đai)",
+      "label": "Giấy chứng nhận quyền sở hữu, quyền sử dụng tài sản (nếu chứng thực hợp đồng liên quan đến tài sản đó)",
       "badges": [
         "goc",
         "saoy"
       ]
     },
     "authorization": {
-      "label": "Giấy ủy quyền (nếu nhờ người khác) - công chứng",
+      "label": "Giấy tờ chứng minh quan hệ / ủy quyền (nếu pháp luật yêu cầu đối với hợp đồng/giao dịch)",
       "badges": [
         "saoy"
       ]
     },
     "fee": {
-      "label": "Lệ phí: 2.000đ/bản (sao y) hoặc 5.000đ/lần (chữ ký)",
+      "label": "Phí: 2.000đ/trang (trang 1-2), 1.000đ/trang (từ trang 3); 10.000đ/trường hợp (chữ ký)",
       "badges": [
         "fee"
       ]
@@ -131,105 +131,107 @@
   },
   "legal_bases": [
     {
-      "title": "Nghị định 23/2015/NĐ-CP của Chính phủ: Về cấp bản sao từ sổ gốc, chứng thực bản sao, chứng thực chữ ký, chứng thực hợp đồng, giao dịch",
-      "article": "Điều 2, Điều 5, Điều 20, Điều 24 — quy định về chứng thực bản sao, chứng thực chữ ký, chứng thực hợp đồng/giao dịch (sửa đổi bởi NĐ 280/2025/NĐ-CP)",
+      "title": "Nghị định 23/2015/NĐ-CP của Chính phủ (được sửa đổi, bổ sung bởi Nghị định 07/2025/NĐ-CP và Nghị định 280/2025/NĐ-CP có hiệu lực 01/11/2025)",
+      "article": "Điều 5, Điều 18, Điều 20, Điều 24 — thẩm quyền chứng thực của Chủ tịch UBND cấp xã, tổ chức hành nghề công chứng; không phụ thuộc nơi cư trú đối với sao y, chứng thực chữ ký",
       "url": "https://vanban.chinhphu.vn/?pageid=27160&docid=179100",
-      "last_verified_date": "2026-09-20"
+      "last_verified_date": "2026-10-17"
     },
     {
-      "title": "Thông tư 01/2020/TT-BTP của Bộ Tư pháp: Quy định chi tiết và hướng dẫn thi hành một số điều của NĐ 23/2015/NĐ-CP",
-      "article": "Điều 2, Điều 3 — mức thu 2.000đ/bản sao y, 5.000đ/lần chứng thực chữ ký",
+      "title": "Thông tư 01/2020/TT-BTP của Bộ Tư pháp: Quy định chi tiết và hướng dẫn thi hành một số điều của Nghị định 23/2015/NĐ-CP",
+      "article": "Hướng dẫn nghiệp vụ chứng thực bản sao từ bản chính, chứng thực chữ ký và hợp đồng, giao dịch",
       "url": "https://vanban.chinhphu.vn/default.aspx?pageid=27160&docid=199458",
-      "last_verified_date": "2026-09-20"
+      "last_verified_date": "2026-10-17"
     },
     {
-      "title": "Nghị định 82/2023/NĐ-CP của Chính phủ: Sửa đổi, bổ sung một số điều của NĐ 120/2016/NĐ-CP (hướng dẫn Luật Hộ tịch/chứng thực)",
-      "article": "Điều 4, Điều 15, Điều 23 — thủ tục chứng thực, hồ sơ, thẩm quyền",
-      "url": "https://vanban.chinhphu.vn/?pageid=27160&docid=209063",
-      "last_verified_date": "2026-09-20"
+      "title": "Thông tư 226/2016/TT-BTC của Bộ Tài chính: Quy định mức thu, chế độ thu, nộp, quản lý và sử dụng phí chứng thực",
+      "article": "Điều 4 — mức thu phí chứng thực bản sao từ bản chính (2.000đ/trang đối với 2 trang đầu, từ trang 3 trở lên thu 1.000đ/trang, tối đa 200.000đ/bản); chứng thực chữ ký 10.000đ/trường hợp",
+      "url": "https://vanban.chinhphu.vn/?pageid=27160&docid=187535",
+      "last_verified_date": "2026-10-17"
     }
   ],
   "officeInfo": {
-    "where": "UBND cấp xã/phường/thị trấn hoặc Phòng Tư pháp cấp huyện",
+    "where": "UBND cấp xã/phường/thị trấn bất kỳ (Bộ phận Một cửa) hoặc Tổ chức hành nghề công chứng (Phòng công chứng / Văn phòng công chứng)",
     "officeLevel": "ward",
     "officePrefix": "UBND",
     "hours": "Thứ 2 - Thứ 6: 8:00 - 11:30, 13:30 - 17:00; Thứ 7: 8:00 - 11:30",
     "lunchNote": "Nghỉ trưa 11:30 - 13:30",
-    "bestTime": "Sáng Thứ 3 - Thứ 4 (hồ sơ đơn giản, xử lý nhanh)",
-    "busyTime": "Thứ 2 và chiều Thứ 6 (rất đông do người nộp ngoài giờ)",
+    "bestTime": "Sáng Thứ 3 - Thứ 4 (hồ sơ đơn giản, nhận ngay trong buổi)",
+    "busyTime": "Thứ 2 và chiều Thứ 6 (đông người nộp hồ sơ)",
     "payment": [
       "Tiền mặt",
-      "Chuyển khoản QR (nếu có)"
+      "Chuyển khoản QR",
+      "Thanh toán trực tuyến (nếu chứng thực bản sao điện tử trên Cổng DVC)"
     ],
     "tips": [
-      "Sao y cần mang bản CHÍNH để đối chiếu, nhân viên sẽ đóng dấu 'Đã đối chiếu với bản chính'.",
-      "Nhiều bản nên photo sẵn ở nhà, UBND thường không có dịch vụ photo hoặc phí cao.",
-      "Chứng thực chữ ký hợp đồng vay mượn tiền cần có người cho vay đi cùng ký, hoặc ủy quyền công chứng."
+      "Theo Nghị định 280/2025/NĐ-CP (hiệu lực 01/11/2025), thẩm quyền chứng thực tại địa phương thuộc Chủ tịch UBND cấp xã (bao gồm cả chứng thực chữ ký người dịch), không còn Phòng Tư pháp cấp huyện.",
+      "Việc chứng thực bản sao từ bản chính, chứng thực chữ ký KHÔNG phụ thuộc vào nơi cư trú — bạn có thể đến bất kỳ UBND xã/phường hoặc Văn phòng công chứng nào thuận tiện nhất.",
+      "Nếu yêu cầu chứng thực bản sao từ bản chính, người đi làm thủ tục không bắt buộc phải là người có tên trong bản chính và không cần giấy ủy quyền.",
+      "Có thể yêu cầu cấp 'Bản sao điện tử được chứng thực từ bản chính' để lưu vào tài khoản Dịch vụ công và tái sử dụng nhiều lần khi nộp hồ sơ trực tuyến."
     ]
   },
-  "data_source": "Cổng Dịch vụ công Quốc gia (dichvucong.gov.vn) / Cổng Pháp luật quốc gia (phapluat.gov.vn)",
-  "last_updated": "02/09/2026",
+  "data_source": "Cổng Dịch vụ công Quốc gia (dichvucong.gov.vn) / Bộ Tư pháp",
+  "last_updated": "17/10/2026",
   "difficulty_level": "Dễ",
   "estimated_time_days": 1,
   "execution_methods": [
-    "Trực tiếp (UBND cấp xã/phường / Phòng Tư pháp)",
-    "Văn phòng Công chứng tư nhân"
+    "Trực tiếp (UBND cấp xã/phường / Văn phòng Công chứng)",
+    "Chứng thực bản sao điện tử (Cổng DVC Quốc gia)"
   ],
   "feeOnline": null,
   "feeOffline": 2000,
   "forms": [
     {
       "form_code": "Không bắt buộc",
-      "form_name": "Không có mẫu tờ khai riêng — chỉ cần mang bản chính + bản sao để đối chiếu",
+      "form_name": "Không có mẫu tờ khai riêng đối với sao y bản chính",
       "fill_mode": "offline",
       "copies_count": 0,
-      "note": "Không cần điền tờ khai. Mang trực tiếp bản chính giấy tờ cần chứng thực + bản photo + CCCD đến cơ quan chứng thực.",
+      "note": "Chỉ cần xuất trình bản chính giấy tờ cần sao y + bản photo để đối chiếu và đóng dấu chứng thực.",
       "download_url": null
     }
   ],
   "warnings": [
     {
       "type": "risk",
-      "content": "Sao y bản photo từ bản chính giả mạo hoặc không rõ nguồn gốc là vi phạm pháp luật. Người đi sao y phải chịu trách nhiệm trước pháp luật nếu bản sao không đúng với bản chính.",
-      "solution": "Sao y tại cơ quan chứng thực có thẩm quyền: UBND cấp xã/phường, Phòng Tư pháp cấp huyện, hoặc văn phòng công chứng."
+      "content": "Theo Nghị định 280/2025/NĐ-CP, cơ quan giải quyết thủ tục hành chính KHÔNG ĐƯỢC yêu cầu người dân nộp/xuất trình bản giấy hoặc bản sao chứng thực nếu thông tin, giấy tờ đó đã được tích hợp trên VNeID hoặc khai thác được từ CSDL quốc gia.",
+      "solution": "Kiểm tra xem cơ quan tiếp nhận có chấp nhận dữ liệu trên VNeID không trước khi đi sao y nhiều bản giấy không cần thiết."
     },
     {
       "type": "reject_reason",
-      "content": "Cơ quan chứng thực có thể từ chối nếu bản chính bị tẩy xóa, sửa chữa, hoặc nội dung giấy tờ mâu thuẫn với nhau.",
-      "solution": "Đừng tự ý sửa đổi bất kỳ nội dung nào trên giấy tờ gốc. Nếu giấy tờ bị hỏng, cần làm lại bản mới tại cơ quan đã cấp."
+      "content": "Bản chính bị tẩy xóa, sửa chữa, thêm, bớt nội dung không hợp lệ; bản chính bị hư hỏng, cũ nát không xác định được nội dung; hoặc bản chính đóng dấu mật (Điều 22 Nghị định 23/2015/NĐ-CP) sẽ bị từ chối chứng thực bản sao.",
+      "solution": "Không tự ý sửa chữa, ép plastic đè làm mờ con dấu trên bản chính. Nếu bản chính hư hỏng, cần xin cấp lại bản chính hoặc trích lục từ sổ gốc."
     },
     {
       "type": "penalty",
-      "content": "Giả mạo, làm giả giấy tờ công cộng để chứng thực, sao y có thể bị xử phạt 2.000.000-5.000.000đ hoặc truy cứu trách nhiệm hình sự tùy mức độ (Nghị định 123/2020/NĐ-CP; Bộ luật Hình sự).",
-      "solution": "Chỉ mang bản chính hợp lệ, không tẩy sửa. Nếu nghi ngờ giấy tờ giả, báo ngay cơ quan chứng thực."
+      "content": "Hành vi tẩy xóa, sửa chữa làm sai lệch nội dung bản chính để yêu cầu chứng thực bản sao hoặc sử dụng giấy tờ giả để chứng thực bị phạt tiền từ 3.000.000đ đến 5.000.000đ và tịch thu tang vật (Điều 34 Nghị định 82/2020/NĐ-CP, sửa đổi bởi Nghị định 117/2024/NĐ-CP), hoặc truy cứu trách nhiệm hình sự theo Điều 341 Bộ luật Hình sự.",
+      "solution": "Chỉ sử dụng bản chính hợp pháp do cơ quan, tổ chức có thẩm quyền cấp."
     }
   ],
   "after_procedure": {
-    "how_to_receive": "Nhận bản sao y tại quầy cơ quan chứng thực ngay sau khi hoàn tất (thường 30 phút — 2 giờ).",
-    "receipt_method": "Bản sao có đóng dấu 'Đã đối chiếu với bản chính' của cơ quan chứng thực.",
-    "receive_by_other": "Người được ủy quyền nhận: cần giấy ủy quyền công chứng + CCCD cả 2 bên + bản gốc giấy tờ cần chứng thực.",
-    "rejected_solution": "Từ chối chứng thực nếu giấy tờ có dấu hiệu giả mạo, tẩy xóa. Giải quyết: làm lại giấy tờ gốc tại cơ quan đã cấp."
+    "how_to_receive": "Nhận kết quả ngay trong ngày tiếp nhận yêu cầu (hoặc ngay tại quầy sau 15 - 60 phút); nếu tiếp nhận sau 15 giờ thì trả kết quả chậm nhất trong ngày làm việc tiếp theo.",
+    "receipt_method": "Bản sao giấy có lời chứng 'Chứng thực bản sao đúng với bản chính' và chữ ký, con dấu của cơ quan chứng thực (hoặc bản sao điện tử có chữ ký số).",
+    "receive_by_other": "Sao y bản chính: bất kỳ ai mang bản chính hợp lệ đều có thể yêu cầu và nhận kết quả, không cần giấy ủy quyền. Chứng thực chữ ký: người yêu cầu phải trực tiếp ký.",
+    "rejected_solution": "Nếu bị từ chối: người thực hiện chứng thực phải giải thích rõ lý do hoặc thông báo bằng văn bản nếu người yêu cầu đề nghị."
   },
   "common_issues": [
     {
-      "problem": "Bản chính giấy tờ quá cũ, phai màu, khó đọc",
-      "solution": "Nên làm bản sao có đóng dấu 'Đã đối chiếu' từ cơ quan đã cấp trước, hoặc sử dụng bản mới nhất nếu có thể.",
-      "impact": "Cơ quan chứng thực có thể yêu cầu bổ sung giấy tờ liên quan"
+      "problem": "Bản chính giấy tờ quá cũ, rách nát, mờ chữ không đọc được",
+      "solution": "Không thể chứng thực bản sao từ bản chính nếu không xác định được nội dung. Cần liên hệ cơ quan đã cấp bản chính để xin cấp lại hoặc xin bản sao trích lục từ sổ gốc.",
+      "impact": "Bị từ chối sao y bản chính theo Điều 22 Nghị định 23/2015/NĐ-CP"
     },
     {
-      "problem": "Giấy tờ của nước ngoài, không phải tiếng Việt",
-      "solution": "Cần bản dịch tiếng Việt có công chứng bởi cơ quan công chứng có thẩm quyền. Văn bản nước ngoài cần được hợp pháp hóa lãnh sự trước.",
-      "impact": "Thêm thời gian 3-5 ngày cho bản dịch + hợp pháp hóa"
+      "problem": "Giấy tờ bằng tiếng nước ngoài hoặc do cơ quan nước ngoài cấp",
+      "solution": "Theo Nghị định 280/2025/NĐ-CP, cả Chủ tịch UBND cấp xã và Tổ chức hành nghề công chứng đều có thẩm quyền chứng thực bản sao từ bản chính giấy tờ bằng tiếng nước ngoài và chứng thực chữ ký người dịch.",
+      "impact": "Thuận tiện hơn, có thể làm ngay tại UBND cấp xã hoặc Văn phòng công chứng"
     },
     {
-      "problem": "Mất bản chính, chỉ còn bản photo",
-      "solution": "Bản photo không thể dùng để sao y. Cần làm lại bản chính tại cơ quan đã cấp, hoặc lấy bản có đóng dấu xác nhận từ cơ quan quản lý.",
-      "impact": "Phải làm thêm thủ tục lấy giấy tờ gốc trước khi chứng thực"
+      "problem": "Mất bản chính, chỉ còn bản photo hoặc bản sao chứng thực cũ",
+      "solution": "Bản photo hoặc bản sao chứng thực cũ KHÔNG thể dùng để sao y ra bản chứng thực mới. Phải mang bản chính hoặc xin cấp bản sao từ sổ gốc.",
+      "impact": "Không được chứng thực nếu không xuất trình bản chính"
     },
     {
-      "problem": "Cần chứng thực chữ ký trên giấy tờ không có mẫu chữ ký so sánh",
-      "solution": "Mang theo giấy tờ có chữ ký của người ký (CCCD, giấy tờ hợp pháp) để cơ quan chứng thực đối chiếu.",
-      "impact": "Nếu không có mẫu, có thể bị từ chối hoặc chậm hơn"
+      "problem": "Ký sẵn ở nhà rồi mới mang giấy tờ ra UBND xã xin chứng thực chữ ký",
+      "solution": "Theo quy định, người yêu cầu chứng thực chữ ký phải ký TRỰC TIẾP trước mặt người thực hiện chứng thực (trừ trường hợp chứng thực chữ ký tại bộ phận một cửa thì ký trước mặt công chức tiếp nhận hồ sơ).",
+      "impact": "Phải ký lại trực tiếp trên văn bản mới trước mặt cán bộ tiếp nhận"
     }
   ]
 }
